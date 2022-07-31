@@ -1,0 +1,76 @@
+
+<DESCRIBE::>expect_error, new version
+
+<IT::>f0 raises nothing
+
+<FAILED::>f0 did not raise any exception
+
+<FAILED::>f0 did not raise Exception
+
+<FAILED::>f0 did not raise ArithmeticError
+
+<FAILED::>f0 did not raise ZeroDivisionError
+
+<FAILED::>f0 did not raise LookupError
+
+<FAILED::>f0 did not raise KeyError
+
+<FAILED::>f0 did not raise OSError
+
+<COMPLETEDIN::>0.03
+
+<IT::>f1 raises Exception
+
+<PASSED::>Test Passed
+
+<PASSED::>Test Passed
+
+<FAILED::>f1 did not raise ArithmeticError: Exception() should be <class 'ArithmeticError'>
+
+<FAILED::>f1 did not raise ZeroDivisionError: Exception() should be <class 'ZeroDivisionError'>
+
+<FAILED::>f1 did not raise LookupError: Exception() should be <class 'LookupError'>
+
+<FAILED::>f1 did not raise KeyError: Exception() should be <class 'KeyError'>
+
+<FAILED::>f1 did not raise OSError: Exception() should be <class 'OSError'>
+
+<COMPLETEDIN::>0.02
+
+<IT::>f2 raises Exception >> ArithmeticError >> ZeroDivisionError
+
+<PASSED::>Test Passed
+
+<PASSED::>Test Passed
+
+<PASSED::>Test Passed
+
+<PASSED::>Test Passed
+
+<FAILED::>f2 did not raise LookupError: ZeroDivisionError('integer division or modulo by zero') should be <class 'LookupError'>
+
+<FAILED::>f2 did not raise KeyError: ZeroDivisionError('integer division or modulo by zero') should be <class 'KeyError'>
+
+<FAILED::>f2 did not raise OSError: ZeroDivisionError('integer division or modulo by zero') should be <class 'OSError'>
+
+<COMPLETEDIN::>0.02
+
+<IT::>f3 raises Exception >> LookupError >> KeyError
+
+<PASSED::>Test Passed
+
+<PASSED::>Test Passed
+
+<FAILED::>f3 did not raise ArithmeticError: KeyError(1) should be <class 'ArithmeticError'>
+
+<FAILED::>f3 did not raise ZeroDivisionError: KeyError(1) should be <class 'ZeroDivisionError'>
+
+<PASSED::>Test Passed
+
+<PASSED::>Test Passed
+
+<FAILED::>f3 did not raise OSError: KeyError(1) should be <class 'OSError'>
+
+<COMPLETEDIN::>0.02
+
+<COMPLETEDIN::>0.11

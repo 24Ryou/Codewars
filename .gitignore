@@ -1,0 +1,6 @@
+DO NOT EDIT CHALL AND MARK_GEN.txt
+/venv
+/.vscode
+/markdown_generator/*
+!/markdown_generator/main.py
+!/markdown_generator/utilities.py

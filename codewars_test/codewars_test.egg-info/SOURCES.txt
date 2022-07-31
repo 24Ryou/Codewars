@@ -1,0 +1,9 @@
+LICENSE.md
+README.md
+setup.py
+codewars_test/__init__.py
+codewars_test/test_framework.py
+codewars_test.egg-info/PKG-INFO
+codewars_test.egg-info/SOURCES.txt
+codewars_test.egg-info/dependency_links.txt
+codewars_test.egg-info/top_level.txt
