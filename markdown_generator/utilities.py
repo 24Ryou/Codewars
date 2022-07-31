@@ -106,7 +106,7 @@ def getKata(data):
 
 def writer(url):
   data = getJson(url)
-  open('readme.md' , 'a' , encoding='utf-8').write(getKata(data) +'\n')
+  open('codewars.md' , 'a' , encoding='utf-8').write(getKata(data) +'\n')
 
 # --------------------------- CREATE SOLUTION FILE --------------------------- #
 
