@@ -100,7 +100,7 @@ def getDescription(description = None):
 def getKata(data):
   solution = getSolution(data['name'])
   description = getDescription(data['description'])
-  return '# ' + data['name'] + '\n' + description + '\n' + solution
+  return '# ' + slugify(data['name']) + '\n' + description + '\n' + solution
 
 # --------------------------------- WRITER -------------------------------- #
 
