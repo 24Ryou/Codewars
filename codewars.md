@@ -1,12 +1,12 @@
 __Lists of challenges__
 - [Abbreviate a Two Word Name](#abbreviate-a-two-word-name)
-- [Are they the "same"?](#are-they-the-same)
+- [Are they the same](#are-they-the-same)
 - [Basic Mathematical Operations](#basic-mathematical-operations)
-- [Clever Solution](#clever-solution)
-- [Convert a Number to a String!](#convert-a-number-to-a-string)
-- [Convert a String to a Number!](#convert-a-string-to-a-number)
+- [Calculating with Functions](#calculating-with-functions)
+- [Convert a Number to a String](#convert-a-number-to-a-string)
+- [Convert a String to a Number](#convert-a-string-to-a-number)
 - [Convert string to camel case](#convert-string-to-camel-case)
-- [Counting sheep...](#counting-sheep)
+- [Counting sheep](#counting-sheep)
 - [Disemvowel Trolls](#disemvowel-trolls)
 - [Even or Odd](#even-or-odd)
 - [Find the odd int](#find-the-odd-int)
@@ -15,25 +15,25 @@ __Lists of challenges__
 - [Not very secure](#not-very-secure)
 - [Remove String Spaces](#remove-string-spaces)
 - [PaginationHelper](#paginationhelper)
-- [page_index takes an item index and returns the page that it belongs on](#page_index-takes-an-item-index-and-returns-the-page-that-it-belongs-on)
 - [Playing with digits](#playing-with-digits)
 - [Primes in numbers](#primes-in-numbers)
 - [Regex Password Validation](#regex-password-validation)
-- [Clever Solution](#clever-solution-1)
+- [RGB To Hex Conversion](#rgb-to-hex-conversion)
 - [Rot13](#rot13)
 - [Sort the odd](#sort-the-odd)
-- [Clever Solution](#clever-solution-2)
+- [Square Every Digit](#square-every-digit)
 - [String repeat](#string-repeat)
 - [Sum of odd numbers](#sum-of-odd-numbers)
 - [Take a Ten Minutes Walk](#take-a-ten-minutes-walk)
 - [Tribonacci Sequence](#tribonacci-sequence)
-- [Clever Solution](#clever-solution-3)
+- [Two to One](#two-to-one)
 - [Unique In Order](#unique-in-order)
 - [Valid Parentheses](#valid-parentheses)
 - [Vowel Count](#vowel-count)
-- [Where my anagrams at?](#where-my-anagrams-at)
-- [Who likes it?](#who-likes-it)
-- [Beginner Series #3 Sum of Numbers](#beginner-series-3-sum-of-numbers)
+- [Where my anagrams at](#where-my-anagrams-at)
+- [Who likes it](#who-likes-it)
+- [Beginner Series 3 Sum of Numbers](#beginner-series-3-sum-of-numbers)
+
 # Abbreviate a Two Word Name
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
 
@@ -55,6 +55,7 @@ It should look like this:
 
 `patrick feeney` => `P.F`
 
+
 ```py
 def abbrevName(name):
     return '.'.join(w[0] for w in name.split()).upper()
@@ -62,7 +63,7 @@ def abbrevName(name):
 # Clever Solution
 abbrev_name = lambda x: ".".join([x[0] , x.split(" ")[1][0]]).upper()
 ```
-# Are they the "same"?
+# Are they the same
 Given two arrays `a` and `b` write a function `comp(a, b)` (or`compSame(a, b)`) that checks whether the two arrays have the "same" elements, with the same *multiplicities* (the multiplicity of a member is the number of times it appears). "Same" means, here, that the elements in `b` are the elements in `a` squared, regardless of the order.
 
 #### Examples
@@ -101,6 +102,7 @@ If `a` or `b` are `nil` (or `null` or `None`, depending on the language), the pr
 
 #### Note for C
 The two arrays have the same size `(> 0)` given as parameter in function `comp`.
+
 ```py
 def comp(a1, a2):
     return None not in (a1,a2) and [i*i for i in sorted(a1)]==sorted(a2)
@@ -166,7 +168,8 @@ movq xmm0, rax
 movq xmm1, rdx
 call basic_op        ; XMM0 <- 7.0
 ```
-~~~```py
+~~~
+```py
 def basic_op (operator, value1, value2):
   match operator:
     case '+':
@@ -192,6 +195,7 @@ seven(times(five())) # must return 35
 four(plus(nine())) # must return 13
 eight(minus(three())) # must return 5
 six(divided_by(two())) # must return 3
+
 ```py
 def zero(r = ''):
   if r != '':
@@ -352,7 +356,7 @@ minus = lambda x: lambda y: y - x
 times = lambda x: lambda y: y * x
 divided_by = lambda x: lambda y: y / x
 ```
-# Convert a Number to a String!
+# Convert a Number to a String
 We need a function that can transform a number (integer) into a string.
 
 What ways of achieving this do you know?
@@ -372,13 +376,14 @@ In C, return a dynamically allocated string that will be freed by the test suite
 999  --> "999"
 -100 --> "-100"
 ```
+
 ```py
 number_to_string = lambda x : str(x)
 
 # Clever Solution
 number_to_string = str
 ```
-# Convert a String to a Number!
+# Convert a String to a Number
 Note: This kata is inspired by [Convert a Number to a String!](http://www.codewars.com/kata/convert-a-number-to-a-string/). Try that one too.
 
 ## Description
@@ -404,6 +409,7 @@ Note: Don't worry, all inputs will be strings, and every string is a perfectly v
 "-7" --> -7
 ```
 
+
 ```py
 string_to_number = lambda n: int(n)
 
@@ -423,6 +429,7 @@ Complete the method/function so that it converts dash/underscore delimited words
 
 `"the-stealth-warrior"` gets converted to `"theStealthWarrior"`  
 `"The_Stealth_Warrior"` gets converted to `"TheStealthWarrior"`
+
 ```py
 def to_camel_case(text):
     removed = text.replace('-', ' ').replace('_', ' ').split()
@@ -435,7 +442,7 @@ def to_camel_case(text):
     output = ''.join(x for x in text.title() if x not in "_-")
     return text[0] + output[1:] if text else ''
 ```
-# Counting sheep...
+# Counting sheep
 Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
 
 For example,
@@ -446,6 +453,7 @@ For example,
   True,  False, False, True ,
   True,  True,  True,  True ,
   False, False, True,  True]
+
 ```py
 def count_sheeps(arrayOfSheeps):
   return arrayOfSheeps.count(True)
@@ -472,6 +480,7 @@ Your task is to write a function that takes a string and return a new string wit
 For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
 Note: for this kata `y` isn't considered a vowel.
+
 ```py
 disemvowel = lambda x :  re.sub("[aeiouAEIOU]","",x)
 
@@ -497,7 +506,8 @@ Return a table with a column `is_even` containing `"Even"` or `"Odd"` depending 
 ```
 ```if:shell
 Write a script that takes an integer as an argument and returns `"Even"` for even numbers or `"Odd"` for odd numbers.
-``````py
+```
+```py
 def even_or_odd(number): return 'Even' if number%2 == 0 else 'Odd'
 
 # Clever Solution
@@ -530,6 +540,7 @@ There will always be only one integer that appears an odd number of times.
 `[1,1,2]` should return `2`, because it occurs 1 time (which is odd).  
 `[0,1,0,1,0]` should return `0`, because it occurs 3 times (which is odd).  
 `[1,2,2,3,3,3,4,3,3,3,2,2,1]` should return `4`, because it appears 1 time (which is odd).
+
 ```py
 def find_it(seq):
   array = seq
@@ -587,6 +598,7 @@ nb_year(1500000, 2.5, 10000, 2000000) -> 10
 #### Note: 
 Don't forget to convert the percent parameter as a percentage in the body of your function: if the parameter percent is 2 you have to convert it to 0.02.
 
+
 ```py
 def nb_year(p0, percent, aug, p):
   years = 0
@@ -609,6 +621,7 @@ In this little assignment you are given a string of space separated numbers, and
 high_and_low("1 2 3 4 5")  # return "5 1"
 high_and_low("1 2 -3 4 5") # return "5 -3"
 high_and_low("1 9 3 4 -5") # return "9 -5"
+
 ```py
 def high_and_low(numbers):
   num = [int(x) for x in numbers.split()]
@@ -633,6 +646,7 @@ The string has the following conditions to be alphanumeric:
 * At least one character (`""` is not valid)
 * Allowed characters are uppercase / lowercase latin letters and digits from `0` to `9`
 * No whitespaces / underscore
+
 ```py
 def alphanumeric(password):
     regex = '^(?=[^\s_])[a-zA-Z0-9]+$'
@@ -660,6 +674,7 @@ The input string will be terminated with a null character `\0`.
 ~~~if:c,nasm
 For C and Nasm, you must return a new dynamically allocated string.
 ~~~
+
 ```py
 def no_space(x):
     return "".join(x.split())
@@ -681,11 +696,12 @@ helper.page_item_count(0)  # should == 4
 helper.page_item_count(1) # last page - should == 2
 helper.page_item_count(2) # should == -1 since the page is invalid
 
-# page_index takes an item index and returns the page that it belongs on
+## page_index takes an item index and returns the page that it belongs on
 helper.page_index(5) # should == 1 (zero based index)
 helper.page_index(2) # should == 0
 helper.page_index(20) # should == -1
 helper.page_index(-10) # should == -1 because negative indexes are invalid
+
 ```py
 class PaginationHelper:
 
@@ -762,6 +778,7 @@ dig_pow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
 dig_pow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
 dig_pow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
 dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
+
 ```py
 def dig_pow(n, p):
   s = 0
@@ -785,6 +802,7 @@ n(i) is 1.
 ```
 Example: n = 86240 should return "(2**5)(5)(7**2)(11)"
 ```
+
 
 ```py
 def prime_factors(n):
@@ -834,7 +852,8 @@ You need to write regex that will validate a password to make sure it meets the 
 * contains a lowercase letter
 * contains an uppercase letter
 * contains a digit
-* only contains alphanumeric characters (note that `'_'` is not alphanumeric)```py
+* only contains alphanumeric characters (note that `'_'` is not alphanumeric)
+```py
 regex = compile("""^(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[0-9])[A-Za-z\d]{6,}$""", VERBOSE)
 
 # Clever Solution
@@ -850,6 +869,7 @@ rgb(255, 255, 255) # returns FFFFFF
 rgb(255, 255, 300) # returns FFFFFF
 rgb(0,0,0) # returns 000000
 rgb(148, 0, 211) # returns 9400D3
+
 ```py
 def rgb(r, g, b):
   r = check(r)
@@ -888,6 +908,7 @@ Please note that using `encode` is considered cheating.
 ```if:r
 **Note:** As R is a natively vectorized language, you should write `rot13()` such that the argument `x` may be a character vector of any length. The return value should always be a character vector of the same length as `x`.
 ```
+
 ```py
 def rot13(message):
   rot = ""
@@ -982,7 +1003,8 @@ You will be given an array of numbers. You have to sort the odd numbers in ascen
 purity: `LetRec`  
 numEncoding: `BinaryScott`  
 export constructors `nil, cons` and deconstructor `foldl` for your `List` encoding  
-~~~```py
+~~~
+```py
 def sort_array(source_array):
     odds = []
     answer = []
@@ -1014,6 +1036,7 @@ Welcome. In this kata, you are asked to square every digit of a number and conca
 For example, if we run 9119 through the function, 811181 will come out, because 9<sup>2</sup> is 81 and 1<sup>2</sup> is 1.
 
 **Note:** The function accepts an integer and returns an integer
+
 ```py
 def square_digits(num) : return int(''.join(str(int(i)**2) for i in str(num)))
 
@@ -1055,6 +1078,7 @@ Write a function that accepts an integer `n` and a string `s` as parameters, and
 6, "I"     -> "IIIIII"
 5, "Hello" -> "HelloHelloHelloHelloHello"
 ```
+
 ```py
 def repeat_str(repeat, string):
     return repeat * string
@@ -1085,6 +1109,7 @@ Calculate the sum of the numbers in the n<sup>th</sup> row of this triangle (sta
 2 --> 3 + 5 = 8
 ```
 
+
 ```py
 def row_sum_odd_numbers(n):
     return n*n*n
@@ -1100,6 +1125,7 @@ You live in the city of Cartesia where all roads are laid out in a perfect grid.
 You live in the city of Cartesia where all roads are laid out in a perfect grid.  You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk.  The city provides its citizens with a Walk Generating App on their phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk (eg. ['n', 's', 'w', 'e']).  You always walk only a single block for each letter (direction) and you know it takes you one minute to traverse one city block, so create a function that will return **true** if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point.  Return **false** otherwise.
 
 > **Note**: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only).  It will never give you an empty array (that's not a walk, that's standing still!).
+
 ```py
 def is_valid_walk(walk):
   if len(walk) != 10 :
@@ -1143,7 +1169,8 @@ Signature will always contain 3 numbers; n will always be a non-negative number;
 
 If you enjoyed this kata more advanced and generalized version of it can be found in the <a href="http://www.codewars.com/kata/fibonacci-tribonacci-and-friends"  target="_blank" title="Xbonacci sequence">Xbonacci kata</a>
 
-*[Personal thanks to Professor <a href="https://www.coursera.org/instructor/jimfowler" target="_blank" title="Jim Fowler">Jim Fowler</a> on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]*```py
+*[Personal thanks to Professor <a href="https://www.coursera.org/instructor/jimfowler" target="_blank" title="Jim Fowler">Jim Fowler</a> on Coursera for his awesome classes that I really recommend to any math enthusiast and for showing me this mathematical curiosity too with his usual contagious passion :)]*
+```py
 def tribonacci(signature, n):
     if n < 3:
         return signature[:n]
@@ -1179,6 +1206,7 @@ longest(a, b) -> "abcdefklmopqwxy"
 a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 ```
+
 ```py
 def longest(s1, s2):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -1203,6 +1231,7 @@ For example:
 unique_in_order('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
 unique_in_order('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 unique_in_order([1,2,2,3,3])       == [1,2,3]
+
 ```py
 def unique_in_order(iterable):
   x = []
@@ -1239,6 +1268,7 @@ Write a function that takes a string of parentheses, and determines if the order
 ~~~if-not:javascript,go,cobol
 Along with opening (`(`) and closing (`)`) parenthesis, input may contain any valid ASCII characters.  Furthermore, the input string may be empty and/or not contain any parentheses at all.  Do **not** treat other forms of brackets as parentheses (e.g. `[]`, `{}`, `<>`).
 ~~~
+
 ```py
 def valid_parentheses(string):
   count = 0
@@ -1274,6 +1304,7 @@ Return the number (count) of vowels in the given string.
 We will consider `a`, `e`, `i`, `o`, `u` as vowels for this Kata (but not `y`).
 
 The input string will only consist of lower case letters and/or spaces.
+
 ```py
 def get_count(sentence):
     return len([x for x in sentence if x.lower() in 'aeuio'])
@@ -1282,7 +1313,7 @@ def get_count(sentence):
 def getCount(inputStr):
     return sum(1 for let in inputStr if let in "aeiouAEIOU")
 ```
-# Where my anagrams at?
+# Where my anagrams at
 What is an anagram? Well, two words are anagrams of each other if they both contain the same letters. For example:
 
 What is an anagram? Well, two words are anagrams of each other if they both contain the same letters. For example:
@@ -1310,6 +1341,7 @@ anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
 **Note for Go**\
 For Go: Empty string slice is expected when there are no anagrams found.
 
+
 ```py
 def anagrams(word, words):
     list = []
@@ -1321,7 +1353,7 @@ def anagrams(word, words):
 # Clever Solution
 def anagrams(word, words): return [item for item in words if sorted(item)==sorted(word)]
 ```
-# Who likes it?
+# Who likes it
 You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
 
 Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:
@@ -1344,6 +1376,7 @@ Implement the function which takes an array containing the names of people that 
 ```
 
 Note: For 4 or more names, the number in `"and 2 others"` simply increases.
+
 ```py
 def likes(names):
     i = len(names)
@@ -1372,7 +1405,7 @@ def likes(names):
         4: '{}, {} and {others} others like this'
     }[min(4, n)].format(*names[:3], others=n-2)
 ```
-# Beginner Series #3 Sum of Numbers
+# Beginner Series 3 Sum of Numbers
 Given two integers `a` and `b`, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return `a` or `b`.
 
 **Note:** `a` and `b` are not ordered!

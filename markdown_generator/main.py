@@ -44,9 +44,14 @@ urls = [
 print('Select From List Below:')
 print('1 - Create Challenge Flile')
 print('2 - Add Solution To `Codewars.md`')
+print('3 - ReCreate The `Codewars.md`')
 match input('Enter the number: '):
   case '1' :
     data = getJson(urls[-1])
     createSolutionFile(data['name'])
   case '2' :
     writer(urls[-1])
+  case '3' :
+    reset()
+    for url in urls:
+      writer(url)

@@ -118,3 +118,8 @@ def createSolutionFile(name : str):
   ''' 
   open(f'challenges/{slugify(name)}.py' , 'w' , encoding='utf-8').write(sample)
   print('File Created Successfully!!!')
+
+# ----------------------------------- RESET ---------------------------------- #
+
+def reset():
+  open('codewars.md' , 'w').write('__Lists of challenges__\n')
