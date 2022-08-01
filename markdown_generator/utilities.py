@@ -100,7 +100,7 @@ def getDescription(description = None):
 def getKata(data):
   solution = getSolution(data['name'])
   description = getDescription(data['description'])
-  return '# ' + data['name'] + '\n' + description + solution
+  return '# ' + data['name'] + '\n' + description + '\n' + solution
 
 # --------------------------------- WRITER -------------------------------- #
 
@@ -111,11 +111,10 @@ def writer(url):
 # --------------------------- CREATE SOLUTION FILE --------------------------- #
 
 def createSolutionFile(name : str):
-  sample = '''
-  import codewars_test as test
-  # -------------------------------- my solution ------------------------------- #
-  # ------------------------------ clever solution ----------------------------- #
-  # ----------------------------------- test ----------------------------------- #
+  sample = '''import codewars_test as test
+# -------------------------------- my solution ------------------------------- #
+# ------------------------------ clever solution ----------------------------- #
+# ----------------------------------- test ----------------------------------- #
   ''' 
-  open(f'challenges/{name}.py' , 'w' , encoding='utf-8').write(sample)
+  open(f'challenges/{slugify(name)}.py' , 'w' , encoding='utf-8').write(sample)
   print('File Created Successfully!!!')

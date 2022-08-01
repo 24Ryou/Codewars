@@ -36,8 +36,17 @@ urls = [
   'https://www.codewars.com/kata/52774a314c2333f0a7000688', # Valid Parentheses
   'https://www.codewars.com/kata/54ff3102c1bad923760001f3', # Vowel Count
   'https://www.codewars.com/kata/523a86aa4230ebb5420001e1', # Where my anagrams at
-  'https://www.codewars.com/kata/5266876b8f4bf2da9b000362'  # Who likes it
+  'https://www.codewars.com/kata/5266876b8f4bf2da9b000362', # Who likes it
+  'https://www.codewars.com/kata/55f2b110f61eb01779000053', # Beginner Series #3 Sum of Numbers
 ]
 
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
-writer(urls[-1])
+print('Select From List Below:')
+print('1 - Create Challenge Flile')
+print('2 - Add Solution To `Codewars.md`')
+match input('Enter the number: '):
+  case '1' :
+    data = getJson(urls[-1])
+    createSolutionFile(data['name'])
+  case '2' :
+    writer(urls[-1])
