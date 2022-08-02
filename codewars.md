@@ -33,6 +33,7 @@ __Lists of challenges__
 - [Where my anagrams at](#where-my-anagrams-at)
 - [Who likes it](#who-likes-it)
 - [Beginner Series 3 Sum of Numbers](#beginner-series-3-sum-of-numbers)
+- [Build Tower](#build-tower)
 
 # Abbreviate a Two Word Name
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
@@ -1433,4 +1434,58 @@ def get_sum(a,b):
 # Clever Solution
 def get_sum(a, b):
     return (a + b) * (abs(a - b) + 1) // 2
+```
+# Build Tower
+Build Tower
+---
+
+Build a pyramid-shaped tower given a positive integer `number of floors`. A tower block is represented with `"*"` character.
+
+For example, a tower with `3` floors looks like this:
+
+Build Tower
+---
+
+Build a pyramid-shaped tower given a positive integer `number of floors`. A tower block is represented with `"*"` character.
+
+For example, a tower with `3` floors looks like this:
+
+```
+[
+  "  *  ",
+  " *** ", 
+  "*****"
+]
+```
+
+And a tower with `6` floors looks like this:
+
+```
+[
+  "     *     ", 
+  "    ***    ", 
+  "   *****   ", 
+  "  *******  ", 
+  " ********* ", 
+  "***********"
+]
+```
+
+___
+
+Go challenge [Build Tower Advanced](https://www.codewars.com/kata/57675f3dedc6f728ee000256) once you have finished this :)
+
+```py
+def tower_builder(n_floor):
+    result = []
+    width = (n_floor * 2) - 1
+    for x in range(1, 2 * n_floor, 2):
+        stars = x * '*'
+        line = stars.center(width)
+        result.append(line)
+    return result
+
+# Clever Solution
+def tower_builder(n):
+    return [("*" * (i*2-1)).center(n*2-1) for i in range(1, n+1)]
 ```

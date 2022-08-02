@@ -38,6 +38,7 @@ urls = [
   'https://www.codewars.com/kata/523a86aa4230ebb5420001e1', # Where my anagrams at
   'https://www.codewars.com/kata/5266876b8f4bf2da9b000362', # Who likes it
   'https://www.codewars.com/kata/55f2b110f61eb01779000053', # Beginner Series #3 Sum of Numbers
+  'https://www.codewars.com/kata/576757b1df89ecf5bd00073b', # Build Tower
 ]
 
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
