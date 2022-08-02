@@ -39,6 +39,7 @@ urls = [
   'https://www.codewars.com/kata/5266876b8f4bf2da9b000362', # Who likes it
   'https://www.codewars.com/kata/55f2b110f61eb01779000053', # Beginner Series #3 Sum of Numbers
   'https://www.codewars.com/kata/576757b1df89ecf5bd00073b', # Build Tower
+  'https://www.codewars.com/kata/57675f3dedc6f728ee000256', # Build Tower Advanced
 ]
 
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #

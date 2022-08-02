@@ -1210,15 +1210,15 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
 ```py
 def longest(s1, s2):
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
-    s = s1 + s2
-    y = ""
-    for x in alphabet:
-      if x not in s:
-        continue
-      if x in s:
-        y = y + x
-    return y
+  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  s = s1 + s2
+  y = ""
+  for x in alphabet:
+    if x not in s:
+      continue
+    if x in s:
+      y = y + x
+  return y
 
 # Clever Solution
 def longest(a1, a2):
@@ -1287,12 +1287,12 @@ def valid_parentheses(string):
 
 # Clever Solution
 def valid_parentheses(string):
-    cnt = 0
-    for char in string:
-        if char == '(': cnt += 1
-        if char == ')': cnt -= 1
-        if cnt < 0: return False
-    return True if cnt == 0 else False
+  cnt = 0
+  for char in string:
+      if char == '(': cnt += 1
+      if char == ')': cnt -= 1
+      if cnt < 0: return False
+  return True if cnt == 0 else False
 ```
 # Vowel Count
 Return the number (count) of vowels in the given string. 
@@ -1308,11 +1308,11 @@ The input string will only consist of lower case letters and/or spaces.
 
 ```py
 def get_count(sentence):
-    return len([x for x in sentence if x.lower() in 'aeuio'])
+  return len([x for x in sentence if x.lower() in 'aeuio'])
 
 # Clever Solution
 def getCount(inputStr):
-    return sum(1 for let in inputStr if let in "aeiouAEIOU")
+  return sum(1 for let in inputStr if let in "aeiouAEIOU")
 ```
 # Where my anagrams at
 What is an anagram? Well, two words are anagrams of each other if they both contain the same letters. For example:
@@ -1345,11 +1345,11 @@ For Go: Empty string slice is expected when there are no anagrams found.
 
 ```py
 def anagrams(word, words):
-    list = []
-    for x in words:
-        if sorted(x) == sorted(word):
-            list.append(x)
-    return list
+  list = []
+  for x in words:
+      if sorted(x) == sorted(word):
+          list.append(x)
+  return list
 
 # Clever Solution
 def anagrams(word, words): return [item for item in words if sorted(item)==sorted(word)]
@@ -1380,31 +1380,31 @@ Note: For 4 or more names, the number in `"and 2 others"` simply increases.
 
 ```py
 def likes(names):
-    i = len(names)
-    s = ''
-    if i > 0 :
-        if i > 2:
-            x = i - 2
-            s = names[0] + ', ' + names[1] + ' and ' + str(x) + ' others like this'
-        elif i > 1:
-            s = names[0] + ' and ' + names[1] + ' like this'
-        else:
-            s = names[0] + ' likes this'
-    else:
-        s = 'no one likes this'
-        
-    return s
+  i = len(names)
+  s = ''
+  if i > 0 :
+      if i > 2:
+          x = i - 2
+          s = names[0] + ', ' + names[1] + ' and ' + str(x) + ' others like this'
+      elif i > 1:
+          s = names[0] + ' and ' + names[1] + ' like this'
+      else:
+          s = names[0] + ' likes this'
+  else:
+      s = 'no one likes this'
+      
+  return s
 
 # Clever Solution
 def likes(names):
-    n = len(names)
-    return {
-        0: 'no one likes this',
-        1: '{} likes this', 
-        2: '{} and {} like this', 
-        3: '{}, {} and {} like this', 
-        4: '{}, {} and {others} others like this'
-    }[min(4, n)].format(*names[:3], others=n-2)
+  n = len(names)
+  return {
+      0: 'no one likes this',
+      1: '{} likes this', 
+      2: '{} and {} like this', 
+      3: '{}, {} and {} like this', 
+      4: '{}, {} and {others} others like this'
+  }[min(4, n)].format(*names[:3], others=n-2)
 ```
 # Beginner Series 3 Sum of Numbers
 Given two integers `a` and `b`, which can be positive or negative, find the sum of all the integers between and including them and return it. If the two numbers are equal return `a` or `b`.
@@ -1433,7 +1433,7 @@ def get_sum(a,b):
 
 # Clever Solution
 def get_sum(a, b):
-    return (a + b) * (abs(a - b) + 1) // 2
+  return (a + b) * (abs(a - b) + 1) // 2
 ```
 # Build Tower
 Build Tower
@@ -1477,15 +1477,91 @@ Go challenge [Build Tower Advanced](https://www.codewars.com/kata/57675f3dedc6f7
 
 ```py
 def tower_builder(n_floor):
-    result = []
-    width = (n_floor * 2) - 1
-    for x in range(1, 2 * n_floor, 2):
-        stars = x * '*'
-        line = stars.center(width)
-        result.append(line)
-    return result
+  result = []
+  width = (n_floor * 2) - 1
+  for x in range(1, 2 * n_floor, 2):
+      stars = x * '*'
+      line = stars.center(width)
+      result.append(line)
+  return result
 
 # Clever Solution
 def tower_builder(n):
-    return [("*" * (i*2-1)).center(n*2-1) for i in range(1, n+1)]
+  return [("*" * (i*2-1)).center(n*2-1) for i in range(1, n+1)]
+```
+# Build Tower Advanced
+Build Tower Advanced
+---
+
+Build Tower by the following given arguments:<br>
+__number of floors__ (integer and always greater than 0)<br>
+__block size__ (width, height) (integer pair and always greater than (0, 0))
+
+Tower block unit is represented as `*`
+
+* Python: return a `list`;
+* JavaScript: returns an `Array`;
+
+Have fun!
+***
+
+for example, a tower of 3 floors with block size = (2, 3) looks like below
+Build Tower Advanced
+---
+
+Build Tower by the following given arguments:<br>
+__number of floors__ (integer and always greater than 0)<br>
+__block size__ (width, height) (integer pair and always greater than (0, 0))
+
+Tower block unit is represented as `*`
+
+* Python: return a `list`;
+* JavaScript: returns an `Array`;
+
+Have fun!
+***
+
+for example, a tower of 3 floors with block size = (2, 3) looks like below
+```
+[
+  '    **    ',
+  '    **    ',
+  '    **    ',
+  '  ******  ',
+  '  ******  ',
+  '  ******  ',
+  '**********',
+  '**********',
+  '**********'
+]
+```
+and a tower of 6 floors with block size = (2, 1) looks like below
+```
+[
+  '          **          ', 
+  '        ******        ', 
+  '      **********      ', 
+  '    **************    ', 
+  '  ******************  ', 
+  '**********************'
+]
+```
+***
+Go take a look at [Build Tower](https://www.codewars.com/kata/576757b1df89ecf5bd00073b) which is a more basic version :)
+```py
+def tower_builder(n_floors, block_size):
+  w, h = block_size
+  result = []
+  width = (w*2)*n_floors-w
+  for x in range(1, 2 * n_floors, 2):
+    for y in range(0 , h):
+      stars = x * ('*'*w)
+      line = stars.center(width)
+      result.append(line)
+  return result
+
+# Clever Solution
+def tower_builder(n_floors, block_size):
+  w , h = block_size
+  return [str.center("*" * (i*2-1)*w, (n_floors*2-1)*w) for i in range(1, n_floors+1) for _ in range(h)]
 ```
