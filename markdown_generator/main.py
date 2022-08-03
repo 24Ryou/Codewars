@@ -40,6 +40,11 @@ urls = [
   'https://www.codewars.com/kata/55f2b110f61eb01779000053', # Beginner Series #3 Sum of Numbers
   'https://www.codewars.com/kata/576757b1df89ecf5bd00073b', # Build Tower
   'https://www.codewars.com/kata/57675f3dedc6f728ee000256', # Build Tower Advanced
+  'https://www.codewars.com/kata/551b4501ac0447318f0009cd', # Convert a Boolean to a String
+  'https://www.codewars.com/kata/523b4ff7adca849afe000035', # Function 1 - hello world
+  'https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad', # Invert values
+  'https://www.codewars.com/kata/5259b20d6021e9e14c0010d4', # Reverse words
+  'https://www.codewars.com/kata/545cedaa9943f7fe7b000048', # Detect Pangram
 ]
 
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #

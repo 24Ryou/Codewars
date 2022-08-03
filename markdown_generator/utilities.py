@@ -2,7 +2,6 @@
 
 import re
 import unicodedata
-from unittest import result
 import requests
 import sys
 from pathlib import Path
@@ -107,6 +106,7 @@ def getKata(data):
 def writer(url):
   data = getJson(url)
   open('codewars.md' , 'a' , encoding='utf-8').write(getKata(data) +'\n')
+  print("Solution Added Successfully!")
 
 # --------------------------- CREATE SOLUTION FILE --------------------------- #
 

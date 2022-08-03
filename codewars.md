@@ -34,6 +34,12 @@ __Lists of challenges__
 - [Who likes it](#who-likes-it)
 - [Beginner Series 3 Sum of Numbers](#beginner-series-3-sum-of-numbers)
 - [Build Tower](#build-tower)
+- [Build Tower Advanced](#build-tower-advanced)
+- [Convert a Boolean to a String](#convert-a-boolean-to-a-string)
+- [Function 1 hello world](#function-1-hello-world)
+- [Invert values](#invert-values)
+- [Reverse words](#reverse-words)
+- [Detect Pangram](#detect-pangram)
 
 # Abbreviate a Two Word Name
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
@@ -1564,4 +1570,115 @@ def tower_builder(n_floors, block_size):
 def tower_builder(n_floors, block_size):
   w , h = block_size
   return [str.center("*" * (i*2-1)*w, (n_floors*2-1)*w) for i in range(1, n_floors+1) for _ in range(h)]
+```
+# Convert a Boolean to a String
+Implement a function which convert the given boolean value into its string representation.
+
+Note: Only valid inputs will be given.
+Implement a function which convert the given boolean value into its string representation.
+
+Note: Only valid inputs will be given.
+
+```py
+boolean_to_string = str
+
+# Clever Solution
+def boolean_to_string(b):
+    return str(b)
+```
+# Function 1 hello world
+### Description:
+
+Make a simple function called **greet** that returns the most-famous "hello world!".
+
+### Style Points
+
+Sure, this is about as easy as it gets. But how clever can you be to create the most creative hello world you can think of? What is a "hello world" solution you would want to show your friends?
+### Description:
+
+Make a simple function called **greet** that returns the most-famous "hello world!".
+
+### Style Points
+
+Sure, this is about as easy as it gets. But how clever can you be to create the most creative hello world you can think of? What is a "hello world" solution you would want to show your friends?
+
+```py
+def greet(): return 'hello world!'
+```
+# Invert values
+Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become positives.
+
+
+```
+invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+invert([]) == []
+```
+
+```py
+def invert(lst):
+  _list = []
+  for x in lst :
+    if x > 0:
+      _list.append(-x)
+    else:
+      _list.append(abs(x))
+  return _list
+
+# Clever Solution
+def invert(lst):
+    return [-x for x in lst]
+```
+# Reverse words
+Complete the function that accepts a string parameter, and reverses each word in the string. **All** spaces in the string should be retained.
+
+## Examples
+Complete the function that accepts a string parameter, and reverses each word in the string. **All** spaces in the string should be retained.
+
+## Examples
+```
+"This is an example!" ==> "sihT si na !elpmaxe"
+"double  spaces"      ==> "elbuod  secaps"
+```
+```py
+def reverse_words(text):
+  list = text.split(" ")
+  _list = []
+  for x in list:
+    if len(x) > 1: 
+      _list.append(x[::-1])
+    else:
+      _list.append(x)
+  return " ".join(_list)
+
+# Clever Solution
+def reverse_words(str):
+    return ' '.join(s[::-1] for s in str.split(' '))
+```
+# Detect Pangram
+A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant). 
+
+Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
+
+A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant). 
+
+Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
+
+
+
+```py
+def is_pangram(s):
+  letters = list('abcdefghijklmnopqrstuvwxyz')
+  for x in s:
+    if x.lower() in letters:
+      letters.remove(x.lower())
+  return True if len(letters) == 0 else False
+
+# Clever Solution
+def is_pangram(s):
+    s = s.lower()
+    for char in 'abcdefghijklmnopqrstuvwxyz':
+        if char not in s:
+            return False
+    return True
 ```
