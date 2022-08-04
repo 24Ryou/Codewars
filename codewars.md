@@ -1789,3 +1789,34 @@ def find_uniq(arr):
   a, b = set(arr)
   return a if arr.count(a) == 1 else b
 ```
+# Find the unique string
+There is an array of strings. All strings contains similar _letters_ except one. Try to find it!
+
+find_uniq([ 'Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a' ]) # => 'BbBb'
+find_uniq([ 'abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba' ]) # => 'foo'
+
+```py
+def find_uniq(arr):
+  for x in range(0,len(arr)):
+    c = set(sorted(arr[x-1].lower()))
+    a = set(sorted(arr[x].lower()))
+    b = set(sorted(arr[x+1].lower()))
+    if a != b:
+      if a!=c:
+        return arr[x]
+      else:
+        return arr[x+1]
+
+# Clever Solution
+def find_uniq(arr):
+    if set(arr[0].lower()) == set(arr[1].lower()):
+        majority_set = set(arr[0].lower())
+    elif set(arr[0].lower()) == set(arr[2].lower()):
+        majority_set = set(arr[0].lower())
+    else:
+        majority_set = set(arr[1].lower())
+    
+    for string in arr:
+        if set(string.lower()) != majority_set:
+            return string
+```

@@ -48,6 +48,7 @@ urls = [
   'https://www.codewars.com/kata/555086d53eac039a2a000083', # Opposites Attract
   'https://www.codewars.com/kata/56541980fa08ab47a0000040', # Printer Errors
   'https://www.codewars.com/kata/585d7d5adb20cf33cb000235', # Find the unique number
+  'https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3', # Find the unique string
 ]
 
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
