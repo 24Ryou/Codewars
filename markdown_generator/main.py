@@ -47,6 +47,7 @@ urls = [
   'https://www.codewars.com/kata/545cedaa9943f7fe7b000048', # Detect Pangram
   'https://www.codewars.com/kata/555086d53eac039a2a000083', # Opposites Attract
   'https://www.codewars.com/kata/56541980fa08ab47a0000040', # Printer Errors
+  'https://www.codewars.com/kata/585d7d5adb20cf33cb000235', # Find the unique number
 ]
 
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
