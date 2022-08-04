@@ -40,6 +40,7 @@ __Lists of challenges__
 - [Invert values](#invert-values)
 - [Reverse words](#reverse-words)
 - [Detect Pangram](#detect-pangram)
+- [Opposites Attract](#opposites-attract)
 
 # Abbreviate a Two Word Name
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
@@ -1681,4 +1682,21 @@ def is_pangram(s):
         if char not in s:
             return False
     return True
+```
+# Opposites Attract
+Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love. 
+
+Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.Timmy & Sarah think they are in love, but around where they live, they will only know once they pick a flower each. If one of the flowers has an even number of petals and the other has an odd number of petals it means they are in love. 
+
+Write a function that will take the number of petals of each flower and return true if they are in love and false if they aren't.
+```py
+def lovefunc( flower1, flower2 ):
+    return True if flower1%2==0 and flower2%2 != 0 or flower2%2 == 0 and flower1%2 != 0 else False
+
+# Clever Solution
+def lovefunc( flower1, flower2 ):
+  return (flower1+flower2)%2
+
+def lovefunc(flower1, flower2):
+    return flower1 % 2 != flower2 % 2
 ```

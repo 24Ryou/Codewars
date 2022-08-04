@@ -115,7 +115,7 @@ def createSolutionFile(name : str):
 # -------------------------------- my solution ------------------------------- #
 # ------------------------------ clever solution ----------------------------- #
 # ----------------------------------- test ----------------------------------- #
-  ''' 
+''' 
   open(f'challenges/{slugify(name)}.py' , 'w' , encoding='utf-8').write(sample)
   print('File Created Successfully!!!')
 

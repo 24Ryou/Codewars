@@ -45,6 +45,7 @@ urls = [
   'https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad', # Invert values
   'https://www.codewars.com/kata/5259b20d6021e9e14c0010d4', # Reverse words
   'https://www.codewars.com/kata/545cedaa9943f7fe7b000048', # Detect Pangram
+  'https://www.codewars.com/kata/555086d53eac039a2a000083', # Opposites Attract
 ]
 
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
