@@ -41,6 +41,10 @@ __Lists of challenges__
 - [Reverse words](#reverse-words)
 - [Detect Pangram](#detect-pangram)
 - [Opposites Attract](#opposites-attract)
+- [Printer Errors](#printer-errors)
+- [Find the unique number](#find-the-unique-number)
+- [Find the unique string](#find-the-unique-string)
+- [Isograms](#isograms)
 
 # Abbreviate a Two Word Name
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
@@ -1669,7 +1673,6 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 
 ```py
 def is_pangram(s):
-  letters = list('abcdefghijklmnopqrstuvwxyz')
   for x in s:
     if x.lower() in letters:
       letters.remove(x.lower())

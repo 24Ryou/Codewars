@@ -2,7 +2,6 @@ import codewars_test as test
 import re
 # -------------------------------- my solution ------------------------------- #
 def is_isogram(string):
-  _str = 'abcdefghijklmnopqrstuvwxyz'
   if string == "":
     return True
   for x in string.lower() :
