@@ -1672,7 +1672,7 @@ Given a string, detect whether or not it is a pangram. Return True if it is, Fal
 
 
 ```py
-def is_pangram(s):
+def is_pangram(s):`
   for x in s:
     if x.lower() in letters:
       letters.remove(x.lower())
