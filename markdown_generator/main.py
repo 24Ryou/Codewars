@@ -49,6 +49,7 @@ urls = [
   'https://www.codewars.com/kata/56541980fa08ab47a0000040', # Printer Errors
   'https://www.codewars.com/kata/585d7d5adb20cf33cb000235', # Find the unique number
   'https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3', # Find the unique string
+  'https://www.codewars.com/kata/54ba84be607a92aa900000f1', # Isograms
 ]
 
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #

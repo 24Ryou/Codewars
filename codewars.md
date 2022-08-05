@@ -1820,3 +1820,30 @@ def find_uniq(arr):
         if set(string.lower()) != majority_set:
             return string
 ```
+# Isograms
+An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+**Example: (Input --> Output)**
+An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
+
+**Example: (Input --> Output)**
+```
+"Dermatoglyphics" --> true
+"aba" --> false
+"moOse" --> false (ignore letter case)
+```
+
+```py
+def is_isogram(string):
+  _str = 'abcdefghijklmnopqrstuvwxyz'
+  if string == "":
+    return True
+  for x in string.lower() :
+    if string.lower().count(x.lower()) > 1 or x.isdigit():
+      return False
+  return True
+
+# Clever Solution
+def is_isogram(string):
+    return len(string) == len(set(string.lower()))
+```
