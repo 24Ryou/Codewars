@@ -1905,3 +1905,19 @@ def find_short(s):
 def find_short(s):
     return min(len(x) for x in s.split())
 ```
+# Fake Binary
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+**Note: input will never be an empty string**
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+**Note: input will never be an empty string**
+
+```py
+def fake_bin(x):
+  return ''.join(['1' if int(i) >= 5 else '0' for i in x])
+
+# Clever Solution
+def fake_bin(s):
+  return s.translate(s.maketrans('0123456789', '0000011111'))
+```
