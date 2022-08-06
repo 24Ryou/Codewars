@@ -1850,3 +1850,38 @@ def is_isogram(string):
 def is_isogram(string):
     return len(string) == len(set(string.lower()))
 ```
+# Calculate BMI
+Write function bmi that calculates body mass index (bmi = weight / height<sup>2</sup>).
+
+
+if bmi <= 18.5 return "Underweight"
+
+if bmi <= 25.0 return "Normal"
+
+if bmi <= 30.0 return "Overweight"
+
+if bmi > 30 return "Obese"Write function bmi that calculates body mass index (bmi = weight / height<sup>2</sup>).
+
+if bmi <= 18.5 return "Underweight"
+
+if bmi <= 25.0 return "Normal"
+
+if bmi <= 30.0 return "Overweight"
+
+if bmi > 30 return "Obese"
+```py
+def bmi(weight, height):
+    if weight/height**2 <= 18.5:
+      return 'Underweight'
+    if weight/height**2 <= 25.0:
+      return 'Normal'
+    if weight/height**2 <= 30.0:
+      return 'Overweight'
+    if weight/height**2 > 30:
+      return 'Obese'
+
+# Clever Solution
+def bmi(weight, height):
+    b = weight / height ** 2
+    return ['Underweight', 'Normal', 'Overweight', 'Obese'][(b > 30) + (b > 25) + (b > 18.5)]
+```
