@@ -1885,3 +1885,23 @@ def bmi(weight, height):
     b = weight / height ** 2
     return ['Underweight', 'Normal', 'Overweight', 'Obese'][(b > 30) + (b > 25) + (b > 18.5)]
 ```
+# Shortest Word
+Simple, given a string of words, return the length of the shortest word(s).
+
+String will never be empty and you do not need to account for different data types.
+Simple, given a string of words, return the length of the shortest word(s).
+
+String will never be empty and you do not need to account for different data types.
+
+```py
+def find_short(s):
+  mini = 100
+  for x in s.split():
+    if len(x) < mini:
+      mini = len(x)
+  return mini 
+
+# Clever Solution
+def find_short(s):
+    return min(len(x) for x in s.split())
+```

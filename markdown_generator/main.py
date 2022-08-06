@@ -51,6 +51,7 @@ urls = [
   'https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3', # Find the unique string
   'https://www.codewars.com/kata/54ba84be607a92aa900000f1', # Isograms
   'https://www.codewars.com/kata/57a429e253ba3381850000fb', # Calculate BMI
+  'https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9', # Shortest Word
 ]
 
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
