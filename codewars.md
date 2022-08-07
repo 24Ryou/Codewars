@@ -1921,3 +1921,70 @@ def fake_bin(x):
 def fake_bin(s):
   return s.translate(s.maketrans('0123456789', '0000011111'))
 ```
+# How good are you really
+There was a test in your class and you passed it. Congratulations!</br>
+But you're an ambitious person. You want to know if you're better than the average student in your class.</br>
+
+You receive an array with your peers' test scores. Now calculate the average and compare your score!</br>
+
+~~~if-not:nasm,racket
+Return `True` if you're better, else `False`!
+~~~
+
+~~~if:racket
+Return #t if you're better, else #f.
+~~~
+
+~~~if:nasm
+Return `1` if you're better, else `0`!
+~~~
+
+### Note:
+
+Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
+There was a test in your class and you passed it. Congratulations!</br>
+But you're an ambitious person. You want to know if you're better than the average student in your class.</br>
+
+You receive an array with your peers' test scores. Now calculate the average and compare your score!</br>
+
+~~~if-not:nasm,racket
+Return `True` if you're better, else `False`!
+~~~
+
+~~~if:racket
+Return #t if you're better, else #f.
+~~~
+
+~~~if:nasm
+Return `1` if you're better, else `0`!
+~~~
+
+### Note:
+
+Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
+
+```py
+def better_than_average(class_points, your_points):
+  class_points.append(your_points)
+  return True if max(your_points , (sum(class_points)/len(class_points))) == your_points else False
+
+# Clever Solution
+def better_than_average(class_points, your_points):
+    return your_points > sum(class_points) / len(class_points)
+```
+# Sum of positive
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example `[1,-4,7,12]` => `1 + 7 + 12 = 20`
+
+Note: if there is nothing to sum, the sum is default to `0`.
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example `[1,-4,7,12]` => `1 + 7 + 12 = 20`
+
+Note: if there is nothing to sum, the sum is default to `0`.
+
+```py
+def positive_sum(arr):
+  return sum(x for x in arr if x>0)
+```

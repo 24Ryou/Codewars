@@ -53,8 +53,9 @@ urls = [
   'https://www.codewars.com/kata/57a429e253ba3381850000fb', # Calculate BMI
   'https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9', # Shortest Word
   'https://www.codewars.com/kata/57eae65a4321032ce000002d', # Fake Binary
+  'https://www.codewars.com/kata/5601409514fc93442500010b', # How good are you really?
+  'https://www.codewars.com/kata/5715eaedb436cf5606000381', # Sum of positive
 ]
-
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
 print('1 - Create Challenge Flile')
