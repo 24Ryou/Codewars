@@ -45,6 +45,12 @@ __Lists of challenges__
 - [Find the unique number](#find-the-unique-number)
 - [Find the unique string](#find-the-unique-string)
 - [Isograms](#isograms)
+- [Calculate BMI](#calculate-bmi)
+- [Shortest Word](#shortest-word)
+- [Fake Binary](#fake-binary)
+- [How good are you really](#how-good-are-you-really)
+- [Sum of positive](#sum-of-positive)
+- [Count of positives sum of negatives](#count-of-positives-sum-of-negatives)
 
 # Abbreviate a Two Word Name
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
@@ -1987,4 +1993,26 @@ Note: if there is nothing to sum, the sum is default to `0`.
 ```py
 def positive_sum(arr):
   return sum(x for x in arr if x>0)
+```
+# Count of positives sum of negatives
+Given an array of integers.
+
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+If the input is an empty array or is null, return an empty array.
+
+## Example
+
+For input `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]`, you should return `[10, -65]`.Given an array of integers.
+
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 0 is neither positive nor negative.
+
+If the input is an empty array or is null, return an empty array.
+
+## Example
+
+For input `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]`, you should return `[10, -65]`.
+```py
+def count_positives_sum_negatives(arr):
+    return [sum(1 for x in arr if x>0) ,sum(x for x in arr if x<0)] if len(arr) > 0 else arr
 ```
