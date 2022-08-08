@@ -1379,3 +1379,18 @@ Output: `987654321`
 def descending_order(num) :
   return int(''.join(sorted(list(str(num)) , reverse=True)))
 ```
+# Regex validate PIN code
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but **exactly** 4 digits or exactly 6 digits. 
+
+If the function is passed a valid PIN string, return `true`, else return `false`.
+
+## Examples (**Input --> Output)**
+
+```py
+def validate_pin(pin) :
+  return bool(re.match('^([0-9]{4}|[0-9]{6})$' , pin)) if len(pin) == 6 or len(pin) == 4 else False
+
+# Clever Solution
+def validate_pin(pin):
+    return len(pin) in (4, 6) and pin.isdigit()
+```
