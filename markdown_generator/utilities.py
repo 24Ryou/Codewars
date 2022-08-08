@@ -2,6 +2,7 @@
 
 import re
 import unicodedata
+from unittest import result
 import requests
 import sys
 from pathlib import Path
@@ -75,9 +76,9 @@ def getPythonDes(description = None):
 
 def getRawDes(description = None):
   if description != None :
-    a = description.split("```")
-    if len(a) > 2:
-      return a[0]
+    b = description.split("```")
+    if len(b) > 2:
+      return b[0]
     else :
       return description
   else:
@@ -86,14 +87,19 @@ def getRawDes(description = None):
 # ------------------------ GENERATE FULL description ------------------------ #
 
 def getDescription(description = None):
-  raw = getRawDes(description)
-  python = getPythonDes(description)
-  if raw != None:
-    result = raw
-  if python != None:
-    result += python
-  return result
-
+  python = ''
+  raw = description
+  if description != None :
+    a = description.split("```python\n")
+    b = description.split("```")
+    if len(b) > 2:
+      raw = b[0]
+      if len(a) > 1:
+        python = a[1].split('```')[0]
+        return raw + python
+  else :
+    return None
+  return raw
 # ---------------------------- GENERATE FULL KATA ---------------------------- #
 
 def getKata(data):
