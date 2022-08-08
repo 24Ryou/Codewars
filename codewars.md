@@ -2016,3 +2016,36 @@ For input `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]`, you should
 def count_positives_sum_negatives(arr):
     return [sum(1 for x in arr if x>0) ,sum(x for x in arr if x<0)] if len(arr) > 0 else arr
 ```
+# Descending Order
+Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+
+### Examples:
+
+Input: `42145`
+Output: `54421`
+
+Input: `145263`
+Output: `654321`
+
+Input: `123456789`
+Output: `987654321`
+
+Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+### Examples:
+
+Input: `42145`
+Output: `54421`
+
+Input: `145263`
+Output: `654321`
+
+Input: `123456789`
+Output: `987654321`
+
+
+```py
+def descending_order(num) :
+  return int(''.join(sorted(list(str(num)) , reverse=True)))
+```
