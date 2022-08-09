@@ -58,6 +58,7 @@ urls = [
   'https://www.codewars.com/kata/576bb71bbbcf0951d5000044', # Count of positives / sum of negatives
   'https://www.codewars.com/kata/5467e4d82edf8bbf40000155', # Descending Order
   'https://www.codewars.com/kata/55f8a9c06c018a0d6e000132', # Regex validate PIN code
+  'https://www.codewars.com/kata/582cb0224e56e068d800003c', # Keep Hydrated!
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
