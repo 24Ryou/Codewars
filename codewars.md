@@ -1412,3 +1412,14 @@ def litres(item) :
 def litres(time):
     return time // 2
 ```
+# Binary Addition
+Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.
+
+The binary number returned should be a string.
+
+**Examples:(Input1, Input2 --> Output (explanation)))**
+
+```py
+def add_binary(a,b):
+  return bin(a+b)[2:]
+```
