@@ -159,7 +159,7 @@ def writer(url):
   """
   data = getJson(url)
   open('codewars.md' , 'a' , encoding='utf-8').write(getKata(data) +'\n')
-  print("Solution Added Successfully!")
+  print("Kata Added Successfully!")
 
 # --------------------------- CREATE SOLUTION FILE --------------------------- #
 
