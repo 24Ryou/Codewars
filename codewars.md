@@ -10,7 +10,6 @@ It should look like this:
 
 `patrick feeney` => `P.F`
 
-
 ```py
 def abbrevName(name):
     return '.'.join(w[0] for w in name.split()).upper()
@@ -23,7 +22,6 @@ Given two arrays `a` and `b` write a function `comp(a, b)` (or`compSame(a, b)`) 
 
 #### Examples
 ##### Valid arrays
-
 ```py
 def comp(a1, a2):
     return None not in (a1,a2) and [i*i for i in sorted(a1)]==sorted(a2)
@@ -42,7 +40,6 @@ The function should take three arguments - operation(string/char), value1(number
 The function should return result of numbers after applying the chosen operation.
 
 ### Examples(Operator, value1, value2) --> output
-
 
 ```py
 def basic_op (operator, value1, value2):
@@ -70,7 +67,6 @@ seven(times(five())) # must return 35
 four(plus(nine())) # must return 13
 eight(minus(three())) # must return 5
 six(divided_by(two())) # must return 3
-
 ```py
 def zero(r = ''):
   if r != '':
@@ -236,7 +232,6 @@ We need a function that can transform a number (integer) into a string.
 
 What ways of achieving this do you know?
 
-
 ```py
 number_to_string = lambda x : str(x)
 
@@ -253,7 +248,6 @@ We need a function that can transform a string into a number. What ways of achie
 Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
 
 ## Examples
-
 ```py
 string_to_number = lambda n: int(n)
 
@@ -267,7 +261,6 @@ Complete the method/function so that it converts dash/underscore delimited words
 
 `"the-stealth-warrior"` gets converted to `"theStealthWarrior"`  
 `"The_Stealth_Warrior"` gets converted to `"TheStealthWarrior"`
-
 ```py
 def to_camel_case(text):
     removed = text.replace('-', ' ').replace('_', ' ').split()
@@ -291,7 +284,6 @@ For example,
   True,  False, False, True ,
   True,  True,  True,  True ,
   False, False, True,  True]
-
 ```py
 def count_sheeps(arrayOfSheeps):
   return arrayOfSheeps.count(True)
@@ -309,7 +301,6 @@ Your task is to write a function that takes a string and return a new string wit
 For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
 Note: for this kata `y` isn't considered a vowel.
-
 ```py
 disemvowel = lambda x :  re.sub("[aeiouAEIOU]","",x)
 
@@ -341,7 +332,6 @@ There will always be only one integer that appears an odd number of times.
 `[1,1,2]` should return `2`, because it occurs 1 time (which is odd).  
 `[0,1,0,1,0]` should return `0`, because it occurs 3 times (which is odd).  
 `[1,2,2,3,3,3,4,3,3,3,2,2,1]` should return `4`, because it appears 1 time (which is odd).
-
 ```py
 def find_it(seq):
   array = seq
@@ -365,7 +355,6 @@ regularly increases by `2 percent` per year and moreover `50` new inhabitants pe
 How many years does the town need to see its population
 greater or equal to `p = 1200` inhabitants?
 
-
 ```py
 def nb_year(p0, percent, aug, p):
   years = 0
@@ -388,7 +377,6 @@ In this little assignment you are given a string of space separated numbers, and
 high_and_low("1 2 3 4 5")  # return "5 1"
 high_and_low("1 2 -3 4 5") # return "5 -3"
 high_and_low("1 9 3 4 -5") # return "9 -5"
-
 ```py
 def high_and_low(numbers):
   num = [int(x) for x in numbers.split()]
@@ -406,7 +394,6 @@ The string has the following conditions to be alphanumeric:
 * At least one character (`""` is not valid)
 * Allowed characters are uppercase / lowercase latin letters and digits from `0` to `9`
 * No whitespaces / underscore
-
 ```py
 def alphanumeric(password):
     regex = '^(?=[^\s_])[a-zA-Z0-9]+$'
@@ -420,13 +407,8 @@ def alphanumeric(string):
 # Remove String Spaces
 Simple, remove the spaces from the string, then return the resultant string.
 
-~~~if:bf
 The input string will be terminated with a null character `\0`.
-~~~
-~~~if:c,nasm
 For C and Nasm, you must return a new dynamically allocated string.
-~~~
-
 ```py
 def no_space(x):
     return "".join(x.split())
@@ -435,25 +417,29 @@ def no_space(x):
 no_space = lambda x : x.replace(' ', '')
 ```
 # PaginationHelper
+# PaginationHelper
 For this exercise you will be strengthening your page-fu mastery.  You will complete the PaginationHelper class, which is a utility class helpful for querying paging information related to an array. 
 
 The class is designed to take in an array of values and an integer indicating how many items will be allowed per each page. The types of values contained within the collection/array are not relevant. 
 
 The following are some examples of how this class is used:
 
+```
 helper = PaginationHelper(['a','b','c','d','e','f'], 4)
 helper.page_count() # should == 2
 helper.item_count() # should == 6
 helper.page_item_count(0)  # should == 4
 helper.page_item_count(1) # last page - should == 2
 helper.page_item_count(2) # should == -1 since the page is invalid
+```
 
-# page_index takes an item index and returns the page that it belongs on
+page_index takes an item index and returns the page that it belongs on
+```
 helper.page_index(5) # should == 1 (zero based index)
 helper.page_index(2) # should == 0
 helper.page_index(20) # should == -1
 helper.page_index(-10) # should == -1 because negative indexes are invalid
-
+```
 ```py
 class PaginationHelper:
 
@@ -530,7 +516,6 @@ dig_pow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
 dig_pow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
 dig_pow(695, 2) should return 2 since 6² + 9³ + 5⁴= 1390 = 695 * 2
 dig_pow(46288, 3) should return 51 since 4³ + 6⁴+ 2⁵ + 8⁶ + 8⁷ = 2360688 = 46288 * 51
-
 ```py
 def dig_pow(n, p):
   s = 0
@@ -544,7 +529,6 @@ dig_pow = lambda n,p : -1 if int(sum([int(x)**(p+i) for i , x in enumerate(str(n
 # Primes in numbers
 Given a positive number n > 1 find the prime factor decomposition of n.
 The result will be a string with the following form :
-
 ```py
 def prime_factors(n):
   i = 2
@@ -604,7 +588,6 @@ rgb(255, 255, 255) # returns FFFFFF
 rgb(255, 255, 300) # returns FFFFFF
 rgb(0,0,0) # returns 000000
 rgb(148, 0, 211) # returns 9400D3
-
 ```py
 def rgb(r, g, b):
   r = check(r)
@@ -630,7 +613,6 @@ ROT13 is a simple letter substitution cipher that replaces a letter with the let
 
 Create a function that takes a string and returns the string ciphered with Rot13. 
 If there are numbers or special characters included in the string, they should be returned as they are. Only letters from the latin/english alphabet should be shifted, like in the original Rot13 "implementation".
-
 
 ```py
 def rot13(message):
@@ -708,7 +690,6 @@ You will be given an array of numbers. You have to sort the odd numbers in ascen
 
 ### Examples
 
-
 ```py
 def sort_array(source_array):
     odds = []
@@ -736,7 +717,6 @@ Welcome. In this kata, you are asked to square every digit of a number and conca
 For example, if we run 9119 through the function, 811181 will come out, because 9<sup>2</sup> is 81 and 1<sup>2</sup> is 1.
 
 **Note:** The function accepts an integer and returns an integer
-
 ```py
 def square_digits(num) : return int(''.join(str(int(i)**2) for i in str(num)))
 
@@ -744,7 +724,6 @@ def square_digits(num) : return int(''.join(str(int(i)**2) for i in str(num)))
 square_digits = lambda num: int(''.join(str(int(d)**2) for d in str(num)))
 ```
 # String repeat
-~~~if:bf
 Write a program which accepts a single byte `n` and then a sequence of bytes `string` and outputs the `string` exactly `n` times.
 
 The first input byte will be `n`. Following bytes will be characters of `string`. The end of the input `string` will be indicated with a null byte `\0`.
@@ -753,12 +732,10 @@ The first input byte will be `n`. Following bytes will be characters of `string`
 
 "\6I" -> "IIIIII"
 "\5Hello" -> "HelloHelloHelloHelloHello"
-~~~
 
 Write a function that accepts an integer `n` and a string `s` as parameters, and returns a string of `s` repeated exactly `n` times.
 
 ### Examples (input -> output)
-
 
 ```py
 def repeat_str(repeat, string):
@@ -772,7 +749,6 @@ from operator import mul as repeat_str
 # Sum of odd numbers
 Given the triangle of consecutive odd numbers:
 
-
 ```py
 def row_sum_odd_numbers(n):
     return n*n*n
@@ -785,7 +761,6 @@ def row_sum_odd_numbers(n):
 You live in the city of Cartesia where all roads are laid out in a perfect grid.  You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk.  The city provides its citizens with a Walk Generating App on their phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk (eg. ['n', 's', 'w', 'e']).  You always walk only a single block for each letter (direction) and you know it takes you one minute to traverse one city block, so create a function that will return **true** if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point.  Return **false** otherwise.
 
 > **Note**: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only).  It will never give you an empty array (that's not a walk, that's standing still!).
-
 ```py
 def is_valid_walk(walk):
   if len(walk) != 10 :
@@ -806,7 +781,6 @@ Well met with Fibonacci bigger brother, AKA Tribonacci.
 As the name may already reveal, it works basically like a Fibonacci, but summing the last 3 (instead of 2) numbers of the sequence to generate the next. And, worse part of it, regrettably I won't get to hear non-native Italian speakers trying to pronounce it :(
 
 So, if we are to start our Tribonacci sequence with `[1, 1, 1]` as a starting input (AKA *signature*), we have this sequence:
-
 
 ```py
 def tribonacci(signature, n):
@@ -832,7 +806,6 @@ Take 2 strings `s1` and `s2` including only letters from `a` to `z`.
 Return a new **sorted** string, the longest possible, containing distinct letters - each taken only once - coming from s1 or s2.
 
 #### Examples:
-
 ```py
 def longest(s1, s2):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
@@ -857,7 +830,6 @@ For example:
 unique_in_order('AAAABBBCCDAABBB') == ['A', 'B', 'C', 'D', 'A', 'B']
 unique_in_order('ABBCcAD')         == ['A', 'B', 'C', 'c', 'A', 'D']
 unique_in_order([1,2,2,3,3])       == [1,2,3]
-
 ```py
 def unique_in_order(iterable):
   x = []
@@ -875,7 +847,6 @@ unique_in_order = lambda l: [z for i, z in enumerate(l) if i == 0 or l[i - 1] !=
 Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return `true` if the string is valid, and `false` if it's invalid.
 
 ## Examples
-
 
 ```py
 def valid_parentheses(string):
@@ -907,7 +878,6 @@ Return the number (count) of vowels in the given string.
 We will consider `a`, `e`, `i`, `o`, `u` as vowels for this Kata (but not `y`).
 
 The input string will only consist of lower case letters and/or spaces.
-
 ```py
 def get_count(sentence):
     return len([x for x in sentence if x.lower() in 'aeuio'])
@@ -918,7 +888,6 @@ def getCount(inputStr):
 ```
 # Where my anagrams at
 What is an anagram? Well, two words are anagrams of each other if they both contain the same letters. For example:
-
 
 ```py
 def anagrams(word, words):
@@ -935,7 +904,6 @@ def anagrams(word, words): return [item for item in words if sorted(item)==sorte
 You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.
 
 Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:
-
 
 ```py
 def likes(names):
@@ -972,7 +940,6 @@ Given two integers `a` and `b`, which can be positive or negative, find the sum 
 
 ## Examples (a, b) --> output (explanation)
 
-
 ```py
 def get_sum(a,b):
   return sum(range(min(a,b),max(a,b)+1))
@@ -988,7 +955,6 @@ Build Tower
 Build a pyramid-shaped tower given a positive integer `number of floors`. A tower block is represented with `"*"` character.
 
 For example, a tower with `3` floors looks like this:
-
 
 ```py
 def tower_builder(n_floor):
@@ -1016,12 +982,12 @@ Tower block unit is represented as `*`
 
 * Python: return a `list`;
 * JavaScript: returns an `Array`;
+* Rust: returns an `Vec<String>`;
 
 Have fun!
 ***
 
 for example, a tower of 3 floors with block size = (2, 3) looks like below
-
 ```py
 def tower_builder(n_floors, block_size):
   w, h = block_size
@@ -1043,7 +1009,6 @@ def tower_builder(n_floors, block_size):
 Implement a function which convert the given boolean value into its string representation.
 
 Note: Only valid inputs will be given.
-
 ```py
 boolean_to_string = str
 
@@ -1059,7 +1024,6 @@ Make a simple function called **greet** that returns the most-famous "hello worl
 ### Style Points
 
 Sure, this is about as easy as it gets. But how clever can you be to create the most creative hello world you can think of? What is a "hello world" solution you would want to show your friends?
-
 ```py
 def greet(): return 'hello world!'
 ```
@@ -1084,7 +1048,6 @@ def invert(lst):
 Complete the function that accepts a string parameter, and reverses each word in the string. **All** spaces in the string should be retained.
 
 ## Examples
-
 ```py
 def reverse_words(text):
   list = text.split(" ")
@@ -1104,7 +1067,6 @@ def reverse_words(str):
 A pangram is a sentence that contains every single letter of the alphabet at least once. For example, the sentence "The quick brown fox jumps over the lazy dog" is a pangram, because it uses the letters A-Z at least once (case is irrelevant). 
 
 Given a string, detect whether or not it is a pangram. Return True if it is, False if not. Ignore numbers and punctuation.
-
 
 ```py
 def is_pangram(s):
@@ -1160,7 +1122,6 @@ from `a`to `z`.
 
 #### Examples:
 
-
 ```py
 def printer_error(s):
   count = 0
@@ -1182,7 +1143,6 @@ There is an array with some numbers. All numbers are equal except for one. Try t
 
 find_uniq([ 1, 1, 1, 2, 1, 1 ]) == 2
 find_uniq([ 0, 0, 0.55, 0, 0 ]) == 0.55
-
 ```py
 def find_uniq(arr):
   arr = sorted(arr)
@@ -1202,7 +1162,6 @@ There is an array of strings. All strings contains similar _letters_ except one.
 
 find_uniq([ 'Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a' ]) # => 'BbBb'
 find_uniq([ 'abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba' ]) # => 'foo'
-
 ```py
 def find_uniq(arr):
   for x in range(0,len(arr)):
@@ -1232,7 +1191,6 @@ def find_uniq(arr):
 An isogram is a word that has no repeating letters, consecutive or non-consecutive. Implement a function that determines whether a string that contains only letters is an isogram. Assume the empty string is an isogram. Ignore letter case.
 
 **Example: (Input --> Output)**
-
 ```py
 def is_isogram(string):
   if string == "":
@@ -1277,7 +1235,6 @@ def bmi(weight, height):
 Simple, given a string of words, return the length of the shortest word(s).
 
 String will never be empty and you do not need to account for different data types.
-
 ```py
 def find_short(s):
   mini = 100
@@ -1294,7 +1251,6 @@ def find_short(s):
 Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 
 **Note: input will never be an empty string**
-
 ```py
 def fake_bin(x):
   return ''.join(['1' if int(i) >= 5 else '0' for i in x])
@@ -1309,22 +1265,15 @@ But you're an ambitious person. You want to know if you're better than the avera
 
 You receive an array with your peers' test scores. Now calculate the average and compare your score!</br>
 
-~~~if-not:nasm,racket
 Return `True` if you're better, else `False`!
-~~~
 
-~~~if:racket
 Return #t if you're better, else #f.
-~~~
 
-~~~if:nasm
 Return `1` if you're better, else `0`!
-~~~
 
 ### Note:
 
 Your points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!
-
 ```py
 def better_than_average(class_points, your_points):
   class_points.append(your_points)
@@ -1340,7 +1289,6 @@ You get an array of numbers, return the sum of all of the positives ones.
 Example `[1,-4,7,12]` => `1 + 7 + 12 = 20`
 
 Note: if there is nothing to sum, the sum is default to `0`.
-
 ```py
 def positive_sum(arr):
   return sum(x for x in arr if x>0)
@@ -1374,7 +1322,6 @@ Output: `654321`
 Input: `123456789`
 Output: `987654321`
 
-
 ```py
 def descending_order(num) :
   return int(''.join(sorted(list(str(num)) , reverse=True)))
@@ -1385,7 +1332,6 @@ ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything 
 If the function is passed a valid PIN string, return `true`, else return `false`.
 
 ## Examples (**Input --> Output)**
-
 ```py
 def validate_pin(pin) :
   return bool(re.match('^([0-9]{4}|[0-9]{6})$' , pin)) if len(pin) == 6 or len(pin) == 4 else False
@@ -1402,8 +1348,6 @@ Because Nathan knows it is important to stay hydrated, he drinks 0.5 litres of w
 You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
 For example:
-~~~if-not:sql
-
 ```py
 def litres(item) :
   return int(item*.5)
@@ -1418,8 +1362,22 @@ Implement a function that adds two numbers together and returns their sum in bin
 The binary number returned should be a string.
 
 **Examples:(Input1, Input2 --> Output (explanation)))**
-
 ```py
 def add_binary(a,b):
   return bin(a+b)[2:]
+```
+# Complementary DNA
+Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+
+If you want to know more: http://en.wikipedia.org/wiki/DNA
+
+In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". 
+Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+
+More similar exercise are found here: http://rosalind.info/problems/list-view/ (source)
+
+Example: (**input --> output**)
+```py
+def DNA_strand(dna) :
+  return dna.translate(dna.maketrans('ATGC' , 'TACG'))
 ```

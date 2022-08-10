@@ -60,12 +60,15 @@ urls = [
   'https://www.codewars.com/kata/55f8a9c06c018a0d6e000132', # Regex validate PIN code
   'https://www.codewars.com/kata/582cb0224e56e068d800003c', # Keep Hydrated!
   'https://www.codewars.com/kata/551f37452ff852b7bd000139', # Binary Addition
+  'https://www.codewars.com/kata/554e4a2f232cdd87d9000038', # Complementary DNA
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
 print('1 - Create Challenge Flile')
 print('2 - Add Solution To `Codewars.md`')
 print('3 - ReCreate The `Codewars.md`')
+print('4 - Add New Escape String')
+print('5 - Add New Bug Description Into Manual')
 match input('Enter the number: '):
   case '1' :
     data = getJson(urls[-1])
@@ -76,3 +79,8 @@ match input('Enter the number: '):
     reset()
     for url in urls:
       writer(url)
+  case '4' :
+    setEscape(input["Enter The New Escape String: "])
+  case '5' :
+    data = getJson(input["Enter The Kata's URL: "])
+    addManualDescription(data['id'] , data['description'])
