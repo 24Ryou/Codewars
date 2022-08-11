@@ -63,6 +63,7 @@ urls = [
   'https://www.codewars.com/kata/554e4a2f232cdd87d9000038', # Complementary DNA
   'https://www.codewars.com/kata/57a2013acf1fa5bfc4000921', # Calculate average 
   'https://www.codewars.com/kata/5949481f86420f59480000e7', # Odd or Even?
+  'https://www.codewars.com/kata/558fc85d8fd1938afb000014', # Sum of two lowest positive integers
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
