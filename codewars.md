@@ -1,4 +1,63 @@
 __Lists of challenges__
+- [Abbreviate a Two Word Name](#abbreviate-a-two-word-name)
+- [Are they the same](#are-they-the-same)
+- [Basic Mathematical Operations](#basic-mathematical-operations)
+- [Calculating with Functions](#calculating-with-functions)
+- [Convert a Number to a String](#convert-a-number-to-a-string)
+- [Convert a String to a Number](#convert-a-string-to-a-number)
+- [Convert string to camel case](#convert-string-to-camel-case)
+- [Counting sheep](#counting-sheep)
+- [Disemvowel Trolls](#disemvowel-trolls)
+- [Even or Odd](#even-or-odd)
+- [Find the odd int](#find-the-odd-int)
+- [Growth of a Population](#growth-of-a-population)
+- [Highest and Lowest](#highest-and-lowest)
+- [Not very secure](#not-very-secure)
+- [Remove String Spaces](#remove-string-spaces)
+- [PaginationHelper](#paginationhelper)
+- [PaginationHelper](#paginationhelper-1)
+- [Playing with digits](#playing-with-digits)
+- [Primes in numbers](#primes-in-numbers)
+- [Regex Password Validation](#regex-password-validation)
+- [RGB To Hex Conversion](#rgb-to-hex-conversion)
+- [Rot13](#rot13)
+- [Sort the odd](#sort-the-odd)
+- [Square Every Digit](#square-every-digit)
+- [String repeat](#string-repeat)
+- [Sum of odd numbers](#sum-of-odd-numbers)
+- [Take a Ten Minutes Walk](#take-a-ten-minutes-walk)
+- [Tribonacci Sequence](#tribonacci-sequence)
+- [Two to One](#two-to-one)
+- [Unique In Order](#unique-in-order)
+- [Valid Parentheses](#valid-parentheses)
+- [Vowel Count](#vowel-count)
+- [Where my anagrams at](#where-my-anagrams-at)
+- [Who likes it](#who-likes-it)
+- [Beginner Series 3 Sum of Numbers](#beginner-series-3-sum-of-numbers)
+- [Build Tower](#build-tower)
+- [Build Tower Advanced](#build-tower-advanced)
+- [Convert a Boolean to a String](#convert-a-boolean-to-a-string)
+- [Function 1 hello world](#function-1-hello-world)
+- [Invert values](#invert-values)
+- [Reverse words](#reverse-words)
+- [Detect Pangram](#detect-pangram)
+- [Opposites Attract](#opposites-attract)
+- [Printer Errors](#printer-errors)
+- [Find the unique number](#find-the-unique-number)
+- [Find the unique string](#find-the-unique-string)
+- [Isograms](#isograms)
+- [Calculate BMI](#calculate-bmi)
+- [Shortest Word](#shortest-word)
+- [Fake Binary](#fake-binary)
+- [How good are you really](#how-good-are-you-really)
+- [Sum of positive](#sum-of-positive)
+- [Count of positives sum of negatives](#count-of-positives-sum-of-negatives)
+- [Example](#example)
+- [Descending Order](#descending-order)
+- [Regex validate PIN code](#regex-validate-pin-code)
+- [Keep Hydrated](#keep-hydrated)
+- [Binary Addition](#binary-addition)
+- [Complementary DNA](#complementary-dna)
 # Abbreviate a Two Word Name
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
 
@@ -1382,4 +1441,12 @@ Example: (**input --> output**)
 ```py
 def DNA_strand(dna) :
   return dna.translate(dna.maketrans('ATGC' , 'TACG'))
+```
+# Calculate average
+Write a function which calculates the average of the numbers in a given list.
+
+**Note:** Empty arrays should return 0.
+```py
+def find_average(numbers):
+    return sum(numbers)/len(numbers)
 ```
