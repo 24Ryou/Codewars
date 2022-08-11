@@ -1475,3 +1475,23 @@ For example, when an array is passed like `[19, 5, 42, 2, 77]`, the output shoul
 def sum_two_smallest_numbers(numbers):
     return sum(sorted(numbers)[0:2])
 ```
+# Rock Paper Scissors
+# Rock Paper Scissors
+
+Let's play! You have to return which player won! In case of a draw return `Draw!`.
+
+**Examples(Input1, Input2 --> Output):**
+
+```py
+def rps(p1, p2):
+    rule = {'rock' : 'paper' , 'paper' : 'scissors' , 'scissors' : 'rock'}
+    if p1 == p2 :
+      return 'Draw!'
+    return 'Player 2 won!' if p2 == rule[p1] else 'Player 1 won!'
+
+# Clever Solution
+def rps(p1, p2):
+    hand = {'rock':0, 'paper':1, 'scissors':2}
+    results = ['Draw!', 'Player 1 won!', 'Player 2 won!']
+    return results[hand[p1] - hand[p2]]
+```
