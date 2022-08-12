@@ -65,6 +65,7 @@ urls = [
   'https://www.codewars.com/kata/5949481f86420f59480000e7', # Odd or Even?
   'https://www.codewars.com/kata/558fc85d8fd1938afb000014', # Sum of two lowest positive integers
   'https://www.codewars.com/kata/5672a98bdbdd995fad00000f', # Rock Paper Scissors!
+  'https://www.codewars.com/kata/56a5d994ac971f1ac500003e', # Consecutive strings
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
@@ -88,3 +89,4 @@ match input('Enter the number: '):
   case '5' :
     data = getJson(input("Enter The Kata's URL: "))
     addManualDescription(data['id'] , data['description'])
+    print(f"Manual Description Added Successfully id: {data['id']}")
