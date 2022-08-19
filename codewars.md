@@ -1539,3 +1539,30 @@ def longest_consec(strarr, k):
 def longest_consec(s, k):
     return max(["".join(s[i:i+k]) for i in range(len(s)-k+1)], key=len) if s and 0 < k <= len(s) else ""
 ```
+# Sum without highest and lowest number
+## Task
+
+Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).
+
+The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+
+Mind the input validation.
+
+## Example
+
+    { 6, 2, 1, 8, 10 } => 16
+    { 1, 1, 11, 2, 3 } => 6
+
+## Input validation
+
+If an empty value ( `null`, `None`, `Nothing` etc. ) is given instead of an array, or the given array is an empty list or a list with only `1` element, return `0`.
+```py
+def sum_array(arr):
+  if arr != None and len(arr) > 2:
+    return sum(arr) - (max(arr) + min(arr))
+  else: return 0
+
+# Clever Solution
+def sum_array(arr):
+    return sum(sorted(arr)[1:-1]) if arr and len(arr) > 1 else 0
+```

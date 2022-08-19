@@ -66,6 +66,7 @@ urls = [
   'https://www.codewars.com/kata/558fc85d8fd1938afb000014', # Sum of two lowest positive integers
   'https://www.codewars.com/kata/5672a98bdbdd995fad00000f', # Rock Paper Scissors!
   'https://www.codewars.com/kata/56a5d994ac971f1ac500003e', # Consecutive strings
+  'https://www.codewars.com/kata/576b93db1129fcf2200001e6', # Sum without highest and lowest number
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
