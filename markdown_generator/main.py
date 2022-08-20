@@ -67,6 +67,7 @@ urls = [
   'https://www.codewars.com/kata/5672a98bdbdd995fad00000f', # Rock Paper Scissors!
   'https://www.codewars.com/kata/56a5d994ac971f1ac500003e', # Consecutive strings
   'https://www.codewars.com/kata/576b93db1129fcf2200001e6', # Sum without highest and lowest number
+  'https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd', # Beginner Series #1 School Paperwork
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
