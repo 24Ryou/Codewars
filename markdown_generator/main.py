@@ -70,6 +70,7 @@ urls = [
   'https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd', # Beginner Series #1 School Paperwork
   'https://www.codewars.com/kata/568d0dd208ee69389d000016', # Transportation on vacation
   'https://www.codewars.com/kata/5772da22b89313a4d50012f7', # Grasshopper - Personalized Message
+  'https://www.codewars.com/kata/57eaeb9578748ff92a000009', # Sum Mixed Array
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')

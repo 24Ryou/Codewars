@@ -1612,3 +1612,11 @@ otherwise         | 'Hello guest'
 def greet(name, owner):
   return 'Hello boss' if name == owner else 'Hello guest'
 ```
+# Sum Mixed Array
+Given an array of integers as strings and numbers, return the sum of the array values as if all were numbers.
+
+Return your answer as a number.
+```py
+def sum_mix(arr):
+  return sum(map(int , arr))
+```
