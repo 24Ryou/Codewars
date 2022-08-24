@@ -1620,3 +1620,27 @@ Return your answer as a number.
 def sum_mix(arr):
   return sum(map(int , arr))
 ```
+# Replace With Alphabet Position
+Welcome.
+
+In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+
+If anything in the text isn't a letter, ignore it and don't return it.
+
+`"a" = 1`, `"b" = 2`, etc.
+
+## Example <!-- unlisted languages will use the first entry. please keep python up top. -->
+
+alphabet_position("The sunset sets at twelve o' clock.")
+```py
+import string
+def alphabet_position(text):
+    keys = list(string.ascii_lowercase)
+    values = list(range(1,27))
+    dic = dict(zip(keys , values))
+    return ' '.join([str(dic[x]) for x in text.lower() if x in keys])
+
+# Clever Solution
+def alphabet_position(text):
+    return ' '.join(str(ord(c) - 96) for c in text.lower() if c.isalpha())
+```
