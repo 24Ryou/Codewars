@@ -74,6 +74,7 @@ urls = [
   'https://www.codewars.com/kata/546f922b54af40e1e90001da', # Replace With Alphabet Position
   'https://www.codewars.com/kata/5541f58a944b85ce6d00006a', # Product of consecutive Fib numbers
   'https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0', # Remove First and Last Character
+  'https://www.codewars.com/kata/5a00e05cc374cb34d100000d', # Reversed sequence 
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')

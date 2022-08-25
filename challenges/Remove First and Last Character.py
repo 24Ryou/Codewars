@@ -2,7 +2,6 @@ import codewars_test as test
 # -------------------------------- my solution ------------------------------- #
 def remove_char(s):
   return s[1:-1]
-# ------------------------------ clever solution ----------------------------- #
 # ----------------------------------- test ----------------------------------- #
 @test.describe("Fixed Tests")
 def basic_tests():

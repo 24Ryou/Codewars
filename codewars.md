@@ -63,6 +63,15 @@ __Lists of challenges__
 - [Sum of two lowest positive integers](#sum-of-two-lowest-positive-integers)
 - [Rock Paper Scissors](#rock-paper-scissors)
 - [Rock Paper Scissors](#rock-paper-scissors-1)
+- [Consecutive strings](#consecutive-strings)
+- [Sum without highest and lowest number](#sum-without-highest-and-lowest-number)
+- [Beginner Series 1 School Paperwork](#beginner-series-1-school-paperwork)
+- [Transportation on vacation](#transportation-on-vacation)
+- [Grasshopper Personalized Message](#grasshopper-personalized-message)
+- [Sum Mixed Array](#sum-mixed-array)
+- [Replace With Alphabet Position](#replace-with-alphabet-position)
+- [Product of consecutive Fib numbers](#product-of-consecutive-fib-numbers)
+- [Remove First and Last Character](#remove-first-and-last-character)
 # Abbreviate a Two Word Name
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
 
@@ -1683,6 +1692,14 @@ It's pretty straightforward. Your goal is to create a function that removes the 
 ```py
 def remove_char(s):
   return s[1:-1]
+```
+# Reversed sequence
+Build a function that returns an array of integers from n to 1 where 
+```py
+def reverse_seq(n):
+    return sorted(list(range(1 , n+1)),reverse=True)
 
 # Clever Solution
+def reverseseq(n):
+    return list(range(n, 0, -1))
 ```
