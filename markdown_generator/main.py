@@ -73,6 +73,7 @@ urls = [
   'https://www.codewars.com/kata/57eaeb9578748ff92a000009', # Sum Mixed Array
   'https://www.codewars.com/kata/546f922b54af40e1e90001da', # Replace With Alphabet Position
   'https://www.codewars.com/kata/5541f58a944b85ce6d00006a', # Product of consecutive Fib numbers
+  'https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0', # Remove First and Last Character
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
