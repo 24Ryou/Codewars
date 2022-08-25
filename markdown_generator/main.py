@@ -72,6 +72,7 @@ urls = [
   'https://www.codewars.com/kata/5772da22b89313a4d50012f7', # Grasshopper - Personalized Message
   'https://www.codewars.com/kata/57eaeb9578748ff92a000009', # Sum Mixed Array
   'https://www.codewars.com/kata/546f922b54af40e1e90001da', # Replace With Alphabet Position
+  'https://www.codewars.com/kata/5541f58a944b85ce6d00006a', # Product of consecutive Fib numbers
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')

@@ -1644,3 +1644,37 @@ def alphabet_position(text):
 def alphabet_position(text):
     return ' '.join(str(ord(c) - 96) for c in text.lower() if c.isalpha())
 ```
+# Product of consecutive Fib numbers
+The Fibonacci numbers are the numbers in the following integer sequence (Fn):
+>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, ...
+
+such as 
+>F(n) = F(n-1) + F(n-2) with F(0) = 0 and F(1) = 1.
+
+Given a number, say prod (for product), we search two Fibonacci numbers F(n) and F(n+1) verifying 
+>F(n) * F(n+1) = prod.
+
+Your function productFib takes an integer (prod) and returns
+an array: 
+```py
+def productFib(prod):
+  i = 0
+  test = lambda i : fib(i)*fib(i+1)
+  while(test(i) < prod):
+    i += 1
+  return [fib(i) , fib(i+1) , True] if test(i) == prod else [fib(i) , fib(i+1) , False]
+
+def fib(n):
+  if n == 0 or n == 1: return n
+  x, y = 0, 1
+  for i in range(n-1):
+    x, y = y, x + y
+  return y
+
+# Clever Solution
+def productFib(prod):
+  a, b = 0, 1
+  while prod > a * b:
+    a, b = b, a + b
+  return [a, b, prod == a * b]
+```
