@@ -1703,3 +1703,25 @@ def reverse_seq(n):
 def reverseseq(n):
     return list(range(n, 0, -1))
 ```
+# Your order please
+Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
+
+Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
+
+If the input string is empty, return an empty string.
+The words in the input String will only contain valid consecutive numbers.
+
+
+## Examples
+
+```py
+def order(sentence):
+  sentence = sentence.split()
+  order = [int(y) for x in sentence for y in x if y.isdigit()]
+  dic = dict(zip(order , sentence))
+  return " ".join(dict(sorted(dic.items())).values())
+
+# Clever Solution
+def order(words):
+  return ' '.join(sorted(words.split(), key=lambda w:sorted(w)))
+```
