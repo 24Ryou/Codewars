@@ -76,6 +76,7 @@ urls = [
   'https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0', # Remove First and Last Character
   'https://www.codewars.com/kata/5a00e05cc374cb34d100000d', # Reversed sequence 
   'https://www.codewars.com/kata/55c45be3b2079eccff00010f', # Your order, please
+  'https://www.codewars.com/kata/55d24f55d7dd296eb9000030', # Grasshopper - Summation
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
