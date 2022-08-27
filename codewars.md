@@ -1808,3 +1808,16 @@ class RomanNumerals:
       roman = string.replace(roman, key, "")
     return out
 ```
+# Return Negative
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+### Examples
+
+```py
+def make_negative( number ):
+    return number * -1 if number > 0 else number
+
+# Clever Solution
+def make_negative( number ):
+    return -abs(number)
+```

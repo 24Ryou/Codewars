@@ -78,6 +78,7 @@ urls = [
   'https://www.codewars.com/kata/55c45be3b2079eccff00010f', # Your order, please
   'https://www.codewars.com/kata/55d24f55d7dd296eb9000030', # Grasshopper - Summation
   'https://www.codewars.com/kata/51b66044bce5799a7f000003', # Roman Numerals Helper
+  'https://www.codewars.com/kata/55685cd7ad70877c23000102', # Return Negative
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
