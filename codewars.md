@@ -1821,3 +1821,21 @@ def make_negative( number ):
 def make_negative( number ):
     return -abs(number)
 ```
+# Count the Digit
+Take an integer `n (n >= 0)` and a digit `d (0 <= d <= 9)` as an integer. 
+
+Square all numbers `k (0 <= k <= n)` between 0 and n. 
+
+Count the numbers of digits `d` used in the writing of all the `k**2`. 
+
+Call `nb_dig` (or nbDig or ...) the function taking `n` and `d` as parameters and returning this count.
+
+#### Examples:
+```py
+def nb_dig(n, d):
+  return ("".join(str(x**2) for x in range(0,n+1))).count(str(d))
+
+# Clever Solution
+def nb_dig(n, d):
+    return sum(str(i*i).count(str(d)) for i in range(n+1))
+```
