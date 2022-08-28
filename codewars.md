@@ -1839,3 +1839,46 @@ def nb_dig(n, d):
 def nb_dig(n, d):
     return sum(str(i*i).count(str(d)) for i in range(n+1))
 ```
+# Simple Encryption 1 Alternating Split
+Implement a pseudo-encryption algorithm which given a string `S` and an integer `N` concatenates all the odd-indexed characters of `S` with all the even-indexed characters of `S`, this process should be repeated `N` times.
+
+Examples:
+
+```py
+def decrypt(encrypted_text, n):
+  if encrypted_text != None:
+    v = int(len(encrypted_text)/2)
+    encrypted_text = list(encrypted_text)
+    for x in range(n):
+      odd  = list(encrypted_text[:v])
+      even = list(encrypted_text[v:])
+      encrypted_text[1::2] = odd
+      encrypted_text[::2] = even
+    return "".join(encrypted_text)
+  else : return encrypted_text
+
+def encrypt(text, n):
+  for x in range(n):
+    odd  = text[1::2]
+    even = text[::2]
+    text = odd+even
+  return text
+
+# Clever Solution
+def decrypt(text, n):
+    if text in ("", None):
+        return text
+    
+    ndx = len(text) // 2
+
+    for i in range(n):
+        a = text[:ndx]
+        b = text[ndx:]
+        text = "".join(b[i:i+1] + a[i:i+1] for i in range(ndx + 1))
+    return text
+
+def encrypt(text, n):
+    for i in range(n):
+        text = text[1::2] + text[::2]
+    return text
+```
