@@ -72,6 +72,15 @@ __Lists of challenges__
 - [Replace With Alphabet Position](#replace-with-alphabet-position)
 - [Product of consecutive Fib numbers](#product-of-consecutive-fib-numbers)
 - [Remove First and Last Character](#remove-first-and-last-character)
+- [Reversed sequence](#reversed-sequence)
+- [Your order please](#your-order-please)
+- [Grasshopper Summation](#grasshopper-summation)
+- [Summation](#summation)
+- [Roman Numerals Helper](#roman-numerals-helper)
+- [Return Negative](#return-negative)
+- [Count the Digit](#count-the-digit)
+- [Simple Encryption 1 Alternating Split](#simple-encryption-1-alternating-split)
+- [Simple Encryption 2 Index Difference](#simple-encryption-2-index-difference)
 # Abbreviate a Two Word Name
 Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
 
@@ -1918,23 +1927,4 @@ def decrypt(encrypted_text):
       encrypted_text = "".join([x[i].swapcase() if i%2 != 0 else x[i] for i in range(len(x))])
     else : raise Exception("Error")
   return encrypted_text
-
-# Clever Solution
-test.assert_equals(encrypt("Business"), "&61kujla")
-test.assert_equals(encrypt("Do the kata \"Kobayashi-Maru-Test!\" Endless fun and excitement when finding a solution!"), "$-Wy,dM79H'i'o$n0C&I.ZTcMJw5vPlZc Hn!krhlaa:khV mkL;gvtP-S7Rt1Vp2RV:wV9VuhO Iz3dqb.U0w")
-test.assert_equals(encrypt("This is a test!"), "5MyQa9p0riYplZc")
-test.assert_equals(encrypt("This kata is very interesting!"), "5MyQa79H'ijQaw!Ns6jVtpmnlZ.V6p")
-
-test.describe('Basic Decrypt Tests')
-test.assert_equals(decrypt("$-Wy,dM79H'i'o$n0C&I.ZTcMJw5vPlZc Hn!krhlaa:khV mkL;gvtP-S7Rt1Vp2RV:wV9VuhO Iz3dqb.U0w"), "Do the kata \"Kobayashi-Maru-Test!\" Endless fun and excitement when finding a solution!")
-test.assert_equals(decrypt("5MyQa9p0riYplZc"), "This is a test!")
-test.assert_equals(decrypt("5MyQa79H'ijQaw!Ns6jVtpmnlZ.V6p"), "This kata is very interesting!")
-
-test.describe('None or Empty')
-test.assert_equals(encrypt(""), "")
-test.assert_equals(decrypt(""), "")
-test.assert_equals(encrypt(None), None)
-test.assert_equals(decrypt(None), None)
-
-test.describe('Not Allowed Chars')
-test.expect_error("Not allowed chars should lead to an Error", lambda: encrypt("A5```
+```
