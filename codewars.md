@@ -1928,3 +1928,31 @@ def decrypt(encrypted_text):
     else : raise Exception("Error")
   return encrypted_text
 ```
+# Find the missing letter
+#Find the missing letter
+
+Write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.
+
+You will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.<br>
+The array will always contain letters in only one case.
+
+Example:
+```py
+def find_missing_letter(chars):
+  for i in range(1,len(chars)):
+    if ord(chars[i]) > ord(chars[i-1])+1:
+      return chr(ord(chars[i])-1)
+
+def find_missing_letter(chars):
+  return [chr(ord(chars[i])-1) for i in range(1,len(chars)) if ord(chars[i])-1 != ord(chars[i-1])][0]
+
+# Clever Solution
+def find_missing_letter(chars):
+  n = 0
+  while ord(chars[n]) == ord(chars[n+1]) - 1:
+      n += 1
+  return chr(1+ord(chars[n]))
+
+def find_missing_letter(c):
+  return next(chr(ord(c[i])+1) for i in range(len(c)-1) if ord(c[i])+1 != ord(c[i+1]))
+```

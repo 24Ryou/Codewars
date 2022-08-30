@@ -82,6 +82,7 @@ urls = [
   'https://www.codewars.com/kata/566fc12495810954b1000030', # Count the Digit
   'https://www.codewars.com/kata/57814d79a56c88e3e0000786', # Simple Encryption #1 - Alternating Split
   'https://www.codewars.com/kata/5782b5ad202c0ef42f0012cb', # Simple Encryption #2 - Index-Difference
+  'https://www.codewars.com/kata/5839edaa6754d6fec10000a2', # Find the missing letter
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
