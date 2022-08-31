@@ -84,6 +84,7 @@ urls = [
   'https://www.codewars.com/kata/5782b5ad202c0ef42f0012cb', # Simple Encryption #2 - Index-Difference
   'https://www.codewars.com/kata/5839edaa6754d6fec10000a2', # Find the missing letter
   'https://www.codewars.com/kata/51b62bf6a9c58071c600001b', # Roman Numerals Encoder
+  'https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1', # Counting Duplicates
 ]
 # ------------------------------ ONLY SEND 1 URL ----------------------------- #
 print('Select From List Below:')
