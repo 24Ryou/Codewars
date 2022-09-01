@@ -1,0 +1,53 @@
+{
+  "id": "546e2562b03326a88e000020",
+  "name": "Square Every Digit",
+  "slug": "square-every-digit",
+  "category": "reference",
+  "publishedAt": "2014-11-20T17:31:14.986Z",
+  "approvedAt": "2014-11-30T01:42:19.965Z",
+  "languages": [
+    "python",
+    "java",
+    "javascript",
+    "ruby",
+    "haskell",
+    "csharp",
+    "crystal",
+    "typescript",
+    "elm",
+    "julia",
+    "prolog",
+    "swift",
+    "elixir",
+    "c",
+    "nasm",
+    "cobol",
+    "cpp",
+    "r",
+    "coffeescript",
+    "php",
+    "fsharp",
+    "d"
+  ],
+  "url": "https://www.codewars.com/kata/546e2562b03326a88e000020",
+  "rank": {
+    "id": -7,
+    "name": "7 kyu",
+    "color": "white"
+  },
+  "createdAt": "2014-11-20T17:31:24.505Z",
+  "createdBy": {
+    "username": "MysteriousMagenta",
+    "url": "https://www.codewars.com/users/MysteriousMagenta"
+  },
+  "approvedBy": "jhoffner",
+  "description": "Welcome. In this kata, you are asked to square every digit of a number and concatenate them.\n\nFor example, if we run 9119 through the function, 811181 will come out, because 9<sup>2</sup> is 81 and 1<sup>2</sup> is 1.\n\n**Note:** The function accepts an integer and returns an integer\n",
+  "apiVersion": 2,
+  "tags": [
+    "Mathematics",
+    "Fundamentals"
+  ],
+  "totalAttempts": 609665,
+  "totalCompleted": 200026,
+  "totalStars": 1851
+}

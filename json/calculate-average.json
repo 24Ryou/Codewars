@@ -1,0 +1,48 @@
+{
+  "id": "57a2013acf1fa5bfc4000921",
+  "name": "Calculate average ",
+  "slug": "calculate-average",
+  "category": "reference",
+  "publishedAt": "2016-08-03T14:35:48.901Z",
+  "approvedAt": "2016-10-17T16:15:50.315Z",
+  "languages": [
+    "haskell",
+    "fsharp",
+    "python",
+    "c",
+    "csharp",
+    "javascript",
+    "php",
+    "clojure",
+    "crystal",
+    "java",
+    "typescript",
+    "cpp",
+    "nasm",
+    "rust",
+    "julia",
+    "coffeescript",
+    "r"
+  ],
+  "url": "https://www.codewars.com/kata/57a2013acf1fa5bfc4000921",
+  "rank": {
+    "id": -8,
+    "name": "8 kyu",
+    "color": "white"
+  },
+  "createdAt": "2016-08-03T14:35:38.117Z",
+  "createdBy": {
+    "username": "wichu",
+    "url": "https://www.codewars.com/users/wichu"
+  },
+  "approvedBy": "suic",
+  "description": "Write a function which calculates the average of the numbers in a given list.\n\n**Note:** Empty arrays should return 0.",
+  "apiVersion": 2,
+  "tags": [
+    "Fundamentals",
+    "Functional Programming"
+  ],
+  "totalAttempts": 195592,
+  "totalCompleted": 66436,
+  "totalStars": 342
+}

@@ -1,0 +1,47 @@
+{
+  "id": "546f922b54af40e1e90001da",
+  "name": "Replace With Alphabet Position",
+  "slug": "replace-with-alphabet-position",
+  "category": "reference",
+  "publishedAt": "2014-11-21T19:27:44.612Z",
+  "approvedAt": "2014-12-27T23:20:55.924Z",
+  "languages": [
+    "python",
+    "javascript",
+    "csharp",
+    "php",
+    "c",
+    "ruby",
+    "rust",
+    "scala",
+    "nasm",
+    "groovy",
+    "cobol",
+    "haskell",
+    "crystal",
+    "coffeescript",
+    "julia",
+    "cpp"
+  ],
+  "url": "https://www.codewars.com/kata/546f922b54af40e1e90001da",
+  "rank": {
+    "id": -6,
+    "name": "6 kyu",
+    "color": "yellow"
+  },
+  "createdAt": "2014-11-21T19:27:40.245Z",
+  "createdBy": {
+    "username": "MysteriousMagenta",
+    "url": "https://www.codewars.com/users/MysteriousMagenta"
+  },
+  "approvedBy": "jhoffner",
+  "description": "Welcome.\n\nIn this kata you are required to, given a string, replace every letter with its position in the alphabet.\n\nIf anything in the text isn't a letter, ignore it and don't return it.\n\n`\"a\" = 1`, `\"b\" = 2`, etc.\n\n## Example <!-- unlisted languages will use the first entry. please keep python up top. -->\n\n```python\nalphabet_position(\"The sunset sets at twelve o' clock.\")\n```\n```javascript\nalphabetPosition(\"The sunset sets at twelve o' clock.\")\n```\n```scala\nalphabetPosition(\"The sunset sets at twelve o' clock.\")\n```\n```haskell\nalphabetPosition \"The sunset sets at twelve o' clock.\"\n```\n```cobol\n      AlphabetPosition(\"The sunset sets at twelve o' clock.\")\n```\n```groovy\nKata.alphabetPosition(\"The sunset sets at twelve o' clock.\")\n```\n```crystal\nalphabet_position(\"The sunset sets at twelve o' clock.\")\n```\n```julia\nalphabetposition(\"The sunset sets at twelve o' clock.\")\n```\n```coffeescript\nalphabetPosition(\"The sunset sets at twelve o' clock.\")\n```\n```crystal\nalphabet_position(\"The sunset sets at twelve o' clock.\")\n```\n```coffeescript\nalphabetPosition(\"The sunset sets at twelve o' clock.\")\n```\n```julia\nalphabetposition(\"The sunset sets at twelve o' clock.\")\n```\n```coffeescript\nalphabetPosition(\"The sunset sets at twelve o' clock.\")\n```\n```csharp\nKata.AlphabetPosition(\"The sunset sets at twelve o' clock.\")\n```\n```nasm\ntext:  db  \"The sunset sets at twelve o' clock.\",0h0\n\nmain:\n    mov rdi, text\n    call alphabet_position\n```\n\nShould return `\"20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11\"` ( as a string )\n",
+  "apiVersion": 2,
+  "tags": [
+    "Strings",
+    "Fundamentals"
+  ],
+  "totalAttempts": 612750,
+  "totalCompleted": 134540,
+  "totalStars": 2518
+}

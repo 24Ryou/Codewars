@@ -1,0 +1,60 @@
+{
+  "id": "582cb0224e56e068d800003c",
+  "name": "Keep Hydrated!",
+  "slug": "keep-hydrated-1",
+  "category": "reference",
+  "publishedAt": "2016-11-16T19:47:07.378Z",
+  "approvedAt": "2016-11-17T13:45:18.237Z",
+  "languages": [
+    "csharp",
+    "javascript",
+    "c",
+    "haskell",
+    "python",
+    "php",
+    "crystal",
+    "ruby",
+    "sql",
+    "coffeescript",
+    "shell",
+    "java",
+    "nasm",
+    "kotlin",
+    "r",
+    "typescript",
+    "racket",
+    "dart",
+    "factor",
+    "julia",
+    "powershell",
+    "cfml",
+    "elixir",
+    "rust",
+    "fortran",
+    "cpp",
+    "go",
+    "cobol"
+  ],
+  "url": "https://www.codewars.com/kata/582cb0224e56e068d800003c",
+  "rank": {
+    "id": -8,
+    "name": "8 kyu",
+    "color": "white"
+  },
+  "createdAt": "2016-11-16T19:14:42.829Z",
+  "createdBy": {
+    "username": "paulrichard",
+    "url": "https://www.codewars.com/users/paulrichard"
+  },
+  "approvedBy": "smile67",
+  "description": "Nathan loves cycling. \n\nBecause Nathan knows it is important to stay hydrated, he drinks 0.5 litres of water per hour of cycling.\n\nYou get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.\n\nFor example:\n~~~if-not:sql\n```\ntime = 3 ----> litres = 1\n\ntime = 6.7---> litres = 3\n\ntime = 11.8--> litres = 5\n```\n~~~\n~~~if:sql\n```\nhours = 3 ----> liters = 1\n\nhours = 6.7---> liters = 3\n\nhours = 11.8--> liters = 5\n```\n\nYou have to return 3 columns: `id`, `hours` and `liters` (not litres, it's a difference from the kata description)\n~~~",
+  "apiVersion": 2,
+  "tags": [
+    "Algorithms",
+    "Mathematics",
+    "Fundamentals"
+  ],
+  "totalAttempts": 221756,
+  "totalCompleted": 111343,
+  "totalStars": 562
+}

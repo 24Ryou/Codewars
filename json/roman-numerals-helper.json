@@ -1,0 +1,42 @@
+{
+  "id": "51b66044bce5799a7f000003",
+  "name": "Roman Numerals Helper",
+  "slug": "roman-numerals-helper",
+  "category": "algorithms",
+  "publishedAt": "2013-06-10T23:54:10.738Z",
+  "approvedAt": null,
+  "languages": [
+    "javascript",
+    "coffeescript",
+    "ruby",
+    "python",
+    "cpp",
+    "c",
+    "julia",
+    "swift",
+    "java",
+    "csharp",
+    "fsharp",
+    "cobol"
+  ],
+  "url": "https://www.codewars.com/kata/51b66044bce5799a7f000003",
+  "rank": {
+    "id": -4,
+    "name": "4 kyu",
+    "color": "blue"
+  },
+  "createdAt": "2013-06-10T23:24:52.310Z",
+  "createdBy": {
+    "username": "jhoffner",
+    "url": "https://www.codewars.com/users/jhoffner"
+  },
+  "approvedBy": null,
+  "description": "Create a RomanNumerals class that can convert a roman numeral to and from an integer value.  It should follow the API demonstrated in the examples below. Multiple roman numeral values will be tested for each helper method. \n\nModern Roman numerals are written by expressing each digit separately starting with the left most digit and skipping any digit with a value of zero. In Roman numerals 1990 is rendered: 1000=M, 900=CM, 90=XC; resulting in MCMXC. 2008 is written as 2000=MM, 8=VIII; or MMVIII. 1666 uses each Roman symbol in descending order: MDCLXVI.\n\nInput range : `1 <= n < 4000`\n\nIn this kata `4` should be represented as `IV`, NOT as `IIII` (the \"watchmaker's four\").\n \n\n### Examples\n\n```javascript\nRomanNumerals.toRoman(1000); // should return 'M'\nRomanNumerals.fromRoman('M'); // should return 1000\n```\n```coffeescript\nRomanNumerals.toRoman(1000) # should return 'M'\nRomanNumerals.fromRoman('M') # should return 1000\n```\n```ruby\nRomanNumerals.to_roman(1000) # should return 'M'\nRomanNumerals.from_roman('M') # should return 1000\n```\n```python\nRomanNumerals.to_roman(1000) # should return 'M'\nRomanNumerals.from_roman('M') # should return 1000\n```\n```c\nto_roman(1000) // should return 'M'\nfrom_roman('M') // should return 1000\n```\n```c++\nRomanNumerals.to_roman(1000) // should return 'M'\nRomanNumerals.from_roman('M') // should return 1000\n```\n```cobol\n      ToRoman(1000)  => result = 'M'\n      FromRoman('M') => result = 1000\n```\n```c#\nRomanNumerals.ToRoman(1000) // should return 'M'\nRomanNumerals.FromRoman('M') // should return 1000\n```\n```f#\nToRoman 1000 // should return 'M'\nFromRoman \"M\" // should return 1000\n```\n```java\nRomanNumerals.toRoman(1000) // should return 'M'\nRomanNumerals.fromRoman(\"M\") // should return 1000\n```\n```julia\nRomanNumerals.toroman(1000) # should return \"M\"\nRomanNumerals.fromroman(\"M\") # should return 1000\n```\n\n### Help\n\n| Symbol | Value |\n|-------:|:------|\n| I\t  |  1    |\n| IV  |  4    |\n| V\t  |  5    |\n| X\t  |  10   |\n| L\t  |  50   |\n| C\t  |  100  |\n| D\t  |  500  |\n| M\t  |  1000 |\n",
+  "apiVersion": 2,
+  "tags": [
+    "Algorithms"
+  ],
+  "totalAttempts": 107718,
+  "totalCompleted": 16126,
+  "totalStars": 1602
+}
