@@ -1,12 +1,12 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def even_or_odd(number): return 'Even' if number%2 == 0 else 'Odd'
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def even_or_odd(number):
   return ["Even", "Odd"][number % 2]
 
 even_or_odd=lambda n:'EOvdedn'[n%2::2]
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it('Basic Test Cases')

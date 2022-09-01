@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def encrypt(text):
   region = list('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789') + list('''.,:;-?! '()$%&"''')
   if text != None and text != "":
@@ -23,7 +23,7 @@ def decrypt(encrypted_text):
       encrypted_text = "".join([x[i].swapcase() if i%2 != 0 else x[i] for i in range(len(x))])
     else : raise Exception("Error")
   return encrypted_text
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.assert_equals(encrypt("Business"), "&61kujla")
 test.assert_equals(encrypt("Do the kata \"Kobayashi-Maru-Test!\" Endless fun and excitement when finding a solution!"), "$-Wy,dM79H'i'o$n0C&I.ZTcMJw5vPlZc Hn!krhlaa:khV mkL;gvtP-S7Rt1Vp2RV:wV9VuhO Iz3dqb.U0w")
 test.assert_equals(encrypt("This is a test!"), "5MyQa9p0riYplZc")

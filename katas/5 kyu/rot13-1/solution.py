@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def rot13(message):
   rot = ""
   for c in message:
@@ -60,12 +60,12 @@ def rot_char(c):
   if c == "Y": return "L"
   if c == "Z": return "M"
   return c
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def rot13(message):
     rot13 = str.maketrans(
     'ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz',
     'NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm')
     return message.translate(rot13)
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.assert_equals(rot13("test"),"grfg")
 test.assert_equals(rot13("Test"),"Grfg")

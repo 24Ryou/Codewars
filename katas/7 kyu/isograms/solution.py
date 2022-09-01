@@ -1,6 +1,6 @@
 import codewars_test as test
 import re
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def is_isogram(string):
   if string == "":
     return True
@@ -8,10 +8,10 @@ def is_isogram(string):
     if string.lower().count(x.lower()) > 1 or x.isdigit():
       return False
   return True
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def is_isogram(string):
     return len(string) == len(set(string.lower()))
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 
 test.assert_equals(is_isogram("Dermatoglyphics"), True )
 test.assert_equals(is_isogram("isogram"), True )

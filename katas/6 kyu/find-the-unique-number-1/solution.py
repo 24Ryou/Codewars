@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def find_uniq(arr):
   arr = sorted(arr)
   for x in range(0 , len(arr)):
@@ -7,11 +7,11 @@ def find_uniq(arr):
       if arr[x] != arr[x-1]:
         return arr[x]
       else: return arr[x+1]
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def find_uniq(arr):
   a, b = set(arr)
   return a if arr.count(a) == 1 else b
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Basic Tests")
 def f():
     @test.it("Simple tests")

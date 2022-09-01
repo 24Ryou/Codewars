@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def find_uniq(arr):
   for x in range(0,len(arr)):
     c = set(sorted(arr[x-1].lower()))
@@ -10,7 +10,7 @@ def find_uniq(arr):
         return arr[x]
       else:
         return arr[x+1]
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def find_uniq(arr):
     if set(arr[0].lower()) == set(arr[1].lower()):
         majority_set = set(arr[0].lower())
@@ -22,7 +22,7 @@ def find_uniq(arr):
     for string in arr:
         if set(string.lower()) != majority_set:
             return string
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.describe('should handle sample cases')
 test.assert_equals(find_uniq([ 'Aa', 'aaa', 'aaaaa', 'BbBb', 'Aaaa', 'AaAaAa', 'a' ]), 'BbBb')
 test.assert_equals(find_uniq([ 'abc', 'acb', 'bac', 'foo', 'bca', 'cab', 'cba' ]), 'foo')

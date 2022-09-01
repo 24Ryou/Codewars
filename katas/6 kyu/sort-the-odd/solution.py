@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def sort_array(source_array):
     odds = []
     answer = []
@@ -14,11 +14,11 @@ def sort_array(source_array):
         x = answer.index("X")
         answer[x] = i
     return answer
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def sort_array(source_array):
     odd = sorted((x for x in source_array if x%2!=0), reverse=True)
     return [x if x%2 == 0 else odd.pop() for x in source_array]
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.assert_equals(sort_array([5, 3, 2, 8, 1, 4]), [1, 3, 2, 8, 5, 4])
 test.assert_equals(sort_array([5, 3, 1, 8, 0]), [1, 3, 5, 8, 0])
 test.assert_equals(sort_array([]),[])

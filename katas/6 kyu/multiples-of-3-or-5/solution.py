@@ -1,8 +1,8 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def solution(number):
   return sum([n for n in range(number) if n%3 == 0 or n%5 == 0])
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.it("Should return 3 for n=4")
 def _():
     test.assert_equals(solution(4), 3)

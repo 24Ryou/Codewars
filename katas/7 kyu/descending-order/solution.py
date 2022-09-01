@@ -1,8 +1,8 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def descending_order(num) :
   return int(''.join(sorted(list(str(num)) , reverse=True)))
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it('Basic Test Cases')

@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def decrypt(encrypted_text, n):
   if encrypted_text != None:
     v = int(len(encrypted_text)/2)
@@ -18,7 +18,7 @@ def encrypt(text, n):
     even = text[::2]
     text = odd+even
   return text
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def decrypt(text, n):
     if text in ("", None):
         return text
@@ -35,7 +35,7 @@ def encrypt(text, n):
     for i in range(n):
         text = text[1::2] + text[::2]
     return text
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.assert_equals(encrypt("This is a test!", 0), "This is a test!")
 test.assert_equals(encrypt("This is a test!", 1), "hsi  etTi sats!")
 test.assert_equals(encrypt("This is a test!", 2), "s eT ashi tist!")

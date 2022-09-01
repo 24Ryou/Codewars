@@ -1,11 +1,11 @@
 from itertools import count
 import codewars_test as test
-# ------------------------------ best practice solution ----------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
+count_sheeps = lambda x : x.count(True)
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def count_sheeps(arrayOfSheeps):
   return arrayOfSheeps.count(True)
-# -------------------------------- my solution ------------------------------- #
-count_sheeps = lambda x : x.count(True)
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 array1 = [True,  True,  True,  False,
           True,  True,  True,  True ,
           True,  False, True,  False,

@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def likes(names):
     i = len(names)
     s = ''
@@ -25,7 +25,7 @@ def likes(names):
         3: '{}, {} and {} like this', 
         4: '{}, {} and {others} others like this'
     }[min(4, n)].format(*names[:3], others=n-2)
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.it('Basic tests')
 def _():
     test.assert_equals(likes([]), 'no one likes this')

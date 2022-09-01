@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def longest(s1, s2):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     s = s1 + s2
@@ -10,10 +10,10 @@ def longest(s1, s2):
       if x in s:
         y = y + x
     return y
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def longest(a1, a2):
     return ''.join(sorted(set(a1 + a2)))
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("longest")
 def tests():
     @test.it("basic tests")

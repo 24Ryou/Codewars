@@ -1,7 +1,7 @@
 from pickle import TRUE
 from typing_extensions import clear_overloads
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def is_valid_walk(walk):
   if len(walk) != 10 :
     return False;
@@ -10,10 +10,10 @@ def is_valid_walk(walk):
   if walk.count('s') != walk.count('n'):
     return False
   return True
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def isValidWalk(walk):
     return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w')
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.expect(is_valid_walk(['n','s','n','s','n','s','n','s','n','s']), 'should return True');
 test.expect(not is_valid_walk(['w','e','w','e','w','e','w','e','w','e','w','e']), 'should return False');
 test.expect(not is_valid_walk(['w']), 'should return False');

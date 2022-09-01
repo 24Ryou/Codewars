@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def tower_builder(n_floors, block_size):
   w, h = block_size
   result = []
@@ -10,11 +10,11 @@ def tower_builder(n_floors, block_size):
       line = stars.center(width)
       result.append(line)
   return result
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def tower_builder(n_floors, block_size):
   w , h = block_size
   return [str.center("*" * (i*2-1)*w, (n_floors*2-1)*w) for i in range(1, n_floors+1) for _ in range(h)]
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.describe("Tests")
 test.it("Basic Tests")
 test.assert_equals(tower_builder(1, (1, 1)), ['*', ])

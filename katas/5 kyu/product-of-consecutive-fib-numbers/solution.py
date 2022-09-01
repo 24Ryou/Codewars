@@ -1,6 +1,6 @@
 from cgitb import text
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def productFib(prod):
   i = 0
   test = lambda i : fib(i)*fib(i+1)
@@ -14,12 +14,12 @@ def fib(n):
   for i in range(n-1):
     x, y = y, x + y
   return y
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def productFib(prod):
   a, b = 0, 1
   while prod > a * b:
     a, b = b, a + b
   return [a, b, prod == a * b]
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.assert_equals(productFib(4895), [55, 89, True])
 test.assert_equals(productFib(5895), [89, 144, False])

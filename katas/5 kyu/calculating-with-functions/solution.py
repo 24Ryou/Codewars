@@ -1,7 +1,7 @@
 from ast import operator
 from tkinter.tix import INTEGER
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def zero(r = ''):
   if r != '':
     number = int(r[0])
@@ -151,7 +151,7 @@ def times(number : int):
   return str(number)+'*'
 def divided_by(number : int): 
   return str(number)+'/'
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 id_ = lambda x: x
 number = lambda x: lambda f=id_: f(x)
 zero, one, two, three, four, five, six, seven, eight, nine = map(number, range(10))
@@ -159,7 +159,7 @@ plus = lambda x: lambda y: y + x
 minus = lambda x: lambda y: y - x
 times = lambda x: lambda y: y * x
 divided_by = lambda x: lambda y: y / x
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.describe('Basic Tests')
 test.assert_equals(seven(times(five())), 35)
 test.assert_equals(four(plus(nine())), 13)

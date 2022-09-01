@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def tribonacci(signature, n):
     if n < 3:
         return signature[:n]
@@ -11,12 +11,12 @@ def tribonacci(signature, n):
         l = len(signature)
         signature.append(sum(signature[l-3:l]))
         return tribonacci(signature,n-1)
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def tribonacci(signature, n):
     res = signature[:n]
     for i in range(n - 3): res.append(sum(res[-3:]))
     return res
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.describe("Basic tests")
 test.assert_equals(tribonacci([1, 1, 1], 10), [1, 1, 1, 3, 5, 9, 17, 31, 57, 105])
 test.assert_equals(tribonacci([0, 0, 1], 10), [0, 0, 1, 1, 2, 4, 7, 13, 24, 44])

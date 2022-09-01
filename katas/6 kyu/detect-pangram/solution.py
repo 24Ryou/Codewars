@@ -1,19 +1,19 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def is_pangram(s):
   letters = list('abcdefghijklmnopqrstuvwxyz')
   for x in s:
     if x.lower() in letters:
       letters.remove(x.lower())
   return True if len(letters) == 0 else False
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def is_pangram(s):
     s = s.lower()
     for char in 'abcdefghijklmnopqrstuvwxyz':
         if char not in s:
             return False
     return True
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("sample tests")
 def sample_tests():
     

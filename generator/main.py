@@ -1,6 +1,6 @@
 import sys , os
 sys.path.append(os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '')))
-from tools.utilities import *
+# from tools.utilities import *
 from tools.tools import *
 
 # --------------------------------- DUMP JSON -------------------------------- #
@@ -39,11 +39,53 @@ from tools.tools import *
 #   des = getDescription(data['description'])
 #   createFileForce(p / data['rank']['name'] /data['slug'] / 'description.md' , des)
 
+# ------------------------------- FIX SOLUTIONS ------------------------------ #
+
+# cb1 = '# -------------------------------- my solution ------------------------------- #'
+# cb2 = '# ------------------------------ clever solution ----------------------------- #'
+# cb3 = '# ----------------------------------- test ----------------------------------- #'
+
+# ca1 = '# -------------------------------- MY SOLUTION ------------------------------- #'
+# ca2 = '# ------------------------------ CLEVER SOLUTION ----------------------------- #'
+# ca3 = '# ----------------------------------- TEST ----------------------------------- #'
+
+# datas = []
+# solutions = []
+# jsons = list(getAllFiles('json' , 'json'))
+# for x in jsons:
+#   datas.append(json.load(open(x)))
+# for data in datas:
+# #   solution = getSolution(f"{data['rank']['name']}/{data['slug']}/solution")
+#   p = Path('katas') / data['rank']['name'] / data['slug'] / 'solution.py'
+#   sol = open(p).read()
+#   sol = sol.replace(cb1 , ca1)
+#   sol = sol.replace(cb2 , ca2)
+#   sol = sol.replace(cb3 , ca3)
+#   open(p , 'w' , encoding='utf-8').write(sol)
+
 # -------------------------------- CODEWARS.MD ------------------------------- #
 
-# files = [x for x in os.walk('katas')]
-# print(files)
+# datas = []
+# katas = []
+# descriptions = []
+# solutions = []
+# kata = []
+# jsons = list(getAllFiles('json' , 'json'))
+# for x in jsons:
+#   datas.append(json.load(open(x)))
+# for data in datas:
+#   solution = '```py\n' + getSolution(f"{data['rank']['name']}/{data['slug']}/solution") + '```'
+#   solutions.append(solution)
+#   description = getDescription(data['description'])
+#   descriptions.append(description)
+#   kata.append('# ' + data['name'])
+#   kata.append(str(description))
+#   kata.append(str(solution))
+#   katas.append("\n".join(kata))
+
+
+# open('codewars.md' , 'w' , encoding='utf-8').write("\n".join(katas)
 
 # ----------------------------------- MAIN ----------------------------------- #
 
-handler()
+# handler()

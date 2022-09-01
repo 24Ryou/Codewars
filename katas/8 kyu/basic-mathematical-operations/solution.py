@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def basic_op (operator, value1, value2):
   match operator:
     case '+':
@@ -10,13 +10,13 @@ def basic_op (operator, value1, value2):
       return value1 * value2
     case '/':
       return value1/value2
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def basic_op(operator, value1, value2):
     return eval("{}{}{}".format(value1, operator, value2))
 
 def basic_op(o, a, b):
     return {'+':a+b,'-':a-b,'*':a*b,'/':a/b}.get(o)
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it('Basic Test Cases')

@@ -1,12 +1,12 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def better_than_average(class_points, your_points):
   class_points.append(your_points)
   return True if max(your_points , (sum(class_points)/len(class_points))) == your_points else False
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def better_than_average(class_points, your_points):
     return your_points > sum(class_points) / len(class_points)
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.describe("Basic Tests")
 
 test.it("better_than_average([2, 3], 5) should return True")

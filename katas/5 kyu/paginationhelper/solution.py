@@ -1,6 +1,6 @@
 from typing_extensions import clear_overloads
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 class PaginationHelper:
 
   def __init__(self, collection : list, items_per_page):
@@ -30,7 +30,7 @@ class PaginationHelper:
         return 0
     else:
       return int(self.collection.index(item_index)/self.item_per_page)
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 class PaginationHelper:
     def __init__(self, collection, items_per_page):
         self._item_count = len(collection)
@@ -49,7 +49,7 @@ class PaginationHelper:
     def page_index(self, item_index):
         return item_index // self.items_per_page \
             if 0 <= item_index < self._item_count else -1
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 collection = range(1,25)
 helper = PaginationHelper(collection, 10)
 

@@ -1,15 +1,15 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def to_camel_case(text):
     removed = text.replace('-', ' ').replace('_', ' ').split()
     if len(removed) == 0:
         return ''
     return removed[0]+ ''.join([x.capitalize() for x in removed[1:]])
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def to_camel_case(text):
     output = ''.join(x for x in text.title() if x not in "_-")
     return text[0] + output[1:] if text else ''
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.describe("Testing function to_camel_case")
 test.it("Basic tests")
 test.assert_equals(to_camel_case(''), '', "An empty string was provided but not returned")

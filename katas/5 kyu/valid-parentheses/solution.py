@@ -1,7 +1,7 @@
 from itertools import count
 from wsgiref.util import request_uri
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def valid_parentheses(string):
   count = 0
   for x in string:
@@ -15,7 +15,7 @@ def valid_parentheses(string):
   if count != 0 :
     return False
   return True
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def valid_parentheses(string):
     cnt = 0
     for char in string:
@@ -23,7 +23,7 @@ def valid_parentheses(string):
         if char == ')': cnt -= 1
         if cnt < 0: return False
     return True if cnt == 0 else False
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Sample Tests")
 def tests():
     @test.it("Sample tests")

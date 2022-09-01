@@ -1,14 +1,14 @@
 import codewars_test as test
 import re
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def alphanumeric(password):
     regex = '^(?=[^\s_])[a-zA-Z0-9]+$'
     pattern = re.compile(regex)
     return bool(pattern.match(password))
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def alphanumeric(string):
     return string.isalnum()
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Sample Tests")
 def sample_tests():
     tests = [

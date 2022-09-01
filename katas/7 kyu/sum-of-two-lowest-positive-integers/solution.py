@@ -1,8 +1,8 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def sum_two_smallest_numbers(numbers):
     return sum(sorted(numbers)[0:2])
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it('Basic Test Cases')

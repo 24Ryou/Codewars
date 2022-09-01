@@ -1,7 +1,7 @@
 import time
 import codewars_test as test
 start_time = time.time()
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def prime_factors(n):
   i = 2
   res = {}
@@ -26,7 +26,7 @@ def prime_factors(n):
     else:
       t = t + '(' +str(key[0]) + '**' + str(key[1]) + ')'
   return t
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def prime_factors(n):
   i, j, p = 2, 0, []
   while n > 1:
@@ -34,7 +34,7 @@ def prime_factors(n):
     if j > 0: p.append([i,j])
     i, j = i + 1, 0
   return ''.join('(%d' %q[0] + ('**%d' %q[1]) * (q[1] > 1) + ')' for q in p)
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe('Testing...')
 def _():
     @test.it('Fixed tests')

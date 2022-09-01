@@ -1,9 +1,9 @@
 from ntpath import join
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def DNA_strand(dna) :
   return dna.translate(dna.maketrans('ATGC' , 'TACG'))
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it('Basic Test Cases')

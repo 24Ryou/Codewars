@@ -1,12 +1,12 @@
 import codewars_test as test
 import re
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def validate_pin(pin) :
   return bool(re.match('^([0-9]{4}|[0-9]{6})$' , pin)) if len(pin) == 6 or len(pin) == 4 else False
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def validate_pin(pin):
     return len(pin) in (4, 6) and pin.isdigit()
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it("should return False for pins with length other than 4 or 6")

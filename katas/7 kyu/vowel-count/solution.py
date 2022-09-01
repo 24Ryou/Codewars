@@ -1,11 +1,11 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def get_count(sentence):
     return len([x for x in sentence if x.lower() in 'aeuio'])
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def getCount(inputStr):
     return sum(1 for let in inputStr if let in "aeiouAEIOU")
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Sample tests")
 def sample_tests():
     

@@ -1,11 +1,11 @@
 import codewars_test as test
 import re
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 disemvowel = lambda x :  re.sub("[aeiouAEIOU]","",x)
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def disemvowel(string):
     return "".join(c for c in string if c.lower() not in "aeiou")
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def basic_tests():
     @test.it("First fixed test")

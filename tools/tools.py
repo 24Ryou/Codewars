@@ -1,5 +1,3 @@
-from fileinput import filename
-import math
 import os
 from pathlib import *
 import re
@@ -227,12 +225,13 @@ def getSolution(slug : str):
   :return: The solution to the kata.
   """
   try:
-    solpath = list(getFOF('katas' , slug , 'py'))[0]
+    solpath = list(getFOF('katas' , slug , 'py'))
     c1 = '# -------------------------------- MY SOLUTION ------------------------------- #'
     c2 = '# ------------------------------ CLEVER SOLUTION ----------------------------- #'
     c3 = '# ----------------------------------- TEST ----------------------------------- #'
     txt = open(solpath[0]).read()
-    txt = txt.split(c1)[1].split(c3)[0].replace(c2 , '# clever solution')
+    if c2 in txt:
+      txt = txt.split(c1)[1].split(c3)[0].replace(c2 , '# clever solution')
     return txt
   except:
     code_response = 211 # getSolution failed
@@ -322,7 +321,6 @@ def linkSorter():
     createFileForce('generator/temp.txt' , "".join(sorted(links)))
     links = open(np).read()
     open(p).write(links)
-    os.remove(Path(np))
   except:
     code_response = 215 # linkSorter failed
     return code_response

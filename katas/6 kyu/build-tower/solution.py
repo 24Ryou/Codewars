@@ -1,7 +1,7 @@
 from inspect import stack
 import codewars_test as test
 from collections import deque
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def tower_builder(n_floor):
   result = []
   width = (n_floor * 2) - 1
@@ -10,10 +10,10 @@ def tower_builder(n_floor):
       line = stars.center(width)
       result.append(line)
   return result
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def tower_builder(n):
     return [("*" * (i*2-1)).center(n*2-1) for i in range(1, n+1)]
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Build Tower")
 def fixed_tests():
     @test.it('Basic Test Cases')

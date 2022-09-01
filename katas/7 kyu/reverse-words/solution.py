@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def reverse_words(text):
   list = text.split(" ")
   _list = []
@@ -9,10 +9,10 @@ def reverse_words(text):
     else:
       _list.append(x)
   return " ".join(_list)
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def reverse_words(str):
     return ' '.join(s[::-1] for s in str.split(' '))
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it('Basic Test Cases')

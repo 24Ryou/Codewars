@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 class RomanNumerals:
   sym = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
   num = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
@@ -27,7 +27,7 @@ class RomanNumerals:
       else:
         result -= first_num
     return result
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 import string
 from collections import OrderedDict
 
@@ -52,7 +52,7 @@ class RomanNumerals:
       out += value * roman.count(key)
       roman = string.replace(roman, key, "")
     return out
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe('sample_tests')
 def sample_tests():
     @test.it('to roman')

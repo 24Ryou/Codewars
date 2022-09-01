@@ -1,14 +1,14 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def order(sentence):
   sentence = sentence.split()
   order = [int(y) for x in sentence for y in x if y.isdigit()]
   dic = dict(zip(order , sentence))
   return " ".join(dict(sorted(dic.items())).values())
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def order(words):
   return ' '.join(sorted(words.split(), key=lambda w:sorted(w)))
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe('Your order, please')
 def desc1():
     @test.it('Sample tests')

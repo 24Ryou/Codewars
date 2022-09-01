@@ -1,9 +1,9 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def square_digits(num) : return int(''.join(str(int(i)**2) for i in str(num)))
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 square_digits = lambda num: int(''.join(str(int(d)**2) for d in str(num)))
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Premade tests: ")
 def fixed_tests():
     @test.it('Basic Test Cases')

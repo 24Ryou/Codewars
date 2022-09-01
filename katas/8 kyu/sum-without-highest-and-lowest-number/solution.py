@@ -1,13 +1,13 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def sum_array(arr):
   if arr != None and len(arr) > 2:
     return sum(arr) - (max(arr) + min(arr))
   else: return 0
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def sum_array(arr):
     return sum(sorted(arr)[1:-1]) if arr and len(arr) > 1 else 0
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def fixed_tests():
     @test.it('None or Empty')

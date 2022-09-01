@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def invert(lst):
   _list = []
   for x in lst :
@@ -8,10 +8,10 @@ def invert(lst):
     else:
       _list.append(abs(x))
   return _list
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def invert(lst):
     return [-x for x in lst]
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Invert values")
 def fixed_tests():
     @test.it('Basic Test Cases')

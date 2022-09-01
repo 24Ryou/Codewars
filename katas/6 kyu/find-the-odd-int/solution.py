@@ -1,5 +1,5 @@
 import codewars_test as test
-# --------------------------------- my solution --------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def find_it(seq):
   array = seq
   for x in seq:
@@ -9,12 +9,12 @@ def find_it(seq):
           count += 1
     if count%2 != 0 :
       return x
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def find_it(seq):
     for i in seq:
         if seq.count(i)%2!=0:
             return i
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Sample tests")
 def sample_tests():
     

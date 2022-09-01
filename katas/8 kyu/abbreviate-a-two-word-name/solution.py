@@ -1,10 +1,7 @@
 import codewars_test as test
-# ------------------------------ other solution ------------------------------ #
-def abbrevName(name):
-    return '.'.join(w[0] for w in name.split()).upper()
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 abbrev_name = lambda x: ".".join([x[0] , x.split(" ")[1][0]]).upper()
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def basic_tests():
     @test.it('Basic Test Cases')

@@ -1,11 +1,11 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def nb_dig(n, d):
   return ("".join(str(x**2) for x in range(0,n+1))).count(str(d))
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def nb_dig(n, d):
     return sum(str(i*i).count(str(d)) for i in range(n+1))
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.describe("nb_dig")
 test.it("Basic tests") 	
 test.assert_equals(nb_dig(5750, 0), 4700)

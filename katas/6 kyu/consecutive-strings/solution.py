@@ -1,14 +1,14 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def longest_consec(strarr, k):
   n = len(strarr)
   if n < 1 or k > n or  k<= 0 : return ""
   lst = ["".join(strarr[i:i+k]) for i in range(n-1)] if k > 1 else strarr
   return max(lst , key = len)
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def longest_consec(s, k):
     return max(["".join(s[i:i+k]) for i in range(len(s)-k+1)], key=len) if s and 0 < k <= len(s) else ""
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 def testing(actual, expected):
   test.assert_equals(actual, expected)
   test.describe("longest_consec")

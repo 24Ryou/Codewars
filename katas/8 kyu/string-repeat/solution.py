@@ -1,12 +1,12 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def repeat_str(repeat, string):
     return repeat * string
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 repeat_str = lambda a,b : a*b
 
 from operator import mul as repeat_str
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe('Fixed tests')
 def basic_tests():
     @test.it('Basic Test Cases')

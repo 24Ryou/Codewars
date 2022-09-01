@@ -1,5 +1,5 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def rgb(r, g, b):
   r = check(r)
   b = check(b)
@@ -13,11 +13,11 @@ def check(int):
     return 0
   else :
     return int
-# ------------------------------ clever solution ----------------------------- #
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
 def rgb(r, g, b):
     round = lambda x: min(255, max(x, 0))
     return ("{:02X}" * 3).format(round(r), round(g), round(b))
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 test.assert_equals(rgb(0,0,0),"000000", "testing zero values")
 test.assert_equals(rgb(1,2,3),"010203", "testing near zero values")
 test.assert_equals(rgb(255,255,255), "FFFFFF", "testing max values")

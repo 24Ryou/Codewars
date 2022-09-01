@@ -1,8 +1,8 @@
 import codewars_test as test
-# -------------------------------- my solution ------------------------------- #
+# -------------------------------- MY SOLUTION ------------------------------- #
 def count_positives_sum_negatives(arr):
     return [sum(1 for x in arr if x>0) ,sum(x for x in arr if x<0)] if len(arr) > 0 else arr
-# ----------------------------------- test ----------------------------------- #
+# ----------------------------------- TEST ----------------------------------- #
 @test.describe("Fixed Tests")
 def basic_tests():
     @test.it('Basic Test Cases')
