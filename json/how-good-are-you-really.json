@@ -1,0 +1,50 @@
+{
+  "id": "5601409514fc93442500010b",
+  "name": "How good are you really?",
+  "slug": "how-good-are-you-really",
+  "category": "reference",
+  "publishedAt": "2015-09-22T12:05:23.590Z",
+  "approvedAt": "2015-09-29T01:03:27.537Z",
+  "languages": [
+    "csharp",
+    "ruby",
+    "python",
+    "javascript",
+    "clojure",
+    "elixir",
+    "java",
+    "c",
+    "php",
+    "julia",
+    "lua",
+    "nasm",
+    "cpp",
+    "typescript",
+    "reason",
+    "dart",
+    "crystal",
+    "coffeescript",
+    "racket",
+    "haskell"
+  ],
+  "url": "https://www.codewars.com/kata/5601409514fc93442500010b",
+  "rank": {
+    "id": -8,
+    "name": "8 kyu",
+    "color": "white"
+  },
+  "createdAt": "2015-09-22T11:50:45.083Z",
+  "createdBy": {
+    "username": "Jotha",
+    "url": "https://www.codewars.com/users/Jotha"
+  },
+  "approvedBy": "joh_pot",
+  "description": "There was a test in your class and you passed it. Congratulations!</br>\nBut you're an ambitious person. You want to know if you're better than the average student in your class.</br>\n\nYou receive an array with your peers' test scores. Now calculate the average and compare your score!</br>\n\n~~~if-not:nasm,racket\nReturn `True` if you're better, else `False`!\n~~~\n\n~~~if:racket\nReturn #t if you're better, else #f.\n~~~\n\n~~~if:nasm\nReturn `1` if you're better, else `0`!\n~~~\n\n### Note:\n\nYour points are not included in the array of your class's points. For calculating the average point you may add your point to the given array!\n",
+  "apiVersion": 2,
+  "tags": [
+    "Fundamentals"
+  ],
+  "totalAttempts": 154063,
+  "totalCompleted": 62722,
+  "totalStars": 399
+}

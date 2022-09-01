@@ -1,0 +1,53 @@
+{
+  "id": "5839edaa6754d6fec10000a2",
+  "name": "Find the missing letter",
+  "slug": "find-the-missing-letter",
+  "category": "algorithms",
+  "publishedAt": "2016-11-26T20:55:30.705Z",
+  "approvedAt": "2016-11-28T23:29:54.618Z",
+  "languages": [
+    "csharp",
+    "fsharp",
+    "java",
+    "javascript",
+    "python",
+    "ruby",
+    "crystal",
+    "typescript",
+    "haskell",
+    "php",
+    "c",
+    "coffeescript",
+    "objc",
+    "nasm",
+    "scala",
+    "kotlin",
+    "rust",
+    "julia",
+    "racket",
+    "swift",
+    "go",
+    "bf"
+  ],
+  "url": "https://www.codewars.com/kata/5839edaa6754d6fec10000a2",
+  "rank": {
+    "id": -6,
+    "name": "6 kyu",
+    "color": "yellow"
+  },
+  "createdAt": "2016-11-26T20:16:42.630Z",
+  "createdBy": {
+    "username": "user5036852",
+    "url": "https://www.codewars.com/users/user5036852"
+  },
+  "approvedBy": "GiacomoSorbi",
+  "description": "#Find the missing letter\n\nWrite a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.\n\nYou will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.<br>\nThe array will always contain letters in only one case.\n\nExample:\n```if-not:swift\n['a','b','c','d','f'] -> 'e'\n['O','Q','R','S'] -> 'P'\n```\n```swift\n[\"a\",\"b\",\"c\",\"d\",\"f\"] -> \"e\"\n[\"O\",\"Q\",\"R\",\"S\"] -> \"P\"\n```\n\n(Use the English alphabet with 26 letters!)\n\nHave fun coding it and please don't forget to vote and rank this kata! :-) \n\nI have also created other katas. Take a look if you enjoyed this kata!",
+  "apiVersion": 2,
+  "tags": [
+    "Mathematics",
+    "Algorithms"
+  ],
+  "totalAttempts": 222136,
+  "totalCompleted": 68753,
+  "totalStars": 1178
+}

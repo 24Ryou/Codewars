@@ -1,0 +1,54 @@
+{
+  "id": "513e08acc600c94f01000001",
+  "name": "RGB To Hex Conversion",
+  "slug": "rgb-to-hex-conversion",
+  "category": "algorithms",
+  "publishedAt": "2013-03-13T17:52:32.179Z",
+  "approvedAt": null,
+  "languages": [
+    "javascript",
+    "coffeescript",
+    "ruby",
+    "python",
+    "csharp",
+    "cpp",
+    "r",
+    "dart",
+    "fsharp",
+    "c",
+    "swift",
+    "nasm",
+    "lua",
+    "julia",
+    "kotlin",
+    "scala",
+    "rust",
+    "php",
+    "elixir",
+    "racket",
+    "clojure",
+    "factor",
+    "go",
+    "java"
+  ],
+  "url": "https://www.codewars.com/kata/513e08acc600c94f01000001",
+  "rank": {
+    "id": -5,
+    "name": "5 kyu",
+    "color": "yellow"
+  },
+  "createdAt": "2013-03-11T16:39:08.351Z",
+  "createdBy": {
+    "username": "jhoffner",
+    "url": "https://www.codewars.com/users/jhoffner"
+  },
+  "approvedBy": null,
+  "description": "The rgb function is incomplete. Complete it so that passing in RGB decimal values will result in a hexadecimal representation being returned. Valid decimal values for RGB are 0 - 255. Any values that fall out of that range must be rounded to the closest valid value.\n\nNote: Your answer should always be 6 characters long, the shorthand with 3 will not work here.\n\nThe following are examples of  expected output values:\n```lua\nkata.rgb(255, 255, 255) -- returns FFFFFF\nkata.rgb(255, 255, 300) -- returns FFFFFF\nkata.rgb(0, 0, 0) -- returns 000000\nkata.rgb(148, 0, 211) -- returns 9400D3\n```\n```javascript\nrgb(255, 255, 255) // returns FFFFFF\nrgb(255, 255, 300) // returns FFFFFF\nrgb(0,0,0) // returns 000000\nrgb(148, 0, 211) // returns 9400D3\n```\n```coffeescript\nrgb(255, 255, 255) # returns FFFFFF\nrgb(255, 255, 300) # returns FFFFFF\nrgb(0,0,0) # returns 000000\nrgb(148, 0, 211) # returns 9400D3\n```\n```ruby\nrgb(255, 255, 255) # returns FFFFFF\nrgb(255, 255, 300) # returns FFFFFF\nrgb(0,0,0) # returns 000000\nrgb(148, 0, 211) # returns 9400D3\n```\n```python\nrgb(255, 255, 255) # returns FFFFFF\nrgb(255, 255, 300) # returns FFFFFF\nrgb(0,0,0) # returns 000000\nrgb(148, 0, 211) # returns 9400D3\n```\n```elixir\nKata.rgb(255, 255, 255) # returns FFFFFF\nKata.rgb(255, 255, 300) # returns FFFFFF\nKata.rgb(0,0,0) # returns 000000\nKata.rgb(148, 0, 211) # returns 9400D3\n```\n```csharp\nRgb(255, 255, 255) # returns FFFFFF\nRgb(255, 255, 300) # returns FFFFFF\nRgb(0,0,0) # returns 000000\nRgb(148, 0, 211) # returns 9400D3\n```\n```fsharp\nrgb 255  255  255 // returns FFFFFF\nrgb 255  255  300 // returns FFFFFF\nrgb 0 0 0 // returns 000000\nrgb 148  0  211 // returns 9400D3\n```\n```c\nchar output[7] = {0};\n\nrgb(255, 255, 255, output); \noutput == \"FFFFFF\";\n\nrgb(255, 255, 300, output); \noutput == \"FFFFFF\";\n\nrgb(0, 0, 0, output); \noutput == \"000000\";\n\nrgb(148, 0, 211, output);\noutput == \"9400D3\";\n```\n```cpp\nrgb(255, 255, 255) # returns FFFFFF\nrgb(255, 255, 300) # returns FFFFFF\nrgb(0,0,0) # returns 000000\nrgb(148, 0, 211) # returns 9400D3\n```\n```r\nrgb(255, 255, 255)\n[1] \"FFFFFF\"\n\nrgb(255, 255, 300)\n[1] \"FFFFFF\"\n\nrgb(0, 0, 0)\n[1] \"000000\"\n\nrgb(148, 0, 211)\n[1] \"9400D3\"\n```\n```dart\nrgb(255, 255, 255) // returns FFFFFF\nrgb(255, 255, 300) // returns FFFFFF\nrgb(0, 0, 0)       // returns 000000\nrgb(148, 0, 211)   // returns 9400D3\n```\n```java\nRgbToHex.rgb(255, 255, 255) // returns FFFFFF\nRgbToHex.rgb(255, 255, 300) // returns FFFFFF\nRgbToHex.rgb(0, 0, 0)       // returns 000000\nRgbToHex.rgb(148, 0, 211)   // returns 9400D3\n```\n```nasm\nmov edi, 255\nmov esi, 255\nmov edx, 255\nmov rcx, outp\ncall rgb        ; The string in outp should be \"FFFFFF\"\n\nmov edi, 255\nmov esi, 255\nmov edx, 300\nmov rcx, outp\ncall rgb        ; The string in outp should be \"FFFFFF\"\n\nmov edi, 0\nmov esi, 0\nmov edx, 0\nmov rcx, outp\ncall rgb        ; The string in outp should be \"000000\"\n\nmov edi, 148\nmov esi,   0\nmov edx, 211\nmov rcx, outp\ncall rgb        ; The string in outp should be \"9400D3\"\n\nThe function should return the address of the string\n```\n```julia\nrgb(255, 255, 255) # returns FFFFFF\nrgb(255, 255, 300) # returns FFFFFF\nrgb(0, 0, 0) # returns 000000\nrgb(148, 0, 211) # returns 9400D3\n```\n```kotlin\nrgb(255, 255, 255) // returns FFFFFF\nrgb(255, 255, 300) // returns FFFFFF\nrgb(0, 0, 0) // returns 000000\nrgb(148, 0, 211) // returns 9400D3\n```\n```racket\n(rgb 255 255 255) ;; returns FFFFFF\n(rgb 255 255 300) ;; returns FFFFFF\n(rgb 0 0 0) ;; returns 000000\n(rgb 148 0 211) ;; returns 9400D3\n```\n```scala\nrgb(255, 255, 255) // FFFFFF\nrgb(255, 255, 300) // FFFFFF\nrgb(0, 0, 0)       // 000000\nrgb(148, 0, 211)   // 9400D3\n```\n```php\nrgb(255, 255, 255); // returns FFFFFF\nrgb(255, 255, 300); // returns FFFFFF\nrgb(0, 0, 0); // returns 000000\nrgb(148, 0, 211); // returns 9400D3\n```\n```clojure\n(rgb 255 255 255) ;; returns FFFFFF\n(rgb 255 255 300) ;; returns FFFFFF\n(rgb 0 0 0) ;; returns 000000\n(rgb 148 0 211) ;; returns 9400D3\n```\n```factor\n255 255 255 rgb ! returns FFFFFF\n255 255 300 rgb ! returns FFFFFF\n0 0 0 rgb ! returns 000000\n148 0 211 rgb ! returns 9400D3\n```\n",
+  "apiVersion": 2,
+  "tags": [
+    "Algorithms"
+  ],
+  "totalAttempts": 319325,
+  "totalCompleted": 81461,
+  "totalStars": 1571
+}

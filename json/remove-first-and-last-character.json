@@ -1,0 +1,60 @@
+{
+  "id": "56bc28ad5bdaeb48760009b0",
+  "name": "Remove First and Last Character",
+  "slug": "remove-first-and-last-character",
+  "category": "reference",
+  "publishedAt": "2016-02-11T21:14:31.636Z",
+  "approvedAt": "2016-11-19T19:30:31.918Z",
+  "languages": [
+    "javascript",
+    "ruby",
+    "python",
+    "coffeescript",
+    "csharp",
+    "haskell",
+    "typescript",
+    "php",
+    "c",
+    "bf",
+    "shell",
+    "java",
+    "elixir",
+    "cpp",
+    "go",
+    "scala",
+    "nasm",
+    "kotlin",
+    "julia",
+    "racket",
+    "rust",
+    "prolog",
+    "cfml",
+    "crystal",
+    "lua",
+    "r",
+    "perl",
+    "cobol",
+    "d"
+  ],
+  "url": "https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0",
+  "rank": {
+    "id": -8,
+    "name": "8 kyu",
+    "color": "white"
+  },
+  "createdAt": "2016-02-11T06:22:37.312Z",
+  "createdBy": {
+    "username": "Steadyx",
+    "url": "https://www.codewars.com/users/Steadyx"
+  },
+  "approvedBy": "user5036852",
+  "description": "It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string.  You don't have to worry with strings with less than two characters.",
+  "apiVersion": 2,
+  "tags": [
+    "Strings",
+    "Fundamentals"
+  ],
+  "totalAttempts": 369793,
+  "totalCompleted": 160854,
+  "totalStars": 937
+}
