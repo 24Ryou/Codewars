@@ -341,12 +341,29 @@ def linkSaver(url , name):
     code_response = 216 # linkSaver failed
     return code_response
 
+def getNameKata():
+  """
+  It opens the file `generator/kata.py`, reads the first line, splits it into two parts at the `# `,
+  and returns the second part
+  :return: The name of the kata
+  """
+  try:
+    slug = open('generator/kata.py').read().splitlines()[0].split('# ')[1]
+    return json.load(open(f'json/{slug}.json'))['name']
+  except:
+    code_response = 217 # getNameKata failed
+    return code_response
+
 def handler():
   print('Select From List Below:')
+  print('0 - Exit')
   print('1 - Load')
   print('2 - Save')
   print('3 - Remove')
+  print('4 - Get name of kata')
   match input("Enter the number: "):
+    case '0':
+      exit()
     case '1':
       url = input('Enter url: ')
       name = input('Enter name: ')
@@ -360,3 +377,8 @@ def handler():
       save(slug)
     case '3':
       remover(input('Enter the slug of kata: '))
+    case '4':
+      print(getNameKata())
+  print()
+  handler()
+
