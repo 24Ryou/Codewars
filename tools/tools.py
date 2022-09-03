@@ -379,6 +379,3 @@ def handler():
       remover(input('Enter the slug of kata: '))
     case '4':
       print(getNameKata())
-  print()
-  handler()
-
