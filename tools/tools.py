@@ -264,8 +264,11 @@ def save(slug : str):
     katapath = Path('katas') / data['rank']['name'] / slug
     createFolder(katapath)
 
-    file = [Path('generator/kata.py')]
+    file = [Path('app/kata.py')]
     transferFiles(file , katapath / 'solution.py')
+    file = [Path('app/kataTest.php')]
+    transferFiles(file , katapath / 'solution.php')
+    
     txt = "# " + data['name']
 
     f = list(getFOF('json' , slug , 'json'))[0]
@@ -283,21 +286,33 @@ def save(slug : str):
 
 def load(slug : str):
   """
-  It creates a file called kata.py in the generator folder, and writes the following text to it:
+  It loads the code from the database and returns the code to the user
   
-  {slug}
+  :param slug: The slug of the project
+  :type slug: str
+  """
+  try:
+    print('Wich Language You Want To Load?')
+    print('0 - All')
+    print('1 - Python')
+    print('2 - PHP')
+    match input('Enter the number: '):
+      case '0':
+        loadpy(slug)
+        loadphp(slug)
+      case '1':
+        loadpy(slug)
+      case '2':
+        loadphp(slug)
+  except:
+    code_response = 214 # load failed
+    return code_response
 
-  import codewars_test as test
-
-  -------------------------------- MY SOLUTION -------------------------------
-
-  ------------------------------ CLEVER SOLUTION -----------------------------
-
-  ----------------------------------- TEST -----------------------------------
+def loadpy(slug : str):
+  """
+  It takes a string and writes it to a file
   
-  The {slug} part is replaced with the slug of the kata you're working on
-  
-  :param slug: the slug of the kata you want to load
+  :param slug: the name of the kata
   :type slug: str
   """
   try:
@@ -305,9 +320,30 @@ def load(slug : str):
     c2 = '# ------------------------------ CLEVER SOLUTION ----------------------------- #'
     c3 = '# ----------------------------------- TEST ----------------------------------- #'
     txt = "\n".join([f'# {slug}' , 'import codewars_test as test' ,  c1 ,c2 , c3])
-    Path('generator/kata.py').write_text(txt)
+    Path('app/kata.py').write_text(txt)
   except:
-    code_response = 214 # load failed
+    code_response = 218 # loadpy failed
+    return code_response
+
+def loadphp(slug : str):
+  """
+  > It creates a new file called `kataTest.php` in the `app` directory, and writes the following text
+  to it:
+  
+  :param slug: the name of the kata
+  :type slug: str
+  """
+  try:
+    c1 = '/* ------------------------------- MY SOLUTION ------------------------------ */'
+    c2 = '/* ----------------------------- CLEVER SOLUTION ---------------------------- */'
+    c3 = '/* ---------------------------------- TEST ---------------------------------- */'
+    l0 = f'<!-- {slug} -->'
+    l1 = '<?php'
+    l2 = 'use PHPUnit\Framework\TestCase;'
+    txt = "\n".join([l0 , l1 , l2 ,  c1 ,c2 , c3])
+    Path('app/kataTest.php').write_text(txt)
+  except:
+    code_response = 218 # loadpy failed
     return code_response
 
 def linkSorter():
@@ -315,10 +351,10 @@ def linkSorter():
   It sorts the links in the link.txt file
   """
   try:
-    p = Path('generator/link.txt')
+    p = Path('app/link.txt')
     links = open(p).read().splitlines()
-    np = 'generator/temp.txt'
-    createFileForce('generator/temp.txt' , "".join(sorted(links)))
+    np = 'app/temp.txt'
+    createFileForce('app/temp.txt' , "".join(sorted(links)))
     links = open(np).read()
     open(p).write(links)
   except:
@@ -333,7 +369,7 @@ def linkSaver(url , name):
   :param name: The name of the link
   """
   try:
-    p = Path('generator/link.txt')
+    p = Path('app/link.txt')
     link = url + ', # ' + name
     open(p , 'a').write("\n"+link)
     linkSorter()
@@ -343,12 +379,12 @@ def linkSaver(url , name):
 
 def getNameKata():
   """
-  It opens the file `generator/kata.py`, reads the first line, splits it into two parts at the `# `,
+  It opens the file `app/kata.py`, reads the first line, splits it into two parts at the `# `,
   and returns the second part
   :return: The name of the kata
   """
   try:
-    slug = open('generator/kata.py').read().splitlines()[0].split('# ')[1]
+    slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
     return json.load(open(f'json/{slug}.json'))['name']
   except:
     code_response = 217 # getNameKata failed
@@ -366,15 +402,23 @@ def handler():
       exit()
     case '1':
       url = input('Enter url: ')
-      name = input('Enter name: ')
-      linkSaver(url , name)
       data = getJsonByURL(url)
+      linkSaver(url , data['name'])
       load(data['slug'])
       # p = Path('json') / f"{data['slug']}.json"
       dumper(f"{data['slug']}.json" , data , 'data')
     case '2':
-      slug = open('generator/kata.py').read().splitlines()[0].split('# ')[1]
-      save(slug)
+      print('Wich Language You Want Save?')
+      print('0 - All')
+      print('1 - Python')
+      print('2 - PHP')
+      match input('Enter the number: '):
+        case '0' , '1' :
+          slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
+          save(slug)
+        case '2':
+          slug = open('app/kataTest.php').read().splitlines()[0].split('<!-- ')[1].split(' -->')[0]
+          save(slug)
     case '3':
       remover(input('Enter the slug of kata: '))
     case '4':

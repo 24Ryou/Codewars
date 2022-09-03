@@ -6,5 +6,8 @@ DO NOT EDIT CHALL AND MARK_GEN.txt
 !/markdown_generator/utilities.py
 !/markdown_generator/escape.txt
 !/markdown_generator/manual_descriptions
-/test
 /tools/__pycache__
+/test
+/vendor
+composer.lock
+.phpunit.result.cache
