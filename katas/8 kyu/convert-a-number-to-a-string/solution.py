@@ -1,15 +1,19 @@
+# sum-of-digits-slash-digital-root
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-number_to_string = lambda x : str(x)
+def digital_root(n):
+  n = list(str(n))
+  if len(n) == 1:
+    return int(n[0])
+  return digital_root(sum(int(i) for i in n))
 # ------------------------------ CLEVER SOLUTION ----------------------------- #
-number_to_string = str
+def digital_root(n):
+  return n if n < 10 else digital_root(sum(map(int,str(n))))
+
+def digital_root(n):
+  return n%9 or n and 9
 # ----------------------------------- TEST ----------------------------------- #
-@test.describe("Fixed Tests")
-def basic_tests():
-    @test.it('Basic Test Cases')
-    def basic_test_cases():
-        test.assert_equals(number_to_string(67), '67')
-        test.assert_equals(number_to_string(79585), '79585')
-        test.assert_equals(number_to_string(79585), "79585")
-        test.assert_equals(number_to_string(1+2), '3')
-        test.assert_equals(number_to_string(1-2), '-1')
+test.assert_equals(digital_root(16), 7)
+test.assert_equals(digital_root(942), 6)
+test.assert_equals(digital_root(132189), 6)
+test.assert_equals(digital_root(493193), 2)

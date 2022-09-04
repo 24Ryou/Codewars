@@ -1,23 +1,25 @@
-<!-- even-or-odd -->
+<!-- sum-of-positive -->
 <?php
 use PHPUnit\Framework\TestCase;
 /* ------------------------------- MY SOLUTION ------------------------------ */
-function even_or_odd(int $n): string {
-  if ($n % 2 == 0) {
-    return 'Even';
+function positive_sum($arr) {
+  $p = array();
+  foreach ($arr as $item){
+    if ($item > 0) {
+      array_push($p , $item);
+    }
   }
-  else {
-    return 'Odd';
-  }
+  return array_sum(($p));
+
 }
 /* ----------------------------- CLEVER SOLUTION ---------------------------- */
 /* ---------------------------------- TEST ---------------------------------- */
-class EvenOrOddTest extends TestCase {
+class PositiveSumTest extends TestCase {
   public function testExamples() {
-    $this->assertEquals("Even", even_or_odd(2));
-    $this->assertEquals("Even", even_or_odd(0));
-    $this->assertEquals("Odd", even_or_odd(7));
-    $this->assertEquals("Odd", even_or_odd(1));
-    $this->assertEquals("Odd", even_or_odd(-1));
+    $this->assertEquals(15, positive_sum([1, 2, 3, 4, 5]));
+    $this->assertEquals(13, positive_sum([1, -2, 3, 4, 5]));
+    $this->assertEquals(0, positive_sum([]));
+    $this->assertEquals(0, positive_sum([-1, -2, -3, -4, -5]));
+    $this->assertEquals(9, positive_sum([-1, 2, 3, 4, -5]));
   }
 }

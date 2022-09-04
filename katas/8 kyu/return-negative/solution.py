@@ -1,16 +1,19 @@
+# sum-of-digits-slash-digital-root
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def make_negative( number ):
-    return number * -1 if number > 0 else number
+def digital_root(n):
+  n = list(str(n))
+  if len(n) == 1:
+    return int(n[0])
+  return digital_root(sum(int(i) for i in n))
 # ------------------------------ CLEVER SOLUTION ----------------------------- #
-def make_negative( number ):
-    return -abs(number)
+def digital_root(n):
+  return n if n < 10 else digital_root(sum(map(int,str(n))))
+
+def digital_root(n):
+  return n%9 or n and 9
 # ----------------------------------- TEST ----------------------------------- #
-@test.describe("Fixed Tests")
-def basic_tests():
-    @test.it('Basic Test Cases')
-    def basic_test_cases():
-        for n, expected in ((42,-42), (-9,-9), (0,0)):
-            actual = make_negative(n)
-            message = f"For n = {n}, expected {expected} but got {actual}"
-            test.assert_equals(actual, expected, message)
+test.assert_equals(digital_root(16), 7)
+test.assert_equals(digital_root(942), 6)
+test.assert_equals(digital_root(132189), 6)
+test.assert_equals(digital_root(493193), 2)
