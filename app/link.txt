@@ -82,3 +82,4 @@ https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1, # Counting Duplicates
 https://www.codewars.com/kata/514b92a657cdc65150000006, # Multiples of 3 or 5
 https://www.codewars.com/kata/51ba717bb08c1cd60f00002f, # Range Extraction
 https://www.codewars.com/kata/525f50e3b73515a6db000b83, # Create Phone Number
+https://www.codewars.com/kata/53da3dbb4a5168369a0000fe, # Even or Odd

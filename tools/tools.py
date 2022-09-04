@@ -1,3 +1,4 @@
+import math
 import os
 from pathlib import *
 import re
@@ -384,8 +385,10 @@ def getNameKata():
   :return: The name of the kata
   """
   try:
-    slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
-    return json.load(open(f'json/{slug}.json'))['name']
+      slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
+      slug2 = open('app/kataTest.php').read().splitlines()[0].split('<!-- ')[1].split(' -->')[0]
+      return "Python  - " + json.load(open(f'json/{slug}.json'))['name'] + '\n' + 'PHP - ' +json.load(open(f'json/{slug2}.json'))['name']
+
   except:
     code_response = 217 # getNameKata failed
     return code_response
