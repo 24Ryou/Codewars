@@ -353,11 +353,13 @@ def linkSorter():
   """
   try:
     p = Path('app/link.txt')
-    links = open(p).read().splitlines()
-    np = 'app/temp.txt'
-    createFileForce('app/temp.txt' , "".join(sorted(links)))
-    links = open(np).read()
-    open(p).write(links)
+    links = open(p).readlines()
+    l = [li.split(', # ')[0] for li in links]
+    n = [li.split(', # ')[1] for li in links]
+    d = dict(zip(l , n))
+    d = dict(sorted(d.items(), key=lambda item: item[1]))
+    ll = [k + ', # ' + v for k,v in d.items()]
+    open(p , 'w').write("".join(ll))
   except:
     code_response = 215 # linkSorter failed
     return code_response
@@ -429,3 +431,5 @@ def handler():
       remover(input('Enter the slug of kata: '))
     case '4':
       print(getNameKata())
+
+linkSorter()
