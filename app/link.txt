@@ -87,3 +87,4 @@ https://www.codewars.com/kata/541c8630095125aba6000c00, # Sum of Digits / Digita
 https://www.codewars.com/kata/5265326f5fda8eb1160004c8, # Convert a Number to a String!
 https://www.codewars.com/kata/55685cd7ad70877c23000102, # Return Negative
 https://www.codewars.com/kata/5715eaedb436cf5606000381, # Sum of positive
+https://www.codewars.com/kata/526571aae218b8ee490006f4, # Bit Counting

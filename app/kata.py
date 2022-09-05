@@ -1,19 +1,14 @@
-# sum-of-digits-slash-digital-root
+# bit-counting
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def digital_root(n):
-  n = list(str(n))
-  if len(n) == 1:
-    return int(n[0])
-  return digital_root(sum(int(i) for i in n))
+def count_bits(n):
+  return sum(1 for x in list(bin(n)[2:]) if x == '1')
 # ------------------------------ CLEVER SOLUTION ----------------------------- #
-def digital_root(n):
-  return n if n < 10 else digital_root(sum(map(int,str(n))))
-
-def digital_root(n):
-  return n%9 or n and 9
+def count_bits(n):
+    return bin(n).count("1")
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(digital_root(16), 7)
-test.assert_equals(digital_root(942), 6)
-test.assert_equals(digital_root(132189), 6)
-test.assert_equals(digital_root(493193), 2)
+test.assert_equals(count_bits(0), 0)
+test.assert_equals(count_bits(4), 1)
+test.assert_equals(count_bits(7), 3)
+test.assert_equals(count_bits(9), 2)
+test.assert_equals(count_bits(10), 2)

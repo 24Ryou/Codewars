@@ -371,9 +371,12 @@ def linkSaver(url , name):
   """
   try:
     p = Path('app/link.txt')
+    links = open(p).readlines()
     link = url + ', # ' + name
-    open(p , 'a').write("\n"+link)
-    linkSorter()
+    if link not in links:
+      open(p , 'a').write("\n"+link)
+      linkSorter()
+    else : return
   except:
     code_response = 216 # linkSaver failed
     return code_response
