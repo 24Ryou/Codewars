@@ -1,3 +1,4 @@
+# String repeat
 ~~~if:bf
 Write a program which accepts a single byte `n` and then a sequence of bytes `string` and outputs the `string` exactly `n` times.
 

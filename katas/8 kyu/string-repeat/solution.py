@@ -1,17 +1,14 @@
+# bit-counting
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def repeat_str(repeat, string):
-    return repeat * string
+def count_bits(n):
+  return sum(1 for x in list(bin(n)[2:]) if x == '1')
 # ------------------------------ CLEVER SOLUTION ----------------------------- #
-repeat_str = lambda a,b : a*b
-
-from operator import mul as repeat_str
+def count_bits(n):
+    return bin(n).count("1")
 # ----------------------------------- TEST ----------------------------------- #
-@test.describe('Fixed tests')
-def basic_tests():
-    @test.it('Basic Test Cases')
-    def basic_test_cases():
-        test.assert_equals(repeat_str(4, 'a'), 'aaaa')
-        test.assert_equals(repeat_str(3, 'hello '), 'hello hello hello ')
-        test.assert_equals(repeat_str(2, 'abc'), 'abcabc')
-    
+test.assert_equals(count_bits(0), 0)
+test.assert_equals(count_bits(4), 1)
+test.assert_equals(count_bits(7), 3)
+test.assert_equals(count_bits(9), 2)
+test.assert_equals(count_bits(10), 2)
