@@ -1,3 +1,4 @@
+from fileinput import close
 import math
 import os
 from pathlib import *
@@ -372,11 +373,13 @@ def linkSaver(url , name):
   :param name: The name of the link
   """
   try:
+    linkSorter()
     p = Path('app/link.txt')
     links = open(p).readlines()
     link = url + ', # ' + name
     if link not in links:
       open(p , 'a').write("\n"+link)
+      close(p)
       linkSorter()
     else : return
   except:
@@ -421,7 +424,10 @@ def handler():
       print('1 - Python')
       print('2 - PHP')
       match input('Enter the number: '):
-        case '0' , '1' :
+        case '0' :
+          slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
+          save(slug)
+        case '1' :
           slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
           save(slug)
         case '2':
