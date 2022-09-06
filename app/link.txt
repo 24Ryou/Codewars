@@ -87,3 +87,4 @@ https://www.codewars.com/kata/55c45be3b2079eccff00010f, # Your order, please
 
 https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0, # Remove First and Last Character
 https://www.codewars.com/kata/57eae20f5500ad98e50002c5, # Remove String Spaces
+https://www.codewars.com/kata/52597aa56021e91c93000cb0, # Moving Zeros To The End
