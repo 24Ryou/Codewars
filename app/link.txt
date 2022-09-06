@@ -32,12 +32,7 @@ https://www.codewars.com/kata/585d7d5adb20cf33cb000235, # Find the unique number
 https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3, # Find the unique string
 https://www.codewars.com/kata/523b4ff7adca849afe000035, # Function 1 - hello world
 https://www.codewars.com/kata/5772da22b89313a4d50012f7, # Grasshopper - Personalized Message
-https://www.codewars.com/kata/55d24f55d7dd296eb9000030, # Grasshopper - Summationhttps://www.codewars.com/kata/563b662a59afc2b5120000c6https://www.codewars.com/kata/554b4ac871d6813a03000035https://www.codewars.com/kata/5601409514fc93442500010bhttps://www.codewars.com/kata/5899dc03bc95b1bf1b0000adhttps://www.codewars.com/kata/54ba84be607a92aa900000f1, # Isograms
-https://www.codewars.com/kata/582cb0224e56e068d800003c, # Keep Hydrated!
-https://www.codewars.com/kata/52597aa56021e91c93000cb0, # Moving Zeros To The End
-https://www.codewars.com/kata/514b92a657cdc65150000006, # Multiples of 3 or 5
-https://www.codewars.com/kata/526dbd6c8c0eb53254000110, # Not very secure
-https://www.codewars.com/kata/5949481f86420f59480000e7, # Odd or Even?
+https://www.codewars.com/kata/55d24f55d7dd296eb9000030, # Grasshopper - Summationhttps://www.codewars.com/kata/563b662a59afc2b5120000c6https://www.codewars.com/kata/554b4ac871d6813a03000035https://www.codewars.com/kata/5601409514fc93442500010bhttps://www.codewars.com/kata/5899dc03bc95b1bf1b0000adhttps://www.codewars.com/kata/54ba84be607a92aa900000f1https://www.codewars.com/kata/582cb0224e56e068d800003chttps://www.codewars.com/kata/52597aa56021e91c93000cb0https://www.codewars.com/kata/514b92a657cdc65150000006https://www.codewars.com/kata/526dbd6c8c0eb53254000110https://www.codewars.com/kata/5949481f86420f59480000e7, # Odd or Even?
 https://www.codewars.com/kata/555086d53eac039a2a000083, # Opposites Attract
 https://www.codewars.com/kata/515bb423de843ea99400000a, # PaginationHelper
 https://www.codewars.com/kata/5552101f47fc5178b1000050, # Playing with digits
@@ -80,3 +75,5 @@ https://www.codewars.com/kata/54ff3102c1bad923760001f3, # Vowel Count
 https://www.codewars.com/kata/523a86aa4230ebb5420001e1, # Where my anagrams at
 https://www.codewars.com/kata/5266876b8f4bf2da9b000362, # Who likes it
 https://www.codewars.com/kata/55c45be3b2079eccff00010f, # Your order, please
+
+https://www.codewars.com/kata/526571aae218b8ee490006f4, # Bit Counting
