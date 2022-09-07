@@ -1,15 +1,17 @@
+# human-readable-time
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def greet(): return 'hello world!'
+def make_readable(seconds):
+  h = seconds/3600
+  m = (h - int(h)) * 60
+  s = (m - int(m)) * 60
+  return "{}:{}:{}".format(str(int(h)).zfill(2),str(int(m)).zfill(2),str(round(s)).zfill(2))
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
+def make_readable(s):
+  return '{:02}:{:02}:{:02}'.format(s / 3600, s / 60 % 60, s % 60)
 # ----------------------------------- TEST ----------------------------------- #
-@test.describe("Greet function")
-def _():
-    @test.it("Making sure greet exists")
-    def _():
-        try:
-            test.expect(greet)
-        except NameError:
-            test.fail("Greet doesn't exist")
-    @test.it("Testing that it returns hello world!")
-    def _():
-        test.assert_equals(greet(), "hello world!", "Greet doesn't return hello world!")
+test.assert_equals(make_readable(0), "00:00:00")
+test.assert_equals(make_readable(5), "00:00:05")
+test.assert_equals(make_readable(60), "00:01:00")
+test.assert_equals(make_readable(86399), "23:59:59")
+test.assert_equals(make_readable(359999), "99:59:59")
