@@ -1,15 +1,17 @@
+# human-readable-time
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def count_positives_sum_negatives(arr):
-    return [sum(1 for x in arr if x>0) ,sum(x for x in arr if x<0)] if len(arr) > 0 else arr
+def make_readable(seconds):
+  h = seconds/3600
+  m = (h - int(h)) * 60
+  s = (m - int(m)) * 60
+  return "{}:{}:{}".format(str(int(h)).zfill(2),str(int(m)).zfill(2),str(round(s)).zfill(2))
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
+def make_readable(s):
+  return '{:02}:{:02}:{:02}'.format(s / 3600, s / 60 % 60, s % 60)
 # ----------------------------------- TEST ----------------------------------- #
-@test.describe("Fixed Tests")
-def basic_tests():
-    @test.it('Basic Test Cases')
-    def basic_test_cases():
-        test.assert_equals(count_positives_sum_negatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]),[10,-65])
-        test.assert_equals(count_positives_sum_negatives([0, 2, 3, 0, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14]),[8,-50])
-        test.assert_equals(count_positives_sum_negatives([1]),[1,0])
-        test.assert_equals(count_positives_sum_negatives([-1]),[0,-1])
-        test.assert_equals(count_positives_sum_negatives([0,0,0,0,0,0,0,0,0]),[0,0])
-        test.assert_equals(count_positives_sum_negatives([]),[])
+test.assert_equals(make_readable(0), "00:00:00")
+test.assert_equals(make_readable(5), "00:00:05")
+test.assert_equals(make_readable(60), "00:01:00")
+test.assert_equals(make_readable(86399), "23:59:59")
+test.assert_equals(make_readable(359999), "99:59:59")

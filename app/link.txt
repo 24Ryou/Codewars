@@ -85,3 +85,4 @@ https://www.codewars.com/kata/582cb0224e56e068d800003c, # Keep Hydrated!
 https://www.codewars.com/kata/57356c55867b9b7a60000bd7, # Basic Mathematical Operations
 https://www.codewars.com/kata/551b4501ac0447318f0009cd, # Convert a Boolean to a String
 https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3, # Abbreviate a Two Word Name
+https://www.codewars.com/kata/576bb71bbbcf0951d5000044, # Count of positives / sum of negatives
