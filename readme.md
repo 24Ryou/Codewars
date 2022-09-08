@@ -1,6 +1,6 @@
 # Codewars Solution
 i wrote a app that organize my codewars solutions base on their 'rank'
-you could find i kata that i completed in katas folder
+you could find kata that i completed in katas folder
 if you like have full view on what kata i've done, there is a link.txt in 'app' folder that sort all katas link + their names on it!
 the main language is python ,  i recently add some php on my old solution, if there was any new solution by new language i added to the
 kata by 'solution.typelanguage" ex: solution.js or solution.php,

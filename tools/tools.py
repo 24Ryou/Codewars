@@ -349,40 +349,24 @@ def loadphp(slug : str):
     code_response = 218 # loadpy failed
     return code_response
 
-def linkSorter():
+def linkSaver():
   """
-  It sorts the links in the link.txt file
+  It gets all the json files in the json folder, loads them, and then gets the url and name of each
+  kata, and then writes them to a file called link.txt
   """
   try:
-    p = Path('app/link.txt')
-    links = open(p).readlines()
-    l = [li.split(', # ')[0] for li in links]
-    n = [li.split(', # ')[1] for li in links]
-    d = dict(zip(l , n))
-    d = dict(sorted(d.items(), key=lambda item: item[1]))
-    ll = [k + ', # ' + v for k,v in d.items()]
-    open(p , 'w').write("".join(ll))
-  except:
-    code_response = 215 # linkSorter failed
-    return code_response
+    pl = Path('app/link.txt')
+    katas = getAllFiles('json' , 'json')
+    datas = []
+    for kata in katas:
+      datas.append(json.load(open(kata)))
+    links = []
 
-def linkSaver(url , name):
-  """
-  It takes a url and a name, and appends it to a text file
-  
-  :param url: The url of the link
-  :param name: The name of the link
-  """
-  try:
-    linkSorter()
-    p = Path('app/link.txt')
-    links = open(p).readlines()
-    link = url + ', # ' + name
-    if link not in links:
-      open(p , 'a').write("\n"+link)
-      close(p)
-      linkSorter()
-    else : return
+    for data in datas:
+      link = data['url'] + ', # ' + data['name']
+      links.append(link)
+
+    open(pl , 'w').write("\n".join(links))
   except:
     code_response = 216 # linkSaver failed
     return code_response
@@ -415,10 +399,10 @@ def handler():
     case '1':
       url = input('Enter url: ')
       data = getJsonByURL(url)
-      linkSaver(url , data['name'])
       load(data['slug'])
       # p = Path('json') / f"{data['slug']}.json"
       dumper(f"{data['slug']}.json" , data , 'data')
+      linkSaver()
     case '2':
       print('Wich Language You Want Save?')
       print('0 - All')
@@ -439,4 +423,4 @@ def handler():
     case '4':
       print(getNameKata())
 
-linkSorter()
+linkSaver()
