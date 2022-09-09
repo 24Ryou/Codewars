@@ -21,6 +21,7 @@ https://www.codewars.com/kata/566fc12495810954b1000030, # Count the Digit
 https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1, # Counting Duplicates
 https://www.codewars.com/kata/54edbc7200b811e956000556, # Counting sheep...
 https://www.codewars.com/kata/525f50e3b73515a6db000b83, # Create Phone Number
+https://www.codewars.com/kata/54b724efac3d5402db00065e, # Decode the Morse code 
 https://www.codewars.com/kata/5467e4d82edf8bbf40000155, # Descending Order
 https://www.codewars.com/kata/545cedaa9943f7fe7b000048, # Detect Pangram
 https://www.codewars.com/kata/550f22f4d758534c1100025a, # Directions Reduction
