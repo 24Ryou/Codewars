@@ -1,11 +1,19 @@
-# create-phone-number
+# even-or-odd
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def create_phone_number(n):
-  return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+def even_or_odd(number): return 'Even' if number%2 == 0 else 'Odd'
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
+def even_or_odd(number):
+    return 'Odd' if number % 2 else 'Even'
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890")
-test.assert_equals(create_phone_number([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]), "(111) 111-1111")
-test.assert_equals(create_phone_number([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]), "(123) 456-7890")
-test.assert_equals(create_phone_number([0, 2, 3, 0, 5, 6, 0, 8, 9, 0]), "(023) 056-0890")
-test.assert_equals(create_phone_number([0, 0, 0, 0, 0, 0, 0, 0, 0, 0]), "(000) 000-0000")
+test.assert_equals(even_or_odd(2), "Even")
+test.assert_equals(even_or_odd(1), "Odd")
+test.assert_equals(even_or_odd(0), "Even")
+test.assert_equals(even_or_odd(1545452), "Even")
+test.assert_equals(even_or_odd(7), "Odd")
+test.assert_equals(even_or_odd(78), "Even")
+test.assert_equals(even_or_odd(17), "Odd")
+test.assert_equals(even_or_odd(74156741), "Odd")
+test.assert_equals(even_or_odd(100000), "Even")
+test.assert_equals(even_or_odd(-123), "Odd")
+test.assert_equals(even_or_odd(-456), "Even")

@@ -1,14 +1,14 @@
-# bit-counting
+# remove-string-spaces
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def count_bits(n):
-  return sum(1 for x in list(bin(n)[2:]) if x == '1')
-# ------------------------------ CLEVER SOLUTION ----------------------------- #
-def count_bits(n):
-    return bin(n).count("1")
+no_space = lambda x : x.replace(' ', '')
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(count_bits(0), 0)
-test.assert_equals(count_bits(4), 1)
-test.assert_equals(count_bits(7), 3)
-test.assert_equals(count_bits(9), 2)
-test.assert_equals(count_bits(10), 2)
+@test.describe("Fixed Tests")
+def basic_tests():
+    @test.it('Basic Test Cases')
+    def basic_test_cases():
+        test.assert_equals(no_space('8 j 8   mBliB8g  imjB8B8  jl  B'), '8j8mBliB8gimjB8B8jlB')
+        test.assert_equals(no_space('8 8 Bi fk8h B 8 BB8B B B  B888 c hl8 BhB fd'), '88Bifk8hB8BB8BBBB888chl8BhBfd')
+        test.assert_equals(no_space('8aaaaa dddd r     '), '8aaaaaddddr')
+        test.assert_equals(no_space('jfBm  gk lf8hg  88lbe8 '), 'jfBmgklf8hg88lbe8') 
+        test.assert_equals(no_space('8j aam'), '8jaam')

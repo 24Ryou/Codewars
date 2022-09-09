@@ -1,32 +1,18 @@
-# decode-the-morse-code
+# beginner-series-number-1-school-paperwork
 import codewars_test as test
-import re
 # -------------------------------- MY SOLUTION ------------------------------- #
-def decode_morse(morse_code):
-  MORSE_CODE = {
-    '.-': 'A', '-...': 'B', '-.-.': 'C', '-..': 'D', '.': 'E', '..-.': 'F',
-    '--.': 'G', '....': 'H', '..': 'I', '.---': 'J', '-.-': 'K', '.-..': 'L',
-    '--': 'M', '-.': 'N', '---': 'O', '.--.': 'P', '--.-': 'Q', '.-.': 'R',
-    '...': 'S', '-': 'T', '..-': 'U', '...-': 'V', '.--': 'W', '-..-': 'X',
-    '-.--': 'Y', '--..': 'Z',
-    '-----': '0', '.----': '1', '..---': '2', '...--': '3', '....-': '4',
-    '.....': '5', '-....': '6', '--...': '7', '---..': '8', '----.': '9',
-    '.-.-.-': '.', '--..--': ',', '..--..': '?', '.----.': "'", '-.-.--': '!',
-    '-..-.': '/', '-.--.': '(', '-.--.-': ')', '.-...': '&', '---...': ':',
-    '-.-.-.': ';', '-...-': '=', '.-.-.': '+', '-....-': '-', '..--.-': '_',
-    '.-..-.': '"', '...-..-': '$', '.--.-.': '@', '...---...': 'SOS'
-  }
-  return ' '.join(''.join(MORSE_CODE[i] for i in word.split(' ')) for word in morse_code.strip().split("   "))
+def paperwork(n, m):
+  return n*m if n>= 0 and m >= 0 else 0
+# ------------------------------ CLEVER SOLUTION ----------------------------- #
+def paperwork(n, m):
+    return max(n, 0)*max(m, 0)
 # ----------------------------------- TEST ----------------------------------- #
-def test_and_print(got, expected):
-    if got == expected:
-        test.expect(True)
-    else:
-        print("<pre style='display:inline'>Got {}, expected {}</pre>".format(got, expected))
-        test.expect(False)
-
-test.describe("Example from description")
-test_and_print(decode_morse('.... . -.--   .--- ..- -.. .'), 'HEY JUDE')
-
-test.describe("Your own tests")
-# Add more tests here
+@test.describe("Fixed Tests")
+def basic_tests():
+    @test.it('Basic Test Cases')
+    def basic_test_cases():
+        test.assert_equals(paperwork(5,5), 25, "Failed at Paperwork(5,5)")
+        test.assert_equals(paperwork(-5,5), 0, "Failed at Paperwork(-5,5)")
+        test.assert_equals(paperwork(5,-5), 0, "Failed at Paperwork(5,-5)")
+        test.assert_equals(paperwork(-5,-5), 0, "Failed at Paperwork(-5,-5)")
+        test.assert_equals(paperwork(5,0), 0, "Failed at Paperwork(5,0)")

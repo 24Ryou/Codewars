@@ -1,17 +1,20 @@
-# human-readable-time
+# keep-hydrated-1
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def make_readable(seconds):
-  h = seconds/3600
-  m = (h - int(h)) * 60
-  s = (m - int(m)) * 60
-  return "{}:{}:{}".format(str(int(h)).zfill(2),str(int(m)).zfill(2),str(round(s)).zfill(2))
+def litres(item) :
+  return int(item*.5)
 # ------------------------------ CLEVER SOLUTION ----------------------------- #
-def make_readable(s):
-  return '{:02}:{:02}:{:02}'.format(s / 3600, s / 60 % 60, s % 60)
+def litres(time):
+    return time // 2
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(make_readable(0), "00:00:00")
-test.assert_equals(make_readable(5), "00:00:05")
-test.assert_equals(make_readable(60), "00:01:00")
-test.assert_equals(make_readable(86399), "23:59:59")
-test.assert_equals(make_readable(359999), "99:59:59")
+@test.describe('Fixed tests')
+def basic_tests():
+    @test.it('Basic Test Cases')
+    def basic_test_cases():
+        test.assert_equals(litres(2), 1, 'should return 1 litre')
+        test.assert_equals(litres(1.4), 0, 'should return 0 litres')
+        test.assert_equals(litres(12.3), 6, 'should return 6 litres')
+        test.assert_equals(litres(0.82), 0, 'should return 0 litres')
+        test.assert_equals(litres(11.8), 5, 'should return 5 litres')
+        test.assert_equals(litres(1787), 893, 'should return 893 litres')
+        test.assert_equals(litres(0), 0, 'should return 0 litres')

@@ -131,7 +131,7 @@ def getJsonByURL(url):
   """
   try:
     response_API = requests.get(url+'.json')
-    print(response_API.status_code , url)
+    # print(response_API.status_code , url)
     return response_API.json()
   except:
     code_response = 207 # getJsonByUrl failed
@@ -254,7 +254,7 @@ def remover(slug):
     code_response = 212 # remover failed
     return code_response
 
-def save(slug : str):
+def save(slug : str , language : str):
   """
   It takes a slug, creates a folder, moves a file, and creates a markdown file
   
@@ -262,15 +262,23 @@ def save(slug : str):
   :type slug: str
   """
   try:
+
     data = json.load(open(f'json/{slug}.json'))
     katapath = Path('katas') / data['rank']['name'] / slug
     createFolder(katapath)
 
-    file = [Path('app/kata.py')]
-    transferFiles(file , katapath / 'solution.py')
-    file = [Path('app/kataTest.php')]
-    transferFiles(file , katapath / 'solution.php')
-    
+    pyfile = [Path('app/kata.py')]
+    phpfile = [Path('app/kataTest.php')]
+
+    match language:
+      case 'All':
+        transferFiles(pyfile , katapath / 'solution.py')
+        transferFiles(phpfile , katapath / 'solution.php')
+      case 'PHP':
+        transferFiles(phpfile , katapath / 'solution.php')
+      case 'Python':
+        transferFiles(pyfile , katapath / 'solution.py')
+
     txt = "# " + data['name']
 
     f = list(getFOF('json' , slug , 'json'))[0]
@@ -411,13 +419,13 @@ def handler():
       match input('Enter the number: '):
         case '0' :
           slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
-          save(slug)
+          save(slug , 'All')
         case '1' :
           slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
-          save(slug)
+          save(slug , 'Python')
         case '2':
           slug = open('app/kataTest.php').read().splitlines()[0].split('<!-- ')[1].split(' -->')[0]
-          save(slug)
+          save(slug , 'PHP')
     case '3':
       remover(input('Enter the slug of kata: '))
     case '4':

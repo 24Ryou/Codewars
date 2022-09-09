@@ -1,17 +1,25 @@
-# human-readable-time
+# basic-mathematical-operations
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def make_readable(seconds):
-  h = seconds/3600
-  m = (h - int(h)) * 60
-  s = (m - int(m)) * 60
-  return "{}:{}:{}".format(str(int(h)).zfill(2),str(int(m)).zfill(2),str(round(s)).zfill(2))
+def basic_op (operator, value1, value2):
+  match operator:
+    case '+':
+      return value1 + value2
+    case '-':
+      return value1 - value2
+    case '*':
+      return value1 * value2
+    case '/':
+      return value1/value2
 # ------------------------------ CLEVER SOLUTION ----------------------------- #
-def make_readable(s):
-  return '{:02}:{:02}:{:02}'.format(s / 3600, s / 60 % 60, s % 60)
+def basic_op(operator, value1, value2):
+    return eval("{}{}{}".format(value1, operator, value2))
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(make_readable(0), "00:00:00")
-test.assert_equals(make_readable(5), "00:00:05")
-test.assert_equals(make_readable(60), "00:01:00")
-test.assert_equals(make_readable(86399), "23:59:59")
-test.assert_equals(make_readable(359999), "99:59:59")
+@test.describe("Fixed Tests")
+def fixed_tests():
+    @test.it('Basic Test Cases')
+    def basic_test_cases():
+        test.assert_equals(basic_op('+', 4, 7), 11)
+        test.assert_equals(basic_op('-', 15, 18), -3)
+        test.assert_equals(basic_op('*', 5, 5), 25)
+        test.assert_equals(basic_op('/', 49, 7), 7)

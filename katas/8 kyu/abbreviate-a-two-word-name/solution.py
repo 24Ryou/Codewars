@@ -1,17 +1,17 @@
-# human-readable-time
+# abbreviate-a-two-word-name
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def make_readable(seconds):
-  h = seconds/3600
-  m = (h - int(h)) * 60
-  s = (m - int(m)) * 60
-  return "{}:{}:{}".format(str(int(h)).zfill(2),str(int(m)).zfill(2),str(round(s)).zfill(2))
+abbrev_name = lambda x: ".".join([x[0] , x.split(" ")[1][0]]).upper()
 # ------------------------------ CLEVER SOLUTION ----------------------------- #
-def make_readable(s):
-  return '{:02}:{:02}:{:02}'.format(s / 3600, s / 60 % 60, s % 60)
+def abbrevName(name):
+    return '.'.join(w[0] for w in name.split()).upper()
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(make_readable(0), "00:00:00")
-test.assert_equals(make_readable(5), "00:00:05")
-test.assert_equals(make_readable(60), "00:01:00")
-test.assert_equals(make_readable(86399), "23:59:59")
-test.assert_equals(make_readable(359999), "99:59:59")
+@test.describe("Fixed Tests")
+def basic_tests():
+    @test.it('Basic Test Cases')
+    def basic_test_cases():
+        test.assert_equals(abbrev_name("Sam Harris"), "S.H")
+        test.assert_equals(abbrev_name("patrick feenan"), "P.F")
+        test.assert_equals(abbrev_name("Evan C"), "E.C")
+        test.assert_equals(abbrev_name("P Favuzzi"), "P.F")
+        test.assert_equals(abbrev_name("David Mendieta"), "D.M")

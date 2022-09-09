@@ -1,14 +1,16 @@
-# bit-counting
+# remove-first-and-last-character
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def count_bits(n):
-  return sum(1 for x in list(bin(n)[2:]) if x == '1')
-# ------------------------------ CLEVER SOLUTION ----------------------------- #
-def count_bits(n):
-    return bin(n).count("1")
+def remove_char(s):
+  return s[1:-1]
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(count_bits(0), 0)
-test.assert_equals(count_bits(4), 1)
-test.assert_equals(count_bits(7), 3)
-test.assert_equals(count_bits(9), 2)
-test.assert_equals(count_bits(10), 2)
+@test.describe("Fixed Tests")
+def basic_tests():
+    @test.it('Basic Test Cases')
+    def basic_test_cases():
+        test.assert_equals(remove_char('eloquent'), 'loquen')
+        test.assert_equals(remove_char('country'), 'ountr')
+        test.assert_equals(remove_char('person'), 'erso')
+        test.assert_equals(remove_char('place'), 'lac')
+        test.assert_equals(remove_char('ok'), '')
+        test.assert_equals(remove_char('ooopsss'), 'oopss')

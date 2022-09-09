@@ -1,14 +1,12 @@
-# bit-counting
+# string-repeat
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def count_bits(n):
-  return sum(1 for x in list(bin(n)[2:]) if x == '1')
-# ------------------------------ CLEVER SOLUTION ----------------------------- #
-def count_bits(n):
-    return bin(n).count("1")
+repeat_str = lambda a,b : a*b
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(count_bits(0), 0)
-test.assert_equals(count_bits(4), 1)
-test.assert_equals(count_bits(7), 3)
-test.assert_equals(count_bits(9), 2)
-test.assert_equals(count_bits(10), 2)
+@test.describe('Fixed tests')
+def basic_tests():
+    @test.it('Basic Test Cases')
+    def basic_test_cases():
+        test.assert_equals(repeat_str(4, 'a'), 'aaaa')
+        test.assert_equals(repeat_str(3, 'hello '), 'hello hello hello ')
+        test.assert_equals(repeat_str(2, 'abc'), 'abcabc')

@@ -1,19 +1,21 @@
-# sum-of-digits-slash-digital-root
+# sum-of-positive
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def digital_root(n):
-  n = list(str(n))
-  if len(n) == 1:
-    return int(n[0])
-  return digital_root(sum(int(i) for i in n))
-# ------------------------------ CLEVER SOLUTION ----------------------------- #
-def digital_root(n):
-  return n if n < 10 else digital_root(sum(map(int,str(n))))
-
-def digital_root(n):
-  return n%9 or n and 9
+def positive_sum(arr):
+    return sum(x for x in arr if x > 0)
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(digital_root(16), 7)
-test.assert_equals(digital_root(942), 6)
-test.assert_equals(digital_root(132189), 6)
-test.assert_equals(digital_root(493193), 2)
+@test.describe("positive_sum")
+def fixed_tests():
+    @test.it('Basic Test Cases')
+    def basic_test_cases():
+        test.assert_equals(positive_sum([1,2,3,4,5]),15)
+        test.assert_equals(positive_sum([1,-2,3,4,5]),13)
+        test.assert_equals(positive_sum([-1,2,3,4,-5]),9)
+        
+    @test.it("returns 0 when array is empty")
+    def empty_case():
+        test.assert_equals(positive_sum([]),0)      
+        
+    @test.it("returns 0 when all elements are negative")
+    def negative_case():
+        test.assert_equals(positive_sum([-1,-2,-3,-4,-5]),0)
