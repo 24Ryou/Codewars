@@ -1,13 +1,5 @@
-from fileinput import close
-import math
-import os
 from pathlib import *
-import re
-import shutil
-import unicodedata
-import requests
-import json
-
+import os , re , shutil , unicodedata , requests , json , clipboard as cb
 
 code_response = 100 # everything run successfully!
 
@@ -394,6 +386,41 @@ def getNameKata():
     code_response = 217 # getNameKata failed
     return code_response
 
+def whatPHP():
+  """
+  It takes a list of directories, and a string, and returns the first directory in the list that
+  contains the string
+  :return: A generator object
+  """
+  q = getFOF('katas/*/*' , 'dir')
+
+  l = sorted(set([Path(i).parent.name for i in q]))
+  print('Which rank you want?')
+  for x in l: print(x.strip().split()[0]  + ' - ' + x)
+  n = input('Enter your item code: ')
+
+  q = getFOF('katas/*/*' , 'dir')
+  return next(whatPHPGen(q , n))
+
+def whatPHPGen(q , n):
+  """
+  It takes a list of directories and a number, and for each directory in the list, it checks if the
+  directory contains a file called `solution.php` and if the directory's parent directory is called `n
+  kyu`. If both conditions are met, it copies the url of the directory to the clipboard and yields the
+  url and the name of the directory
+  
+  :param q: the path to the directory where the solutions are stored
+  :param n: The kyu of the kata
+  """
+  for i in q :
+    php = 'solution.php'
+    j = i / php
+    if j.is_file() == False and Path(i).parent.name == "{} kyu".format(n):
+      x = Path(i).name
+      data = json.load(open('json/{}.json'.format(x)))
+      cb.copy(data['url'])
+      yield (f"{data['url']+'/train/php'}, {data['name']}")
+
 def handler():
   print('Select From List Below:')
   print('0 - Exit')
@@ -401,6 +428,7 @@ def handler():
   print('2 - Save')
   print('3 - Remove')
   print('4 - Get name of kata')
+  print('5 - Get unsolved php kata')
   match input("Enter the number: "):
     case '0':
       exit()
@@ -430,5 +458,5 @@ def handler():
       remover(input('Enter the slug of kata: '))
     case '4':
       print(getNameKata())
-
-linkSaver()
+    case '5':
+      print(whatPHP())
