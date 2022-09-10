@@ -1,5 +1,11 @@
 from pathlib import *
-import os , re , shutil , unicodedata , requests , json , clipboard as cb
+import os 
+import re 
+import shutil 
+import unicodedata 
+import requests 
+import json 
+import clipboard as cb
 
 code_response = 100 # everything run successfully!
 
@@ -363,7 +369,10 @@ def linkSaver():
     links = []
 
     for data in datas:
-      link = data['url'] + ', # ' + data['name']
+      mylng = 'Python'
+      if 'php' in data['languages']:
+        mylng  += ' - ' + 'PHP'
+      link = data['url'] + ', # ' + data['name'] +', # ' + data['rank']['name'] + ', # ' + mylng
       links.append(link)
 
     open(pl , 'w').write("\n".join(links))
@@ -413,11 +422,11 @@ def whatPHPGen(q , n):
   :param n: The kyu of the kata
   """
   for i in q :
+    x = Path(i).name
+    data = json.load(open('json/{}.json'.format(x)))
     php = 'solution.php'
     j = i / php
-    if j.is_file() == False and Path(i).parent.name == "{} kyu".format(n):
-      x = Path(i).name
-      data = json.load(open('json/{}.json'.format(x)))
+    if j.is_file() == False and Path(i).parent.name == "{} kyu".format(n) and 'php' in data['languages']:
       cb.copy(data['url'])
       yield (f"{data['url']+'/train/php'}, {data['name']}")
 
