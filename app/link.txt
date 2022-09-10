@@ -1,5 +1,6 @@
 https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3, # Abbreviate a Two Word Name
 https://www.codewars.com/kata/550498447451fbbd7600041c, # Are they the "same"?
+https://www.codewars.com/kata/523f5d21c841566fde000009, # Array.diff
 https://www.codewars.com/kata/57356c55867b9b7a60000bd7, # Basic Mathematical Operations
 https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd, # Beginner Series #1 School Paperwork
 https://www.codewars.com/kata/55f2b110f61eb01779000053, # Beginner Series #3 Sum of Numbers

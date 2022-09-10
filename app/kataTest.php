@@ -1,26 +1,15 @@
-<!-- grasshopper-summation -->
+<!-- calculate-average -->
 <?php
 use PHPUnit\Framework\TestCase;
 /* ------------------------------- MY SOLUTION ------------------------------ */
-function summation($n) {
-  $sum = 0;
-  while($n > 0){
-    $sum = $sum + $n;
-    $n -= 1;
-  }
-  return $sum;
-}
-/* ----------------------------- CLEVER SOLUTION ---------------------------- */
-function summation($n) {
-  return array_sum(range(1, $n));
+function find_average($array) {
+  return array_sum($array)/count($array);
 }
 /* ---------------------------------- TEST ---------------------------------- */
-class SummationTest extends TestCase {
-  public function testThatSummationWorksForExampleTests() {
-    $this->assertEquals(summation(1), 1);
-    $this->assertEquals(summation(2), 3);
-    $this->assertEquals(summation(3), 6);
-    $this->assertEquals(summation(4), 10);
-    $this->assertEquals(summation(5), 15);
+class CalculateAverageTest extends TestCase {
+  public function testExamples() {
+    $this->assertEquals(1, find_average([1, 1, 1]));
+    $this->assertEquals(2, find_average([1, 2, 3]));
+    $this->assertEquals(2.5, find_average([1, 2, 3, 4]));
   }
 }
