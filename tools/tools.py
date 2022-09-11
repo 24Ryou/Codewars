@@ -344,12 +344,12 @@ def loadphp(slug : str):
   try:
     c1 = '/* ------------------------------- MY SOLUTION ------------------------------ */'
     c2 = '/* ----------------------------- CLEVER SOLUTION ---------------------------- */'
-    c3 = '/* ------------------------------ BEST PRACTICE ----------------------------- */'
+    # c3 = '/* ------------------------------ BEST PRACTICE ----------------------------- */'
     c4 = '/* ---------------------------------- TEST ---------------------------------- */'
     l0 = f'<!-- {slug} -->'
     l1 = '<?php'
     l2 = 'use PHPUnit\Framework\TestCase;'
-    txt = "\n".join([l0 , l1 , l2 ,  c1 ,c2 , c3 , c4])
+    txt = "\n".join([l0 , l1 , l2 ,  c1 ,c2 , c4])
     Path('app/kataTest.php').write_text(txt)
   except:
     code_response = 218 # loadpy failed
