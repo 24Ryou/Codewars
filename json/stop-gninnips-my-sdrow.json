@@ -1,0 +1,57 @@
+{
+  "id": "5264d2b162488dc400000001",
+  "name": "Stop gninnipS My sdroW!",
+  "slug": "stop-gninnips-my-sdrow",
+  "category": "algorithms",
+  "publishedAt": "2013-10-21T07:21:38.528Z",
+  "approvedAt": null,
+  "languages": [
+    "javascript",
+    "coffeescript",
+    "ruby",
+    "haskell",
+    "java",
+    "python",
+    "csharp",
+    "typescript",
+    "cpp",
+    "scala",
+    "fsharp",
+    "clojure",
+    "julia",
+    "kotlin",
+    "go",
+    "groovy",
+    "php",
+    "elixir",
+    "crystal",
+    "dart",
+    "prolog",
+    "swift",
+    "rust",
+    "factor",
+    "c",
+    "lua"
+  ],
+  "url": "https://www.codewars.com/kata/5264d2b162488dc400000001",
+  "rank": {
+    "id": -6,
+    "name": "6 kyu",
+    "color": "yellow"
+  },
+  "createdAt": "2013-10-21T07:07:29.309Z",
+  "createdBy": {
+    "username": "xDranik",
+    "url": "https://www.codewars.com/users/xDranik"
+  },
+  "approvedBy": null,
+  "description": "Write a function that takes in a string of one or more words, and returns the same string, but with all five or more letter words reversed (Just like the name of this Kata). Strings passed in will consist of only letters and spaces. Spaces will be included only when more than one word is present.\n\nExamples:\n```\nspinWords( \"Hey fellow warriors\" ) => returns \"Hey wollef sroirraw\" \nspinWords( \"This is a test\") => returns \"This is a test\" \nspinWords( \"This is another test\" )=> returns \"This is rehtona test\"\n```",
+  "apiVersion": 2,
+  "tags": [
+    "Strings",
+    "Algorithms"
+  ],
+  "totalAttempts": 675350,
+  "totalCompleted": 181332,
+  "totalStars": 2420
+}
