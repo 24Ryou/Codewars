@@ -31,6 +31,7 @@ https://www.codewars.com/kata/53da3dbb4a5168369a0000fe, # Even or Odd, # 8 kyu, 
 https://www.codewars.com/kata/57eae65a4321032ce000002d, # Fake Binary, # 8 kyu, # Python - PHP
 https://www.codewars.com/kata/5839edaa6754d6fec10000a2, # Find the missing letter, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/54da5a58ea159efa38000836, # Find the odd int, # 6 kyu, # Python - PHP
+https://www.codewars.com/kata/5526fc09a1bbd946250002dc, # Find The Parity Outlier, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/585d7d5adb20cf33cb000235, # Find the unique number, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3, # Find the unique string, # 5 kyu, # Python - PHP
 https://www.codewars.com/kata/523b4ff7adca849afe000035, # Function 1 - hello world, # 8 kyu, # Python - PHP
