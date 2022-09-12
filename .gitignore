@@ -12,3 +12,4 @@ composer.lock
 .phpunit.result.cache
 php.md
 python.md
+tools/__pycache__

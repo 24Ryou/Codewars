@@ -402,8 +402,21 @@ def whatPHP():
   :return: A generator object
   """
   q = getFOF('katas/*/*' , 'dir')
+  jsf = getAllFiles('json' , 'json')
+  datas = []
+  pp = []
+  
+  for js in jsf:
+    data = json.load(open(js))
+    if 'php' in data['languages']:
+      datas.append(data)
 
-  l = sorted(set([Path(i).parent.name for i in q]))
+  slugs = [data['slug'] for data in datas]
+  for p in q :
+    if Path(p).name in slugs:
+      pp.append(p)
+
+  l = sorted(set([Path(i).parent.name for i in pp if Path(i / 'solution.php').is_file() == False]))
   print('Which rank you want?')
   for x in l: print(x.strip().split()[0]  + ' - ' + x)
   n = input('Enter your item code: ')
