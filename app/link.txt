@@ -50,6 +50,7 @@ https://www.codewars.com/kata/526dbd6c8c0eb53254000110, # Not very secure, # 5 k
 https://www.codewars.com/kata/5949481f86420f59480000e7, # Odd or Even?, # 7 kyu, # Python - PHP
 https://www.codewars.com/kata/555086d53eac039a2a000083, # Opposites Attract, # 8 kyu, # Python - PHP
 https://www.codewars.com/kata/515bb423de843ea99400000a, # PaginationHelper, # 5 kyu, # Python
+https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec, # Persistent Bugger., # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/5552101f47fc5178b1000050, # Playing with digits, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/54d512e62a5e54c96200019e, # Primes in numbers, # 5 kyu, # Python - PHP
 https://www.codewars.com/kata/56541980fa08ab47a0000040, # Printer Errors, # 7 kyu, # Python - PHP
