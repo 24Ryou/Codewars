@@ -1,0 +1,44 @@
+{
+  "id": "5518a860a73e708c0a000027",
+  "name": "Last digit of a huge number",
+  "slug": "last-digit-of-a-huge-number",
+  "category": "algorithms",
+  "publishedAt": "2015-03-30T02:46:51.888Z",
+  "approvedAt": "2016-05-24T21:27:08.746Z",
+  "languages": [
+    "haskell",
+    "javascript",
+    "python",
+    "go",
+    "rust",
+    "csharp",
+    "cpp",
+    "swift",
+    "coffeescript",
+    "ruby",
+    "c",
+    "prolog",
+    "cobol"
+  ],
+  "url": "https://www.codewars.com/kata/5518a860a73e708c0a000027",
+  "rank": {
+    "id": -3,
+    "name": "3 kyu",
+    "color": "blue"
+  },
+  "createdAt": "2015-03-30T01:35:28.524Z",
+  "createdBy": {
+    "username": "Bodigrim",
+    "url": "https://www.codewars.com/users/Bodigrim"
+  },
+  "approvedBy": "jhoffner",
+  "description": "For a given list `[x1, x2, x3, ..., xn]` compute the last (decimal) digit of \n`x1 ^ (x2 ^ (x3 ^ (... ^ xn)))`. \n\nE. g., with the input `[3, 4, 2]`, your code should return `1`  because `3 ^ (4 ^ 2) = 3 ^ 16 = 43046721`.\n\n_Beware:_ powers grow incredibly fast. For example, `9 ^ (9 ^ 9)` has more than 369 millions of digits. `lastDigit` has to deal with such numbers efficiently.\n\n_Corner cases:_ we assume that `0 ^ 0 = 1` and that `lastDigit` of an empty list equals to 1.\n\nThis kata generalizes [Last digit of a large number](http://www.codewars.com/kata/last-digit-of-a-large-number/haskell); you may find useful to solve it beforehand.\n",
+  "apiVersion": 2,
+  "tags": [
+    "Algorithms",
+    "Mathematics"
+  ],
+  "totalAttempts": 125963,
+  "totalCompleted": 5344,
+  "totalStars": 1382
+}

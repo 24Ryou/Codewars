@@ -45,6 +45,7 @@ https://www.codewars.com/kata/52685f7382004e774f0001f7, # Human Readable Time, #
 https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad, # Invert values, # 8 kyu, # Python - PHP
 https://www.codewars.com/kata/54ba84be607a92aa900000f1, # Isograms, # 7 kyu, # Python - PHP
 https://www.codewars.com/kata/582cb0224e56e068d800003c, # Keep Hydrated!, # 8 kyu, # Python - PHP
+https://www.codewars.com/kata/5518a860a73e708c0a000027, # Last digit of a huge number, # 3 kyu, # Python
 https://www.codewars.com/kata/52597aa56021e91c93000cb0, # Moving Zeros To The End, # 5 kyu, # Python - PHP
 https://www.codewars.com/kata/514b92a657cdc65150000006, # Multiples of 3 or 5, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/526dbd6c8c0eb53254000110, # Not very secure, # 5 kyu, # Python - PHP
