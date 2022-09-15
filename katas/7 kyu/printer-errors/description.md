@@ -1,3 +1,4 @@
+# Printer Errors
 In a factory a printer prints labels for boxes. For one kind of boxes
 the printer has to use colors which, for the sake of simplicity,
 are named with letters from `a to m`. 
