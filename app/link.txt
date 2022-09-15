@@ -28,6 +28,7 @@ https://www.codewars.com/kata/545cedaa9943f7fe7b000048, # Detect Pangram, # 6 ky
 https://www.codewars.com/kata/550f22f4d758534c1100025a, # Directions Reduction, # 5 kyu, # Python - PHP
 https://www.codewars.com/kata/52fba66badcd10859f00097e, # Disemvowel Trolls, # 7 kyu, # Python
 https://www.codewars.com/kata/5287e858c6b5a9678200083c, # Does my number look big in this?, # 6 kyu, # Python - PHP
+https://www.codewars.com/kata/5679aa472b8f57fb8c000047, # Equal Sides Of An Array, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/53da3dbb4a5168369a0000fe, # Even or Odd, # 8 kyu, # Python - PHP
 https://www.codewars.com/kata/57eae65a4321032ce000002d, # Fake Binary, # 8 kyu, # Python - PHP
 https://www.codewars.com/kata/5839edaa6754d6fec10000a2, # Find the missing letter, # 6 kyu, # Python - PHP
