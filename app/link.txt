@@ -44,6 +44,7 @@ https://www.codewars.com/kata/554b4ac871d6813a03000035, # Highest and Lowest, # 
 https://www.codewars.com/kata/5601409514fc93442500010b, # How good are you really?, # 8 kyu, # Python - PHP
 https://www.codewars.com/kata/52685f7382004e774f0001f7, # Human Readable Time, # 5 kyu, # Python - PHP
 https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad, # Invert values, # 8 kyu, # Python - PHP
+https://www.codewars.com/kata/5262119038c0985a5b00029f, # Is a number prime?, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/54ba84be607a92aa900000f1, # Isograms, # 7 kyu, # Python - PHP
 https://www.codewars.com/kata/582cb0224e56e068d800003c, # Keep Hydrated!, # 8 kyu, # Python - PHP
 https://www.codewars.com/kata/5518a860a73e708c0a000027, # Last digit of a huge number, # 3 kyu, # Python
