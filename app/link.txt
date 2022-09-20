@@ -6,6 +6,7 @@ https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd, # Beginner Series #1 Sch
 https://www.codewars.com/kata/55f2b110f61eb01779000053, # Beginner Series #3 Sum of Numbers, # 7 kyu, # Python
 https://www.codewars.com/kata/551f37452ff852b7bd000139, # Binary Addition, # 7 kyu, # Python
 https://www.codewars.com/kata/526571aae218b8ee490006f4, # Bit Counting, # 6 kyu, # Python - PHP
+https://www.codewars.com/kata/5544c7a5cb454edb3c000047, # Bouncing Balls, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/5592e3bd57b64d00f3000047, # Build a pile of Cubes, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/57675f3dedc6f728ee000256, # Build Tower Advanced, # 6 kyu, # Python
 https://www.codewars.com/kata/576757b1df89ecf5bd00073b, # Build Tower, # 6 kyu, # Python - PHP
