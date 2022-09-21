@@ -1,3 +1,4 @@
+https://www.codewars.com/kata/539a0e4d85e3425cb0000a88, # A Chain adding function, # 5 kyu, # Python
 https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3, # Abbreviate a Two Word Name, # 8 kyu, # Python - PHP
 https://www.codewars.com/kata/550498447451fbbd7600041c, # Are they the "same"?, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/523f5d21c841566fde000009, # Array.diff, # 6 kyu, # Python - PHP
