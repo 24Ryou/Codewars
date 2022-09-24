@@ -102,5 +102,6 @@ https://www.codewars.com/kata/54e6533c92449cc251001667, # Unique In Order, # 6 k
 https://www.codewars.com/kata/52774a314c2333f0a7000688, # Valid Parentheses, # 5 kyu, # Python
 https://www.codewars.com/kata/54ff3102c1bad923760001f3, # Vowel Count, # 7 kyu, # Python - PHP
 https://www.codewars.com/kata/523a86aa4230ebb5420001e1, # Where my anagrams at?, # 5 kyu, # Python - PHP
+https://www.codewars.com/kata/550554fd08b86f84fe000a58, # Which are  in?, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/5266876b8f4bf2da9b000362, # Who likes it?, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/55c45be3b2079eccff00010f, # Your order,  please, # 6 kyu, # Python
