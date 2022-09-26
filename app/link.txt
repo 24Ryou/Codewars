@@ -83,6 +83,7 @@ https://www.codewars.com/kata/530e15517bc88ac656000716, # Rot13, # 5 kyu, # Pyth
 https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9, # Shortest Word, # 7 kyu, # Python - PHP
 https://www.codewars.com/kata/57814d79a56c88e3e0000786, # Simple Encryption #1 - Alternating Split, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/5782b5ad202c0ef42f0012cb, # Simple Encryption #2 - Index-Difference, # 5 kyu, # Python
+https://www.codewars.com/kata/520b9d2ad5c005041100000f, # Simple Pig Latin, # 5 kyu, # Python
 https://www.codewars.com/kata/578aa45ee9fd15ff4600090d, # Sort the odd, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/515de9ae9dcfc28eb6000001, # Split Strings, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/546e2562b03326a88e000020, # Square Every Digit, # 7 kyu, # Python - PHP
