@@ -1,0 +1,45 @@
+{
+  "id": "54521e9ec8e60bc4de000d6c",
+  "name": "Maximum  subarray sum",
+  "slug": "maximum-subarray-sum",
+  "category": "reference",
+  "publishedAt": "2014-10-30T12:00:48.793Z",
+  "approvedAt": "2014-12-08T16:45:36.202Z",
+  "languages": [
+    "haskell",
+    "javascript",
+    "python",
+    "clojure",
+    "java",
+    "ruby",
+    "go",
+    "csharp",
+    "c",
+    "cpp",
+    "kotlin",
+    "rust"
+  ],
+  "url": "https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c",
+  "rank": {
+    "id": -5,
+    "name": "5 kyu",
+    "color": "yellow"
+  },
+  "createdAt": "2014-10-30T11:18:54.793Z",
+  "createdBy": {
+    "username": "knotman90",
+    "url": "https://www.codewars.com/users/knotman90"
+  },
+  "approvedBy": "jhoffner",
+  "description": "The maximum sum subarray problem consists in finding the maximum sum of a contiguous subsequence in an array or list of integers:\n\n```haskell\nmaxSequence [-2, 1, -3, 4, -1, 2, 1, -5, 4]\n-- should be 6: [4, -1, 2, 1]\n```\n```javascript\nmaxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])\n// should be 6: [4, -1, 2, 1]\n```\n```python\nmax_sequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])\n# should be 6: [4, -1, 2, 1]\n```\n```clojure\n(max-sequence [-2, 1, -3, 4, -1, 2, 1, -5, 4])\n;; should be 6: [4, -1, 2, 1]\n```\n```java\nMax.sequence(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4});\n// should be 6: {4, -1, 2, 1}\n```\n```kotlin\nmaxSequence(listOf(-2, 1, -3, 4, -1, 2, 1, -5, 4));\n// should be 6: listOf(4, -1, 2, 1)\n```\n```c\nmaxSequence({-2, 1, -3, 4, -1, 2, 1, -5, 4}, 9)\n// should return 6, from sub-array: {4, -1, 2, 1}\n```\n```cpp\nmaxSequence({-2, 1, -3, 4, -1, 2, 1, -5, 4});\n//should be 6: {4, -1, 2, 1}\n```\n```rust\nmax_sequence(&[-2, 1, -3, 4, -1, 2, 1, -5, 4]);\n//should be 6: [4, -1, 2, 1]\n```\n\nEasy case is when the list is made up of only positive numbers and the maximum sum is the sum of the whole array. If the list is made up of only negative numbers, return 0 instead.\n\nEmpty list is considered to have zero greatest sum. Note that the empty list or array is also a valid sublist/subarray.\n",
+  "apiVersion": 2,
+  "tags": [
+    "Algorithms",
+    "Lists",
+    "Dynamic Programming",
+    "Fundamentals"
+  ],
+  "totalAttempts": 314609,
+  "totalCompleted": 56233,
+  "totalStars": 2857
+}
