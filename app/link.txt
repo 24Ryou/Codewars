@@ -55,6 +55,7 @@ https://www.codewars.com/kata/5262119038c0985a5b00029f, # Is a number prime?, # 
 https://www.codewars.com/kata/54ba84be607a92aa900000f1, # Isograms, # 7 kyu, # Python - PHP
 https://www.codewars.com/kata/582cb0224e56e068d800003c, # Keep Hydrated!, # 8 kyu, # Python - PHP
 https://www.codewars.com/kata/5518a860a73e708c0a000027, # Last digit of a huge number, # 3 kyu, # Python
+https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c, # Maximum  subarray sum, # 5 kyu, # Python
 https://www.codewars.com/kata/52597aa56021e91c93000cb0, # Moving Zeros To The End, # 5 kyu, # Python - PHP
 https://www.codewars.com/kata/514b92a657cdc65150000006, # Multiples of 3 or 5, # 6 kyu, # Python - PHP
 https://www.codewars.com/kata/526dbd6c8c0eb53254000110, # Not very secure, # 5 kyu, # Python - PHP
