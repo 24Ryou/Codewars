@@ -19,7 +19,7 @@ function narcissistic(int $value): bool {
     $value -= pow($digit, $digitCount);
   }
   
-  return $value === 0;
+  return $value === 0;k
 }
 /* ---------------------------------- TEST ---------------------------------- */
 class NarcissisticTest extends TestCase {
