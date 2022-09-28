@@ -13,3 +13,5 @@ composer.lock
 php.md
 python.md
 tools/__pycache__
+node_modules
+package-lock.json

@@ -267,15 +267,19 @@ def save(slug : str , language : str):
 
     pyfile = [Path('app/kata.py')]
     phpfile = [Path('app/kataTest.php')]
+    jsfile = [Path('app/kata.js')]
 
     match language:
       case 'All':
         transferFiles(pyfile , katapath / 'solution.py')
         transferFiles(phpfile , katapath / 'solution.php')
+        transferFiles(jsfile , katapath / 'solution.js')
       case 'PHP':
         transferFiles(phpfile , katapath / 'solution.php')
       case 'Python':
         transferFiles(pyfile , katapath / 'solution.py')
+      case 'JS':
+        transferFiles(jsfile , katapath / 'solution.js')
 
     txt = "# " + data['name']
 
@@ -304,14 +308,18 @@ def load(slug : str):
     print('0 - All')
     print('1 - Python')
     print('2 - PHP')
+    print('3 - JavaScript')
     match input('Enter the number: '):
       case '0':
         loadpy(slug)
         loadphp(slug)
+        loadjs(slug)
       case '1':
         loadpy(slug)
       case '2':
         loadphp(slug)
+      case '3':
+        loadjs(slug)
   except:
     code_response = 214 # load failed
     return code_response
@@ -352,7 +360,19 @@ def loadphp(slug : str):
     txt = "\n".join([l0 , l1 , l2 ,  c1 ,c2 , c4])
     Path('app/kataTest.php').write_text(txt)
   except:
-    code_response = 218 # loadpy failed
+    code_response = 219 # loadphp failed
+    return code_response
+
+def loadjs(slug : str):
+  try:
+    c1 = '/* ------------------------------- MY SOLUTION ------------------------------ */'
+    c2 = '/* ----------------------------- CLEVER SOLUTION ---------------------------- */'
+    # c3 = '/* ------------------------------ BEST PRACTICE ----------------------------- */'
+    c4 = '/* ---------------------------------- TEST ---------------------------------- */'
+    txt = "\n".join([f'// {slug}' ,  c1 ,c2 , c4])
+    Path('app/kata.js').write_text(txt)
+  except:
+    code_response = 220 # loadjs failed
     return code_response
 
 def linkSaver():
@@ -388,43 +408,60 @@ def getNameKata():
   """
   try:
       slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
+      slug1 = open('app/kata.js').read().splitlines()[0].split('// ')[1]
       slug2 = open('app/kataTest.php').read().splitlines()[0].split('<!-- ')[1].split(' -->')[0]
-      return "Python  - " + json.load(open(f'json/{slug}.json'))['name'] + '\n' + 'PHP - ' +json.load(open(f'json/{slug2}.json'))['name']
+      return "Python  - " + json.load(open(f'json/{slug}.json'))['name'] + '\n' + 'PHP - ' +json.load(open(f'json/{slug2}.json'))['name'] + '\n' + 'JavaScript - ' +json.load(open(f'json/{slug1}.json'))['name']
 
   except:
     code_response = 217 # getNameKata failed
     return code_response
 
-def whatPHP():
+def what():
   """
   It takes a list of directories, and a string, and returns the first directory in the list that
   contains the string
   :return: A generator object
   """
-  q = getFOF('katas/*/*' , 'dir')
-  jsf = getAllFiles('json' , 'json')
-  datas = []
-  pp = []
-  
-  for js in jsf:
-    data = json.load(open(js))
-    if 'php' in data['languages']:
-      datas.append(data)
+  lang = ''
+  solution = ''
 
-  slugs = [data['slug'] for data in datas]
-  for p in q :
-    if Path(p).name in slugs:
-      pp.append(p)
+  print('1 - PHP')
+  print('2 - JavaScript')
 
-  l = sorted(set([Path(i).parent.name for i in pp if Path(i / 'solution.php').is_file() == False]))
-  print('Which rank you want?')
-  for x in l: print(x.strip().split()[0]  + ' - ' + x)
-  n = input('Enter your item code: ')
+  match input('What Language: '):
+    case '1':
+      lang = 'PHP'
+      solution = 'solution.php'
+    case '2':
+      lang = 'javascript'
+      solution = 'solution.js'
 
-  q = getFOF('katas/*/*' , 'dir')
-  return next(whatPHPGen(q , n))
 
-def whatPHPGen(q , n):
+  if lang != '' and solution != '':
+    q = getFOF('katas/*/*' , 'dir')
+    jsf = getAllFiles('json' , 'json')
+    datas = []
+    pp = []
+    
+    for js in jsf:
+      data = json.load(open(js))
+      if lang in data['languages']:
+        datas.append(data)
+
+    slugs = [data['slug'] for data in datas]
+    for p in q :
+      if Path(p).name in slugs:
+        pp.append(p)
+
+    l = sorted(set([Path(i).parent.name for i in pp if Path(i / 'solution.php').is_file() == False]))
+    print('Which rank you want?')
+    for x in l: print(x.strip().split()[0]  + ' - ' + x)
+    n = input('Enter your item code: ')
+
+    q = getFOF('katas/*/*' , 'dir')
+    return next(whatGen(q , n , lang , solution))
+
+def whatGen(q , n , l , s):
   """
   It takes a list of directories and a number, and for each directory in the list, it checks if the
   directory contains a file called `solution.php` and if the directory's parent directory is called `n
@@ -437,11 +474,10 @@ def whatPHPGen(q , n):
   for i in q :
     x = Path(i).name
     data = json.load(open('json/{}.json'.format(x)))
-    php = 'solution.php'
-    j = i / php
-    if j.is_file() == False and Path(i).parent.name == "{} kyu".format(n) and 'php' in data['languages']:
+    j = i / s
+    if j.is_file() == False and Path(i).parent.name == "{} kyu".format(n) and l in data['languages']:
       cb.copy(data['url'])
-      yield (f"{data['url']+'/train/php'}, {data['name']}")
+      yield (f"{data['url']+f'/train/{l}'}, {data['name']}")
 
 def handler():
   print('Select From List Below:')
@@ -450,7 +486,7 @@ def handler():
   print('2 - Save')
   print('3 - Remove')
   print('4 - Get name of kata')
-  print('5 - Get unsolved php kata')
+  print('5 - Get unsolved kata')
   match input("Enter the number: "):
     case '0':
       exit()
@@ -459,13 +495,15 @@ def handler():
       data = getJsonByURL(url)
       load(data['slug'])
       # p = Path('json') / f"{data['slug']}.json"
-      dumper(f"{data['slug']}.json" , data , 'data')
+      if not getFOF('json' , f"{data['slug']}" , 'json'):
+        dumper(f"{data['slug']}.json" , data , 'data')
       linkSaver()
     case '2':
       print('Wich Language You Want Save?')
       print('0 - All')
       print('1 - Python')
       print('2 - PHP')
+      print('3 - JavaScript')
       match input('Enter the number: '):
         case '0' :
           slug = open('app/kata.py').read().splitlines()[0].split('# ')[1]
@@ -476,9 +514,12 @@ def handler():
         case '2':
           slug = open('app/kataTest.php').read().splitlines()[0].split('<!-- ')[1].split(' -->')[0]
           save(slug , 'PHP')
+        case '3':
+          slug = open('app/kata.js').read().splitlines()[0].split('// ')[1]
+          save(slug , 'JS')
     case '3':
       remover(input('Enter the slug of kata: '))
     case '4':
       print(getNameKata())
     case '5':
-      print(whatPHP())
+      print(what())

@@ -1,0 +1,27 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "i wrote a app that organize my codewars solutions base on their 'rank'\r you could find kata that i completed in katas folder\r if you like have full view on what kata i've done, there is a link.txt in 'app' folder that sort all katas link + their names on it!\r the main language is python ,  i recently add some php on my old solution, if there was any new solution by new language i added to the\r kata by 'solution.typelanguage\" ex: solution.js or solution.php,\r for testing my code in python i use codewars_test, make sure setup that if you want have local env for testing your kata befor attempt,\r and for php i wrote a phpunit and use unitest package.\r katas folder contain all of the kata i done so far and i do the updating every friday if it possible!",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha app/kata.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/24Ryou/Codewars.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/24Ryou/Codewars/issues"
+  },
+  "homepage": "https://github.com/24Ryou/Codewars#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
