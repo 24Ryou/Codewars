@@ -1,5 +1,6 @@
 from pathlib import *
-import os 
+import os
+from queue import Empty 
 import re 
 import shutil 
 import unicodedata 
@@ -495,7 +496,7 @@ def handler():
       data = getJsonByURL(url)
       load(data['slug'])
       # p = Path('json') / f"{data['slug']}.json"
-      if not getFOF('json' , f"{data['slug']}" , 'json'):
+      if Empty(getFOF('json' , f"{data['slug']}" , 'json')):
         dumper(f"{data['slug']}.json" , data , 'data')
       linkSaver()
     case '2':

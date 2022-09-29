@@ -1,0 +1,37 @@
+{
+  "id": "525c65e51bf619685c000059",
+  "name": "Pete, the baker",
+  "slug": "pete-the-baker",
+  "category": "algorithms",
+  "publishedAt": "2013-10-14T22:22:43.459Z",
+  "approvedAt": null,
+  "languages": [
+    "javascript",
+    "haskell",
+    "coffeescript",
+    "python",
+    "ruby",
+    "go",
+    "factor"
+  ],
+  "url": "https://www.codewars.com/kata/525c65e51bf619685c000059",
+  "rank": {
+    "id": -5,
+    "name": "5 kyu",
+    "color": "yellow"
+  },
+  "createdAt": "2013-10-14T21:45:09.395Z",
+  "createdBy": {
+    "username": "BattleRattle",
+    "url": "https://www.codewars.com/users/BattleRattle"
+  },
+  "approvedBy": null,
+  "description": "Pete likes to bake some cakes. He has some recipes and ingredients. Unfortunately he is not good in maths. Can you help him to find out, how many cakes he could bake considering his recipes?\n\n~~~if-not:factor\nWrite a function `cakes()`, which takes the recipe (object) and the available ingredients (also an object) and returns the maximum number of cakes Pete can bake (integer). For simplicity there are no units for the amounts (e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200). Ingredients that are not present in the objects, can be considered as 0.\n~~~\n~~~if:factor\nWrite a word `cakes`, which takes a recipe (assoc) and the available ingredients (also an assoc) and returns the maximum number of cakes Pete can bake (integer). For simplicity there are no units for the amounts (e.g. 1 lb of flour or 200 g of sugar are simply 1 or 200). Ingredients for the recipe that are not present can be considered as 0.\n~~~\n\nExamples:\n\n```javascript\n// must return 2\ncakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200}); \n// must return 0\ncakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000}); \n```\n```coffeescript\n# must return 2\ncakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200}) \n# must return 0\ncakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000}) \n```\n```python\n# must return 2\ncakes({flour: 500, sugar: 200, eggs: 1}, {flour: 1200, sugar: 1200, eggs: 5, milk: 200})\n# must return 0\ncakes({apples: 3, flour: 300, sugar: 150, milk: 100, oil: 100}, {sugar: 500, flour: 2000, milk: 2000})\n```\n```haskell\ncakes [(\"flour\",500), (\"sugar\",200), (\"eggs\",1)] [(\"flour\",1200), (\"sugar\",1200), (\"eggs\",5), (\"milk\",200)]  `shouldBe` 2\ncakes [(\"apples\",3), (\"flour\",300), (\"sugar\",150), (\"milk\",100), (\"oil\",100)] [(\"sugar\",500), (\"flour\",2000), (\"milk\",2000)] `shouldBe` 0\n```\n```factor\n{ { \"flour\" 500 } { \"sugar\" 200 } { \"eggs\" 1 } } { { \"flour\" 1200 } { \"sugar\" 1200 } { \"eggs\" 5 } { \"milk\" 200 } } cakes ->  2\n{ { \"apples\" 3 } { \"flour\" 300 } { \"sugar\" 150 } { \"milk\" 100 } { \"oil\" 100 } } { { \"sugar\" 500 } { \"flour\" 2000 } { \"milk\" 2000 } } cakes -> 0\n```",
+  "apiVersion": 2,
+  "tags": [
+    "Algorithms"
+  ],
+  "totalAttempts": 175955,
+  "totalCompleted": 48256,
+  "totalStars": 1179
+}
