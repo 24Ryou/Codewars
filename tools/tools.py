@@ -431,7 +431,7 @@ def what():
 
   match input('What Language: '):
     case '1':
-      lang = 'PHP'
+      lang = 'php'
       solution = 'solution.php'
     case '2':
       lang = 'javascript'
@@ -454,7 +454,7 @@ def what():
       if Path(p).name in slugs:
         pp.append(p)
 
-    l = sorted(set([Path(i).parent.name for i in pp if Path(i / 'solution.php').is_file() == False]))
+    l = sorted(set([Path(i).parent.name for i in pp if Path(i / solution).is_file() == False]))
     print('Which rank you want?')
     for x in l: print(x.strip().split()[0]  + ' - ' + x)
     n = input('Enter your item code: ')
