@@ -27,7 +27,8 @@
     "racket",
     "swift",
     "go",
-    "bf"
+    "bf",
+    "factor"
   ],
   "url": "https://www.codewars.com/kata/5839edaa6754d6fec10000a2",
   "rank": {
@@ -41,13 +42,13 @@
     "url": "https://www.codewars.com/users/user5036852"
   },
   "approvedBy": "GiacomoSorbi",
-  "description": "#Find the missing letter\n\nWrite a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.\n\nYou will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.<br>\nThe array will always contain letters in only one case.\n\nExample:\n```if-not:swift\n['a','b','c','d','f'] -> 'e'\n['O','Q','R','S'] -> 'P'\n```\n```swift\n[\"a\",\"b\",\"c\",\"d\",\"f\"] -> \"e\"\n[\"O\",\"Q\",\"R\",\"S\"] -> \"P\"\n```\n\n(Use the English alphabet with 26 letters!)\n\nHave fun coding it and please don't forget to vote and rank this kata! :-) \n\nI have also created other katas. Take a look if you enjoyed this kata!",
+  "description": "# Find the missing letter\n\nWrite a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.\n\n~~~if:factor\nIn the case of factor, your array of letters will be a string.\n~~~\n\nYou will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.<br>\nThe array will always contain letters in only one case.\n\nExample:\n~~~if-not:swift,factor\n```\n['a','b','c','d','f'] -> 'e'\n['O','Q','R','S'] -> 'P'\n```\n~~~\n\n~~~if:factor\n```factor\n\"abcdf\" -> CHAR: e\n\"OQRS\" -> CHAR: P\n```\n~~~\n\n```if:swift\n[\"a\",\"b\",\"c\",\"d\",\"f\"] -> \"e\"\n[\"O\",\"Q\",\"R\",\"S\"] -> \"P\"\n```\n\n(Use the English alphabet with 26 letters!)\n\nHave fun coding it and please don't forget to vote and rank this kata! :-) \n\nI have also created other katas. Take a look if you enjoyed this kata!",
   "apiVersion": 2,
   "tags": [
     "Mathematics",
     "Algorithms"
   ],
-  "totalAttempts": 222136,
-  "totalCompleted": 68753,
-  "totalStars": 1178
+  "totalAttempts": 228165,
+  "totalCompleted": 71208,
+  "totalStars": 1224
 }
