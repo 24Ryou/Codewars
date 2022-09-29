@@ -25,7 +25,8 @@
     "r",
     "cobol",
     "sql",
-    "nasm"
+    "nasm",
+    "rust"
   ],
   "url": "https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd",
   "rank": {
@@ -44,7 +45,7 @@
   "tags": [
     "Fundamentals"
   ],
-  "totalAttempts": 170542,
-  "totalCompleted": 74157,
-  "totalStars": 333
+  "totalAttempts": 176162,
+  "totalCompleted": 77664,
+  "totalStars": 342
 }

@@ -21,7 +21,8 @@
     "haskell",
     "r",
     "crystal",
-    "julia"
+    "julia",
+    "rust"
   ],
   "url": "https://www.codewars.com/kata/57356c55867b9b7a60000bd7",
   "rank": {
@@ -41,7 +42,7 @@
     "Mathematics",
     "Fundamentals"
   ],
-  "totalAttempts": 201900,
-  "totalCompleted": 103412,
-  "totalStars": 660
+  "totalAttempts": 208209,
+  "totalCompleted": 107234,
+  "totalStars": 674
 }
