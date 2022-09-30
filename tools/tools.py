@@ -393,6 +393,8 @@ def linkSaver():
       mylng = 'Python'
       if 'php' in data['languages']:
         mylng  += ' - ' + 'PHP'
+      if 'javascript' in data['languages']:
+        mylng += ' - ' + 'JavaScript'
       link = data['url'] + ', # ' + data['name'] +', # ' + data['rank']['name'] + ', # ' + mylng
       links.append(link)
 
