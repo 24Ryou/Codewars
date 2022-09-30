@@ -31,7 +31,8 @@
     "groovy",
     "c",
     "cobol",
-    "d"
+    "d",
+    "factor"
   ],
   "url": "https://www.codewars.com/kata/54da5a58ea159efa38000836",
   "rank": {
@@ -50,7 +51,7 @@
   "tags": [
     "Fundamentals"
   ],
-  "totalAttempts": 611280,
-  "totalCompleted": 204347,
-  "totalStars": 3460
+  "totalAttempts": 620853,
+  "totalCompleted": 208765,
+  "totalStars": 3548
 }
