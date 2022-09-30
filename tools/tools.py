@@ -478,6 +478,11 @@ def whatGen(q , n , l , s):
     j = i / s
     if j.is_file() == False and Path(i).parent.name == "{} kyu".format(n) and l in data['languages']:
       cb.copy(data['url'])
+      match l:
+        case 'javascript':
+          loadjs(data['slug'])
+        case 'php':
+          loadphp(data['slug'])
       yield (f"{data['url']+f'/train/{l}'}, {data['name']}")
 
 def handler():
