@@ -1,3 +1,4 @@
+# Calculate BMI
 Write function bmi that calculates body mass index (bmi = weight / height<sup>2</sup>).
 
 
