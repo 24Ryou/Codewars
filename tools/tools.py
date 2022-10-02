@@ -370,7 +370,8 @@ def loadjs(slug : str):
     c2 = '/* ----------------------------- CLEVER SOLUTION ---------------------------- */'
     # c3 = '/* ------------------------------ BEST PRACTICE ----------------------------- */'
     c4 = '/* ---------------------------------- TEST ---------------------------------- */'
-    txt = "\n".join([f'// {slug}' ,  c1 ,c2 , c4])
+    c5 = '// const chai = require("chai");\n// const Test = chai.assert.strictEqual; // replace Test.assertEqual with Test\n// chai.config.truncateThreshold=0;'
+    txt = "\n".join([f'// {slug}' ,  c1 ,c2 , c4 , c5])
     Path('app/kata.js').write_text(txt)
   except:
     code_response = 220 # loadjs failed
