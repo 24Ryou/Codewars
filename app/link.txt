@@ -46,6 +46,7 @@ https://www.codewars.com/kata/585d8c8a28bc7403ea0000c3, # Find the unique string
 https://www.codewars.com/kata/523b4ff7adca849afe000035, # Function 1 - hello world, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5772da22b89313a4d50012f7, # Grasshopper - Personalized Message, # 8 kyu, # Python - JavaScript
 https://www.codewars.com/kata/55d24f55d7dd296eb9000030, # Grasshopper - Summation, # 8 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/5270d0d18625160ada0000e4, # Greed is Good, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/563b662a59afc2b5120000c6, # Growth of a Population, # 7 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/554b4ac871d6813a03000035, # Highest and Lowest, # 7 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/57eb8fcdf670e99d9b000272, # Highest Scoring Word, # 6 kyu, # Python - PHP - JavaScript
