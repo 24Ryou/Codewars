@@ -53,6 +53,7 @@ https://www.codewars.com/kata/554b4ac871d6813a03000035, # Highest and Lowest, # 
 https://www.codewars.com/kata/57eb8fcdf670e99d9b000272, # Highest Scoring Word, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5601409514fc93442500010b, # How good are you really?, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/52685f7382004e774f0001f7, # Human Readable Time, # 5 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/55aa075506463dac6600010d, # Integers: Recreation One, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad, # Invert values, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5262119038c0985a5b00029f, # Is a number prime?, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/54ba84be607a92aa900000f1, # Isograms, # 7 kyu, # Python - PHP - JavaScript
