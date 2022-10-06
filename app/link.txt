@@ -52,6 +52,7 @@ https://www.codewars.com/kata/563b662a59afc2b5120000c6, # Growth of a Population
 https://www.codewars.com/kata/554b4ac871d6813a03000035, # Highest and Lowest, # 7 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/57eb8fcdf670e99d9b000272, # Highest Scoring Word, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5601409514fc93442500010b, # How good are you really?, # 8 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/52742f58faf5485cae000b9a, # Human readable duration format, # 4 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/52685f7382004e774f0001f7, # Human Readable Time, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/55aa075506463dac6600010d, # Integers: Recreation One, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5899dc03bc95b1bf1b0000ad, # Invert values, # 8 kyu, # Python - PHP - JavaScript
