@@ -1,0 +1,44 @@
+{
+  "id": "5254ca2719453dcc0b00027d",
+  "name": "Permutations",
+  "slug": "permutations",
+  "category": "algorithms",
+  "publishedAt": "2013-10-09T03:53:44.752Z",
+  "approvedAt": null,
+  "languages": [
+    "javascript",
+    "ruby",
+    "python",
+    "haskell",
+    "php",
+    "cpp",
+    "java",
+    "csharp",
+    "elixir",
+    "vb",
+    "cobol",
+    "go"
+  ],
+  "url": "https://www.codewars.com/kata/5254ca2719453dcc0b00027d",
+  "rank": {
+    "id": -4,
+    "name": "4 kyu",
+    "color": "blue"
+  },
+  "createdAt": "2013-10-09T03:14:48.026Z",
+  "createdBy": {
+    "username": "BattleRattle",
+    "url": "https://www.codewars.com/users/BattleRattle"
+  },
+  "approvedBy": null,
+  "description": "In this kata you have to create all permutations of a non empty input string and remove duplicates, if present. This means, you have to shuffle all letters from the input in all possible orders.\n\nExamples:\n```\n* With input 'a'\n* Your function should return: ['a']\n* With input 'ab'\n* Your function should return ['ab', 'ba']\n* With input 'aabb'\n* Your function should return ['aabb', 'abab', 'abba', 'baab', 'baba', 'bbaa']\n```\n\nThe order of the permutations doesn't matter.\n",
+  "apiVersion": 2,
+  "tags": [
+    "Permutations",
+    "Strings",
+    "Algorithms"
+  ],
+  "totalAttempts": 151571,
+  "totalCompleted": 33893,
+  "totalStars": 2395
+}
