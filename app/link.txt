@@ -112,6 +112,7 @@ https://www.codewars.com/kata/558fc85d8fd1938afb000014, # Sum of two lowest posi
 https://www.codewars.com/kata/576b93db1129fcf2200001e6, # Sum without highest and lowest number, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/54da539698b8a2ad76000228, # Take a Ten Minutes Walk, # 6 kyu, # Python - JavaScript
 https://www.codewars.com/kata/52449b062fb80683ec000024, # The Hashtag Generator, # 5 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/5263c6999e0f40dee200059d, # The observed PIN, # 4 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/568d0dd208ee69389d000016, # Transportation on vacation , # 8 kyu, # Python - JavaScript
 https://www.codewars.com/kata/556deca17c58da83c00002db, # Tribonacci Sequence, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5656b6906de340bd1b0000ac, # Two to One, # 7 kyu, # Python - PHP - JavaScript
