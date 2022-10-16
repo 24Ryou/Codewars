@@ -104,6 +104,7 @@ https://www.codewars.com/kata/54a91a4883a7de5d7800009c, # String incrementer, # 
 https://www.codewars.com/kata/57a0e5c372292dd76d000d7e, # String repeat, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5629db57620258aa9d000014, # Strings Mix, # 4 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/529bf0e9bdf7657179000008, # Sudoku Solution Validator, # 4 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/54d496788776e49e6b00052f, # Sum by Factors, # 4 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/57eaeb9578748ff92a000009, # Sum Mixed Array, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/541c8630095125aba6000c00, # Sum of Digits / Digital Root, # 6 kyu, # Python - JavaScript
 https://www.codewars.com/kata/52b7ed099cdc285c300001cd, # Sum of Intervals, # 4 kyu, # Python - PHP - JavaScript
