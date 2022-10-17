@@ -23,8 +23,8 @@ from collections import Counter
 import re
 
 def top_3_words(text):
-    c = Counter(re.findall(r"[a-z']+", re.sub(r" '+ ", " ", text.lower())))
-    return [w for w,_ in c.most_common(3)]
+  c = Counter(re.findall(r"[a-z']+", re.sub(r" '+ ", " ", text.lower())))
+  return [w for w,_ in c.most_common(3)]
 # ----------------------------------- TEST ----------------------------------- #
 test.assert_equals(top_3_words("a a a  b  c c  d d d d  e e e e e"), ["e", "d", "a"])
 test.assert_equals(top_3_words("e e e e DDD ddd DdD: ddd ddd aa aA Aa, bb cc cC e e e"), ["e", "ddd", "aa"])
