@@ -79,6 +79,7 @@ https://www.codewars.com/kata/54d512e62a5e54c96200019e, # Primes in numbers, # 5
 https://www.codewars.com/kata/56541980fa08ab47a0000040, # Printer Errors, # 7 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5541f58a944b85ce6d00006a, # Product of consecutive Fib numbers, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/51ba717bb08c1cd60f00002f, # Range Extraction, # 4 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/53f40dff5f9d31b813000774, # Recover a secret string from random triplets, # 4 kyu, # Python - JavaScript
 https://www.codewars.com/kata/52e1476c8147a7547a000811, # Regex Password Validation, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/55f8a9c06c018a0d6e000132, # Regex validate PIN code, # 7 kyu, # Python - JavaScript
 https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0, # Remove First and Last Character, # 8 kyu, # Python - PHP - JavaScript
