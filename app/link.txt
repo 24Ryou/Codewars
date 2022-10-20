@@ -130,4 +130,5 @@ https://www.codewars.com/kata/55c6126177c9441a570000cc, # Weight for weight, # 5
 https://www.codewars.com/kata/523a86aa4230ebb5420001e1, # Where my anagrams at?, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/550554fd08b86f84fe000a58, # Which are  in?, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5266876b8f4bf2da9b000362, # Who likes it?, # 6 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/5842df8ccbd22792a4000245, # Write Number in Expanded Form, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/55c45be3b2079eccff00010f, # Your order,  please, # 6 kyu, # Python - JavaScript

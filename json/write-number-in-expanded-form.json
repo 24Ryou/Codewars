@@ -1,0 +1,46 @@
+{
+  "id": "5842df8ccbd22792a4000245",
+  "name": "Write Number in Expanded Form",
+  "slug": "write-number-in-expanded-form",
+  "category": "reference",
+  "publishedAt": "2016-12-06T05:05:44.878Z",
+  "approvedAt": "2016-12-06T15:17:14.857Z",
+  "languages": [
+    "javascript",
+    "ruby",
+    "python",
+    "coffeescript",
+    "haskell",
+    "php",
+    "java",
+    "swift",
+    "csharp",
+    "fsharp",
+    "rust",
+    "c",
+    "factor"
+  ],
+  "url": "https://www.codewars.com/kata/5842df8ccbd22792a4000245",
+  "rank": {
+    "id": -6,
+    "name": "6 kyu",
+    "color": "yellow"
+  },
+  "createdAt": "2016-12-03T15:06:52.647Z",
+  "createdBy": {
+    "username": "Belax8",
+    "url": "https://www.codewars.com/users/Belax8"
+  },
+  "approvedBy": "suic",
+  "description": "# Write Number in Expanded Form\n\nYou will be given a number and you will need to return it as a string in [Expanded Form](https://www.mathsisfun.com/definitions/expanded-notation.html). For example:\n\n```haskell\nexpandedForm 12    -- Should return '10 + 2'\nexpandedForm 42    -- Should return '40 + 2'\nexpandedForm 70304 -- Should return '70000 + 300 + 4'\n```\n\n```javascript\nexpandedForm(12); // Should return '10 + 2'\nexpandedForm(42); // Should return '40 + 2'\nexpandedForm(70304); // Should return '70000 + 300 + 4'\n```\n```python\nexpanded_form(12) # Should return '10 + 2'\nexpanded_form(42) # Should return '40 + 2'\nexpanded_form(70304) # Should return '70000 + 300 + 4'\n```\n```php\nexpanded_form(12); // Should return \"10 + 2\"\nexpanded_form(42); // Should return \"40 + 2\"\nexpanded_form(70304); // Should return \"70000 + 300 + 4\"\n```\n```ruby\nexpanded_form(12); # Should return '10 + 2'\nexpanded_form(42); # Should return '40 + 2'\nexpanded_form(70304); # Should return '70000 + 300 + 4'\n```\n```coffeescript\nexpandedForm(12); # Should return '10 + 2'\nexpandedForm(42); # Should return '40 + 2'\nexpandedForm(70304); # Should return '70000 + 300 + 4'\n```\n```java\nKata.expandedForm(12); # Should return \"10 + 2\"\nKata.expandedForm(42); # Should return \"40 + 2\"\nKata.expandedForm(70304); # Should return \"70000 + 300 + 4\"\n```\n```csharp\nKata.ExpandedForm(12); # Should return \"10 + 2\"\nKata.ExpandedForm(42); # Should return \"40 + 2\"\nKata.ExpandedForm(70304); # Should return \"70000 + 300 + 4\"\n```\n```fsharp\nexpandedForm 12L // Should return \"10 + 2\"\nexpandedForm 42L // Should return \"40 + 2\"\nexpandedForm 70304L // Should return \"70000 + 300 + 4\"\n```\n```rust\nexpanded_form(12);    // Should return \"10 + 2\"\nexpanded_form(42);    // Should return \"40 + 2\"\nexpanded_form(70304); // Should return \"70000 + 300 + 4\"\n```\n\nNOTE: All numbers will be whole numbers greater than 0.\n\nIf you liked this kata, check out [part 2](https://www.codewars.com/kata/write-number-in-expanded-form-part-2)!!\n",
+  "apiVersion": 2,
+  "tags": [
+    "Strings",
+    "Mathematics",
+    "Algorithms",
+    "Fundamentals"
+  ],
+  "totalAttempts": 231676,
+  "totalCompleted": 53030,
+  "totalStars": 1485
+}
