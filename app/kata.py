@@ -1,19 +1,11 @@
-# write-number-in-expanded-form
+# reversed-strings
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
-def expanded_form(num):
-  result = []
-
-  for index, digit in enumerate(str(num)[::-1]):
-    if int(digit) != 0:
-      result.append(digit + ('0' * index))
-
-  return ' + '.join(result[::-1])
+def solution(string):
+  return string[::-1]
 # ------------------------------ CLEVER SOLUTION ----------------------------- #
-def expanded_form(num):
-  num = list(str(num))
-  return ' + '.join(x + '0' * (len(num) - y - 1) for y,x in enumerate(num) if x != '0')
 # ----------------------------------- TEST ----------------------------------- #
-test.assert_equals(expanded_form(12), '10 + 2');
-test.assert_equals(expanded_form(42), '40 + 2');
-test.assert_equals(expanded_form(70304), '70000 + 300 + 4');
+test.assert_equals(solution('world'), 'dlrow')
+test.assert_equals(solution('hello'), 'olleh')
+test.assert_equals(solution(''), '')
+test.assert_equals(solution('h'), 'h')
