@@ -1,3 +1,4 @@
+# Not very secure
 In this example you have to validate if a user input string is alphanumeric. The given string is not `nil/null/NULL/None`, so you don't have to check that.
 
 The string has the following conditions to be alphanumeric:
