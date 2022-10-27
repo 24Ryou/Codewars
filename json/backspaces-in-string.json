@@ -1,0 +1,52 @@
+{
+  "id": "5727bb0fe81185ae62000ae3",
+  "name": "Backspaces in string",
+  "slug": "backspaces-in-string",
+  "category": "algorithms",
+  "publishedAt": "2016-05-02T20:39:48.634Z",
+  "approvedAt": "2017-07-20T11:04:24.837Z",
+  "languages": [
+    "ruby",
+    "javascript",
+    "haskell",
+    "csharp",
+    "elm",
+    "python",
+    "cpp",
+    "scala",
+    "julia",
+    "elixir",
+    "typescript",
+    "java",
+    "c",
+    "nasm",
+    "idris",
+    "nim",
+    "rust",
+    "clojure",
+    "factor",
+    "bf"
+  ],
+  "url": "https://www.codewars.com/kata/5727bb0fe81185ae62000ae3",
+  "rank": {
+    "id": -6,
+    "name": "6 kyu",
+    "color": "yellow"
+  },
+  "createdAt": "2016-05-02T20:39:43.449Z",
+  "createdBy": {
+    "username": "vetalpaprotsky",
+    "url": "https://www.codewars.com/users/vetalpaprotsky"
+  },
+  "approvedBy": "ice1000",
+  "description": "Assume `\"#\"` is like a backspace in string. This means that string `\"a#bc#d\"` actually is `\"bd\"`\n\nYour task is to process a string with `\"#\"` symbols.\n\n\n## Examples\n\n```\n\"abc#d##c\"      ==>  \"ac\"\n\"abc##d######\"  ==>  \"\"\n\"#######\"       ==>  \"\"\n\"\"              ==>  \"\"\n```",
+  "apiVersion": 2,
+  "tags": [
+    "Fundamentals",
+    "Strings",
+    "Algorithms"
+  ],
+  "totalAttempts": 58206,
+  "totalCompleted": 13471,
+  "totalStars": 337
+}
