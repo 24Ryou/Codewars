@@ -13,6 +13,7 @@ https://www.codewars.com/kata/5208f99aee097e6552000148, # Break camelCase, # 6 k
 https://www.codewars.com/kata/5592e3bd57b64d00f3000047, # Build a pile of Cubes, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/57675f3dedc6f728ee000256, # Build Tower Advanced, # 6 kyu, # Python - JavaScript
 https://www.codewars.com/kata/576757b1df89ecf5bd00073b, # Build Tower, # 6 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/554a44516729e4d80b000012, # Buying a car, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/57a2013acf1fa5bfc4000921, # Calculate average , # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/57a429e253ba3381850000fb, # Calculate BMI, # 8 kyu, # Python - JavaScript
 https://www.codewars.com/kata/525f3eda17c7cd9f9e000b39, # Calculating with Functions, # 5 kyu, # Python - JavaScript
