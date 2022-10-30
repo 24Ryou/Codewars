@@ -1,5 +1,4 @@
 # best-travel
-from tkinter.messagebox import NO
 import codewars_test as test
 # -------------------------------- MY SOLUTION ------------------------------- #
 from itertools import combinations
