@@ -5,6 +5,7 @@ https://www.codewars.com/kata/523f5d21c841566fde000009, # Array.diff, # 6 kyu, #
 https://www.codewars.com/kata/5727bb0fe81185ae62000ae3, # Backspaces in string, # 6 kyu, # Python - JavaScript
 https://www.codewars.com/kata/57356c55867b9b7a60000bd7, # Basic Mathematical Operations, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/55f9b48403f6b87a7c0000bd, # Beginner Series #1 School Paperwork, # 8 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a, # Beginner Series #2 Clock, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/55f2b110f61eb01779000053, # Beginner Series #3 Sum of Numbers, # 7 kyu, # Python - JavaScript
 https://www.codewars.com/kata/55e7280b40e1c4a06d0000aa, # Best travel, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/551f37452ff852b7bd000139, # Binary Addition, # 7 kyu, # Python - JavaScript
