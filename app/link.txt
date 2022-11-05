@@ -108,6 +108,7 @@ https://www.codewars.com/kata/57814d79a56c88e3e0000786, # Simple Encryption #1 -
 https://www.codewars.com/kata/5782b5ad202c0ef42f0012cb, # Simple Encryption #2 - Index-Difference, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/520b9d2ad5c005041100000f, # Simple Pig Latin, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1, # Snail, # 4 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c, # Sort array by string length, # 7 kyu, # Python - JavaScript
 https://www.codewars.com/kata/578aa45ee9fd15ff4600090d, # Sort the odd, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/515de9ae9dcfc28eb6000001, # Split Strings, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/546e2562b03326a88e000020, # Square Every Digit, # 7 kyu, # Python - PHP - JavaScript
