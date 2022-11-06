@@ -1,0 +1,49 @@
+{
+  "id": "53dc23c68a0c93699800041d",
+  "name": "Sentence Smash",
+  "slug": "sentence-smash",
+  "category": "reference",
+  "publishedAt": "2014-08-01T23:33:34.894Z",
+  "approvedAt": "2014-08-08T02:20:16.227Z",
+  "languages": [
+    "javascript",
+    "ruby",
+    "java",
+    "python",
+    "haskell",
+    "coffeescript",
+    "elixir",
+    "c",
+    "csharp",
+    "php",
+    "r",
+    "julia",
+    "dart",
+    "racket",
+    "typescript",
+    "crystal",
+    "cobol"
+  ],
+  "url": "https://www.codewars.com/kata/53dc23c68a0c93699800041d",
+  "rank": {
+    "id": -8,
+    "name": "8 kyu",
+    "color": "white"
+  },
+  "createdAt": "2014-08-01T23:33:26.173Z",
+  "createdBy": {
+    "username": "richardhsu",
+    "url": "https://www.codewars.com/users/richardhsu"
+  },
+  "approvedBy": "jhoffner",
+  "description": "# Sentence Smash\n\nWrite a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. **Be careful, there shouldn't be a space at the beginning or the end of the sentence!**\n\n## Example\n\n```\n['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'\n```",
+  "apiVersion": 2,
+  "tags": [
+    "Strings",
+    "Arrays",
+    "Fundamentals"
+  ],
+  "totalAttempts": 140002,
+  "totalCompleted": 67866,
+  "totalStars": 406
+}
