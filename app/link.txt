@@ -70,6 +70,7 @@ https://www.codewars.com/kata/5518a860a73e708c0a000027, # Last digit of a huge n
 https://www.codewars.com/kata/52a382ee44408cea2500074c, # Matrix Determinant, # 4 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/54521e9ec8e60bc4de000d6c, # Maximum  subarray sum, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/59df2f8f08c6cec835000012, # Meeting, # 6 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/58f5c63f1e26ecda7e000029, # Mexican Wave, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/51e056fe544cf36c410000fb, # Most frequently used words in a text, # 4 kyu, # Python - JavaScript
 https://www.codewars.com/kata/52597aa56021e91c93000cb0, # Moving Zeros To The End, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/514b92a657cdc65150000006, # Multiples of 3 or 5, # 6 kyu, # Python - PHP - JavaScript
