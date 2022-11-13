@@ -131,6 +131,7 @@ https://www.codewars.com/kata/5715eaedb436cf5606000381, # Sum of positive, # 8 k
 https://www.codewars.com/kata/558fc85d8fd1938afb000014, # Sum of two lowest positive integers, # 7 kyu, # Python - JavaScript
 https://www.codewars.com/kata/576b93db1129fcf2200001e6, # Sum without highest and lowest number, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/54da539698b8a2ad76000228, # Take a Ten Minutes Walk, # 6 kyu, # Python - JavaScript
+https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9, # Testing 1-2-3, # 7 kyu, # Python - JavaScript
 https://www.codewars.com/kata/52449b062fb80683ec000024, # The Hashtag Generator, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5263c6999e0f40dee200059d, # The observed PIN, # 4 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/53697be005f803751e0015aa, # The Vowel Code, # 6 kyu, # Python - JavaScript
