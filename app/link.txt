@@ -106,6 +106,7 @@ https://www.codewars.com/kata/5672a98bdbdd995fad00000f, # Rock Paper Scissors!, 
 https://www.codewars.com/kata/51b62bf6a9c58071c600001b, # Roman Numerals Encoder, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/51b66044bce5799a7f000003, # Roman Numerals Helper, # 4 kyu, # Python - JavaScript
 https://www.codewars.com/kata/530e15517bc88ac656000716, # Rot13, # 5 kyu, # Python - JavaScript
+https://www.codewars.com/kata/55d1d6d5955ec6365400006d, # Round up to the next multiple of 5, # 7 kyu, # Python - JavaScript
 https://www.codewars.com/kata/55c04b4cc56a697bb0000048, # Scramblies, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/53dc23c68a0c93699800041d, # Sentence Smash, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9, # Shortest Word, # 7 kyu, # Python - PHP - JavaScript
