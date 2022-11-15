@@ -35,6 +35,7 @@ https://www.codewars.com/kata/583203e6eb35d7980400002a, # Count the smiley faces
 https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1, # Counting Duplicates, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/54edbc7200b811e956000556, # Counting sheep..., # 8 kyu, # Python - JavaScript
 https://www.codewars.com/kata/525f50e3b73515a6db000b83, # Create Phone Number, # 6 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/569d488d61b812a0f7000015, # Data Reverse, # 6 kyu, # Python - JavaScript
 https://www.codewars.com/kata/54b724efac3d5402db00065e, # Decode the Morse code , # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/554ca54ffa7d91b236000023, # Delete occurrences of an element if it occurs more than n times, # 6 kyu, # Python - JavaScript
 https://www.codewars.com/kata/5467e4d82edf8bbf40000155, # Descending Order, # 7 kyu, # Python - PHP - JavaScript
