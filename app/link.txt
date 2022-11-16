@@ -82,6 +82,7 @@ https://www.codewars.com/kata/55983863da40caa2c900004e, # Next bigger number wit
 https://www.codewars.com/kata/526dbd6c8c0eb53254000110, # Not very secure, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/52f787eb172a8b4ae1000a34, # Number of trailing zeros of N!, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/5949481f86420f59480000e7, # Odd or Even?, # 7 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/56dec885c54a926dcd001095, # Opposite number, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/555086d53eac039a2a000083, # Opposites Attract, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/515bb423de843ea99400000a, # PaginationHelper, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/5254ca2719453dcc0b00027d, # Permutations, # 4 kyu, # Python - PHP - JavaScript
