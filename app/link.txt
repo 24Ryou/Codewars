@@ -46,6 +46,7 @@ https://www.codewars.com/kata/5287e858c6b5a9678200083c, # Does my number look bi
 https://www.codewars.com/kata/5848565e273af816fb000449, # Encrypt this!, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5679aa472b8f57fb8c000047, # Equal Sides Of An Array, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/53da3dbb4a5168369a0000fe, # Even or Odd, # 8 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/56fa3c5ce4d45d2a52001b3c, # Exclusive "or" (xor) Logical Operator, # 8 kyu, # Python - JavaScript
 https://www.codewars.com/kata/514a024011ea4fb54200004b, # Extract the domain name from a URL, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/57eae65a4321032ce000002d, # Fake Binary, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/539ee3b6757843632d00026b, # Find the capitals, # 7 kyu, # Python - JavaScript
