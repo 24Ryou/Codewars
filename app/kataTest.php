@@ -4,6 +4,7 @@
 use PHPUnit\Framework\TestCase;
 /* ------------------------------- MY SOLUTION ------------------------------ */
 function stockList($listOfArt, $listOfCat){
+  if (empty($listOfArt) || empty($listOfCat)) return "";
   foreach ($listOfCat as $chr) {
     $arr[$chr] = 0;
     foreach ($listOfArt as $str) {
