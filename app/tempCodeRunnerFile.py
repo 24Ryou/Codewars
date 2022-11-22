@@ -1,1 +1,0 @@
-map(int , str(abs(number)).split())
