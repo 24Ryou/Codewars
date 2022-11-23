@@ -51,6 +51,7 @@ https://www.codewars.com/kata/56fa3c5ce4d45d2a52001b3c, # Exclusive "or" (xor) L
 https://www.codewars.com/kata/514a024011ea4fb54200004b, # Extract the domain name from a URL, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/57eae65a4321032ce000002d, # Fake Binary, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/539ee3b6757843632d00026b, # Find the capitals, # 7 kyu, # Python - JavaScript
+https://www.codewars.com/kata/545a4c5a61aa4c6916000755, # Find the middle element, # 7 kyu, # Python - JavaScript
 https://www.codewars.com/kata/5839edaa6754d6fec10000a2, # Find the missing letter, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/54da5a58ea159efa38000836, # Find the odd int, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5526fc09a1bbd946250002dc, # Find The Parity Outlier, # 6 kyu, # Python - PHP - JavaScript
