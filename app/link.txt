@@ -156,6 +156,7 @@ https://www.codewars.com/kata/5277c8a221e209d3f6000b56, # Valid Braces, # 6 kyu,
 https://www.codewars.com/kata/52774a314c2333f0a7000688, # Valid Parentheses, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/54ff3102c1bad923760001f3, # Vowel Count, # 7 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/55c6126177c9441a570000cc, # Weight for weight, # 5 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/52b757663a95b11b3d00062d, # WeIrD StRiNg CaSe, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/54d4c8b08776e4ad92000835, # What's a Perfect Power  anyway?, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/523a86aa4230ebb5420001e1, # Where my anagrams at?, # 5 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/550554fd08b86f84fe000a58, # Which are  in?, # 6 kyu, # Python - PHP - JavaScript
