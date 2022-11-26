@@ -1,0 +1,42 @@
+{
+  "id": "586c1cf4b98de0399300001d",
+  "name": "Grasshopper - Terminal game combat function",
+  "slug": "grasshopper-terminal-game-combat-function-1",
+  "category": "reference",
+  "publishedAt": "2017-01-03T21:51:55.942Z",
+  "approvedAt": "2017-10-16T23:50:10.116Z",
+  "languages": [
+    "javascript",
+    "ruby",
+    "python",
+    "crystal",
+    "rust",
+    "csharp",
+    "go",
+    "cpp",
+    "php",
+    "haskell",
+    "coffeescript",
+    "racket"
+  ],
+  "url": "https://www.codewars.com/kata/586c1cf4b98de0399300001d",
+  "rank": {
+    "id": -8,
+    "name": "8 kyu",
+    "color": "white"
+  },
+  "createdAt": "2017-01-03T21:51:48.806Z",
+  "createdBy": {
+    "username": "rom4eg",
+    "url": "https://www.codewars.com/users/rom4eg"
+  },
+  "approvedBy": "Voile",
+  "description": "Create a combat function that takes the player's current health and the amount of damage recieved, and returns the player's new health.\nHealth can't be less than <b>0<b>.",
+  "apiVersion": 2,
+  "tags": [
+    "Fundamentals"
+  ],
+  "totalAttempts": 32543,
+  "totalCompleted": 17598,
+  "totalStars": 77
+}

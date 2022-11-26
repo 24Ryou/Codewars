@@ -61,6 +61,7 @@ https://www.codewars.com/kata/523b4ff7adca849afe000035, # Function 1 - hello wor
 https://www.codewars.com/kata/5503013e34137eeeaa001648, # Give me a Diamond, # 6 kyu, # Python - JavaScript
 https://www.codewars.com/kata/5772da22b89313a4d50012f7, # Grasshopper - Personalized Message, # 8 kyu, # Python - JavaScript
 https://www.codewars.com/kata/55d24f55d7dd296eb9000030, # Grasshopper - Summation, # 8 kyu, # Python - PHP - JavaScript
+https://www.codewars.com/kata/586c1cf4b98de0399300001d, # Grasshopper - Terminal game combat function, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5270d0d18625160ada0000e4, # Greed is Good, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/563b662a59afc2b5120000c6, # Growth of a Population, # 7 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/54dc6f5a224c26032800005c, # Help the bookseller !, # 6 kyu, # Python - PHP - JavaScript
