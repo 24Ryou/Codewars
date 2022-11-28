@@ -28,6 +28,7 @@ https://www.codewars.com/kata/551b4501ac0447318f0009cd, # Convert a Boolean to a
 https://www.codewars.com/kata/5265326f5fda8eb1160004c8, # Convert a Number to a String!, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/544675c6f971f7399a000e79, # Convert a String to a Number!, # 8 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/5583090cbe83f4fd8c000051, # Convert number to reversed array of digits, # 8 kyu, # Python - JavaScript
+https://www.codewars.com/kata/529b418d533b76924600085d, # Convert PascalCase string into snake_case, # 5 kyu, # Python - JavaScript
 https://www.codewars.com/kata/517abf86da9663f1d2000003, # Convert string to camel case, # 6 kyu, # Python - PHP - JavaScript
 https://www.codewars.com/kata/52efefcbcdf57161d4000091, # Count characters in your string, # 6 kyu, # Python - JavaScript
 https://www.codewars.com/kata/576bb71bbbcf0951d5000044, # Count of positives / sum of negatives, # 8 kyu, # Python - PHP - JavaScript

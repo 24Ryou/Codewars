@@ -1,0 +1,36 @@
+{
+  "id": "529b418d533b76924600085d",
+  "name": "Convert PascalCase string into snake_case",
+  "slug": "convert-pascalcase-string-into-snake-case",
+  "category": "algorithms",
+  "publishedAt": "2013-12-01T14:18:05.610Z",
+  "approvedAt": "2013-12-03T00:13:34.774Z",
+  "languages": [
+    "ruby",
+    "javascript",
+    "coffeescript",
+    "python",
+    "csharp"
+  ],
+  "url": "https://www.codewars.com/kata/529b418d533b76924600085d",
+  "rank": {
+    "id": -5,
+    "name": "5 kyu",
+    "color": "yellow"
+  },
+  "createdAt": "2013-12-01T14:02:53.125Z",
+  "createdBy": {
+    "username": "OlgaGr",
+    "url": "https://www.codewars.com/users/OlgaGr"
+  },
+  "approvedBy": "jhoffner",
+  "description": "Complete the function/method so that it takes a `PascalCase` string and returns the string in `snake_case` notation. Lowercase characters can be numbers. If the method gets a number as input, it should return a string.\n\n## Examples\n```\n\"TestController\"  -->  \"test_controller\"\n\"MoviesAndBooks\"  -->  \"movies_and_books\"\n\"App7Test\"        -->  \"app7_test\"\n1                 -->  \"1\"\n```",
+  "apiVersion": 2,
+  "tags": [
+    "Strings",
+    "Algorithms"
+  ],
+  "totalAttempts": 67209,
+  "totalCompleted": 10285,
+  "totalStars": 212
+}
